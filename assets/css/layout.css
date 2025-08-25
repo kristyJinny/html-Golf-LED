@@ -2,18 +2,17 @@
 
 .wrapper {
   position: relative;
-  overflow: hidden;
+  /* overflow: hidden; */
   width: initial;
   width:100%;
   height: 100%;
   height: 100vh;
-  /* max-width: 1920px; */
   background-color: #00854a; /* 디자인 색 확인 필요 */
-  
+
   display: flex;
-  justify-content: center;
-  align-items: center;
-  
+  /* justify-content: center;
+  align-items: center; */
+
   /* outline: 1px solid red;   *//* test */
 
 }
@@ -21,16 +20,16 @@
 .container-section {
   display: flex;
   flex-direction: column;
-  width:100%;
-  height: 100%;
-  max-width: 1920rem;
-  max-height: 1080rem;
+  /* width:100%;
+  height: 100%; */
+  /* max-width: 1920rem;
+  max-height: 1080rem; */
   margin: 0 auto;
-  padding: 22rem 25rem;
+  padding: 10rem 20rem 10rem;
   background: url('../images/bg_01.png') no-repeat center top;
   background-size: cover;
-  
-  /* outline: 1px solid skyblue; *//* test */
+
+  outline: 1px solid skyblue; /* test */
 }
 
 /* main-header */
@@ -38,7 +37,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 24rem 0 22rem;
+  height: 146rem; /* 임시 */
+  padding: 0 20rem;
+  box-sizing: border-box;
 }
 .main-header .main-title {
   width: 490rem;
@@ -50,26 +51,39 @@
   font-weight: 700;
 }
 
+main {
+  --color-scrollbar-track-edge: Transparent;
+  --margin-scrollbar: calc(var(--rem) * 2);
+  --width-scrollbar: calc(var(--rem) * 4 + var(--margin-scrollbar) * 2);
+
+  scroll-behavior: auto;
+  overscroll-behavior: contain;
+}
+
 /* main-board */
 .main-board {
   flex-grow: 1;
   width: 100%;
-  /* height: calc(100% - 160rem); */
-  margin-top: 27rem;
+  height: calc(100% - 146rem - 68rem);
+  height: calc(100vh- 146rem - 68rem);
+  margin-top: 20rem;
+  overflow: auto auto;
+    /* overflow: auto scroll; */
 
   /* display: flex;
   justify-content: center;
   align-items: center; */
-  
-  /* outline: 1px solid blue;  */ /* test */ 
+
+  /* outline: 1px solid blue;  */ /* test */
 }
 
 
 /* footer */
 footer {
-  padding: 12rem 0 0 22rem;
+  height: 76rem; /* 임시 */
+  padding: 0 20rem;
 }
 .footer-logo {
   width: 200rem;
-  height: 56rem;
+  height: 76rem;
 }
