@@ -1,3 +1,8 @@
+/* --- common  --- */
+.style-col {
+  flex-direction: column;
+}
+
 /* --- table  --- */
 
 table {
@@ -28,7 +33,7 @@ caption {
   position: sticky;
   top: 0;
   z-index: 3;
-  background-color: #00854a; /* 디자인 색 확인 필요 */
+  background-color: #00854b; /* 디자인 색 확인 필요 */
   /* border-bottom: 4rem solid #fff; */
 }
 .table-box thead::after {
@@ -82,8 +87,21 @@ caption {
   color: #f15922;
 }
 
-.table-box .name-box {
+/* table style-b:  */
+.table-bo0x.style-b {
 
+}
+.table-box.style-b tbody {
+  border-top: 4rem solid #fff;
+}
+.table-box tbody tr + tr {
+  border-top: 4rem solid #fff;
+}
+.table-box.style-b tbody tr:first-child {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.table-box.style-b tbody td {
+  border-left: 4rem solid #fff;
 }
 
 /* --- 테이블 2개 --- */
@@ -97,69 +115,104 @@ caption {
 /* --- card  --- */
 .card-list {
   display: flex;
-  gap: 20rem;
+  gap: 46rem;
 }
+.card-item {}
 
-.card-item {
-  width: 33.33%;
-
-}
-.card-area {
+.profile-area {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 10rem 16rem;
+  padding: 20rem 10rem 25rem;
   border-radius: 10rem;
   background-color: #fff;
 }
-.card-area .img-box img {
-  width: 500rem;
-  height: 400rem;
+.profile-area .img-box img {
+  /* width: 500rem;
+  height: 400rem; */
 }
-.card-area .name-box {
+.profile-area .name-box {
   display: flex;
-  align-items: center;
-  color: #00854a;
+  align-items: baseline;
+  margin-top: 25rem;
+  margin-left: 38rem;
+  font-weight: 600;
+  color: #00854b;
 }
-.card-area .name-box .name {
-  font-size: 24rem;
-  font-weight: 700;
+.profile-area .name-box .name {
+  font-size: 68rem;
+  /* font-weight: 700; */
 }
-.card-area .name-box .name-en {
-  position: relative;
-  font-size: 14rem;
-  margin-left: 5rem;
-  padding-left: 5rem;
+.profile-area .name-box .name-en {
+  /* position: relative; */
+  margin-left: 8rem;
+  font-size: 33rem;
 }
-.card-area .name-box .name-en::before {
-  content: '';
+.profile-area .name-box .name-en::before {
+  /* content: ''; */
   position: absolute;
   display: inline-block;
-  width: 1rem;
+  width: 4rem;
   height: 100%;
-  background-color: #00854a;
+  background-color: #00854b;
 }
 
 
 /* --- data-area ---*/
-.data-area ul,
-.data-area li {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
 .data-area li .name {
-  color: #00854a;
+  color: #00854b;
   background-color: #fff;
   padding: 2rem 4rem;
   border-radius: 10rem;
 }
-
 .data-area li .data {
   color: #fff;
 }
-
 .data-area li .data.red {
   color: red;
+}
+
+
+/* --- page-personal --- */
+.personal-wrap {
+  display: flex;
+  align-items: anchor-center;
+}
+.personal-img {
+  width: 700rem;
+  height: 800rem;
+}
+
+.personal-wrap .name-box {
+  color: #fff;
+}
+.personal-wrap .name-box .name {
+  font-size: 98rem;
+  letter-spacing: -1.9;
+}
+.personal-wrap .name-box .name-en {
+  font-size: 39rem;
+  letter-spacing: -0.7;
+}
+
+.data-area.style-row {
+  display: flex;
+}
+.data-area.big {
+  gap: 65rem;
+  font-size: 55rem;
+}
+.data-area.big .name {
+  margin-right: 65rem;
+  padding: 0 30rem;
+  border-radius: 50rem;
+}
+
+/* page layout */
+.personal-wrap .data-area.style-row.big {
+  margin: 30rem;
+}
+
+.personal-wrap .table-wrap {
+
 }

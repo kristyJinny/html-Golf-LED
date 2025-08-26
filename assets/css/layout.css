@@ -7,7 +7,7 @@
   width:100%;
   height: 100%;
   height: 100vh;
-  background-color: #00854a; /* 디자인 색 확인 필요 */
+  background-color: #00854b; /* 디자인 색 확인 필요 */
 
   display: flex;
   /* justify-content: center;
@@ -61,7 +61,7 @@ main {
 }
 
 /* main-board */
-.main-board {
+.main {
   flex-grow: 1;
   width: 100%;
   height: calc(100% - 146rem - 68rem);
