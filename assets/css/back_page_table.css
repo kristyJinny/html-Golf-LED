@@ -99,7 +99,7 @@ caption {
 }
 
 /* --- 테이블 2개 --- */
-.table-wrap.table-duo {
+.table-wrap.table-wrap02 {
   display: flex;
   gap: 20rem;
 }
