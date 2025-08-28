@@ -7,7 +7,7 @@
   width:100%;
   height: 100%;
   height: 100vh;
-  background-color: #00854b; 
+  background-color: #00854b;
 
   display: flex;
   /* justify-content: center;
@@ -29,7 +29,8 @@
   background: url('../images/bg_01.png') no-repeat center top;
   background-size: cover;
 
-  outline: 1px solid skyblue; /* test */
+  /* outline: 1px solid skyblue; */
+   /* test */
 }
 
 /* main-header */
@@ -37,21 +38,23 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 146rem; /* 임시 */
   padding: 0 20rem;
   box-sizing: border-box;
 }
 .main-header .main-title {
   width: 490rem;
   height: 106rem;
+  margin:0;
+  padding:0;
 }
 .main-header .sub-title {
   font-size: 62rem;
   color: #fff;
-  font-weight: 700;
+  /* font-weight: 400; */
+  letter-spacing: -1.24rem;
 }
 
-main {
+.main {
   --color-scrollbar-track-edge: Transparent;
   --margin-scrollbar: calc(var(--rem) * 2);
   --width-scrollbar: calc(var(--rem) * 4 + var(--margin-scrollbar) * 2);
@@ -63,10 +66,12 @@ main {
 /* main-board */
 .main {
   flex-grow: 1;
+  display: flex;
+  align-items: center;
   width: 100%;
-  height: calc(100% - 146rem - 68rem);
-  height: calc(100vh- 146rem - 68rem);
-  margin-top: 20rem;
+  height: calc(100% - 240rem);
+  height: calc(100vh- 240rem);
+  /* margin-top: 20rem; */
   overflow: auto auto;
     /* overflow: auto scroll; */
 
@@ -77,10 +82,14 @@ main {
   /* outline: 1px solid blue;  */ /* test */
 }
 
+.main.main-card {
+  align-items: flex-start;
+  margin-top: 29rem;
+}
 
 /* footer */
 footer {
-  height: 93rem; /* 임시 */
+  /* height: 93rem; */
   padding: 0 20rem;
   border-top: 4rem solid #ffff;
 }
@@ -88,4 +97,10 @@ footer {
   width: 200rem;
   height: 76rem;
   margin-top: 10rem;
+}
+
+footer.footer-event {
+  padding: 0 17rem;
+  color: #fff;
+  border-top: 0;
 }

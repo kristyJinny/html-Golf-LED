@@ -19,7 +19,9 @@ caption {
   border: 0;
   clip: rect(0 0 0 0);
 }
-
+table, th, td {
+  font-weight: 500;
+}
 .table-wrap {}
 
 .table-box table {
@@ -42,24 +44,28 @@ caption {
 }
 .table-box thead th {
   font-size: 38rem;
+  /* letter-spacing: -0.76rem; */
 }
 .table-box tbody td {
-  font-size: 30rem;
+  font-size: 43rem;
   text-align: center;
   vertical-align: middle;
   padding: 8rem 0;
+  height: 77rem;
+  box-sizing: border-box;
 }
 .table-box tbody tr + tr {
   border-top: 2rem solid rgba(255, 255, 255, 0.2);
 }
-
+.table-box tbody .name-box {
+  text-align: left;;
+}
 .table-box tbody td .name {
-  /* font-size: 47rem; */
-  /* font-size: 40rem; */
+  font-size: 40rem;
 }
 .table-box tbody td .name-en {
-  /* font-size: 36rem; */
-  font-size: 28rem;
+  font-size: 33rem;
+  /* font-size: 28rem; */
 }
 
 .table-box tbody td .pos {
@@ -73,11 +79,21 @@ caption {
 }
 
 /* table style-b:  */
+.table-box.style-b + .table-box.style-b {
+  margin-top: 7rem;
+}
+  
 .table-box.style-b table {
-  border: 4rem solid #fff;
+  border-top: 4rem solid #fff;
+  border-bottom: 4rem solid #fff;
 }
 .table-box.style-b tbody {
   border-top: 4rem solid #fff;
+}
+.table-box.style-b tbody th {
+  width: 152rem;
+  box-sizing: border-box;
+  font-size: 43rem;
 }
 .table-box.style-b tbody tr + tr {
   border-top: 4rem solid #fff;
@@ -86,6 +102,7 @@ caption {
   background-color: rgba(255, 255, 255, 0.2);
 }
 .table-box.style-b tbody td {
+  height: 88rem;
   border-left: 4rem solid #fff;
 }
 
@@ -100,14 +117,17 @@ caption {
 .table-box.big thead th {
   font-size: 42rem;
 }
-
 .table-box.big thead td {
   font-size: 52rem;
-    /* padding: 6rem 0; */
+}
+.table-box.big tbody td {
+  font-size: 47rem;
+  height: 84rem;
 }
 .table-box.big .name-en {
   font-size: 36rem;
 }
 .table-box.big .pos {
-  font-size: 47rem;
+  /* font-size: 47rem; */
+  /* 삭제예정? */
 }
