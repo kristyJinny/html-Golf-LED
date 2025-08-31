@@ -56,8 +56,6 @@
   /* 스케일 = 1rem 크기(px) */
   --base-w: 1920;
   --base-h: 1080;
-
-  /* 1rem = 스케일된 1px (가로/세로 중 작은 축) */
   --rem: min(100dvw / var(--base-w), 100dvh / var(--base-h));
 
   /* --root-em-int: 1;
@@ -78,7 +76,7 @@ html,
 body {
   margin: 0;
   height: 100%;
-  overflow: hidden; /* 전광판/행사용이면 hidden */
+  overflow: hidden; /* 전광판/행사용이면 hidden 권장 */
 }
 
 
@@ -104,13 +102,8 @@ body {
   word-break: keep-all;
   font-family: 'SCoreDream', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif;
   font-weight: 500;
+  -webkit-text-size-adjust: none;
   -webkit-text-size-adjust: 100%;  /* iOS 자동 확대 방지 */
-}
-
-.wrapper {
-  width: 100vw;
-  height: 100vh;
-  aspect-ratio: 16/9; /* 브라우저 크기에 따라 자동 비율 유지 */
 }
 * {
   scroll-behavior: inherit;

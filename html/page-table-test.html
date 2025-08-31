@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Document</title>
+  <link rel="stylesheet" href="./../assets/css/base.css">
+  <link rel="stylesheet" href="./../assets/css/layout.css">
+  <link rel="stylesheet" href="./../assets/css/page.css">
+  <link rel="stylesheet" href="./../assets/css/table.css">
+
+  <!-- <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/ungveloper/web-fonts/SCoreDream/font-face.css" />
+  <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/ungveloper/web-fonts/SCoreDream/font-family.css" /> -->
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <section class="container-section" data-page="page-table01">
+      <header class="header">
+        <h1 class="main-title">
+          <img src="../assets/images/logo_header.svg" alt="20회 DB손해보험" class="logo-header">
+        </h1>
+        <div class="sub-title">
+          1 ROUND
+        </div>
+      </header>
+
+      <main class="main main-table">
+        <div class="inner">
+
+          <div class="table-wrap">
+            <div class="table-box big">
+              <table class="table">
+                <colgroup>
+                  <col>
+                  <col width="26%">
+                  <col>
+                  <col>
+                  <col>
+                  <col>
+                  <col>
+                  <col>
+                  <col>
+                  <col>
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th scope="col">POS</th>
+                    <th scope="col">PLAYER</th>
+                    <th scope="col">SCORE</th>
+                    <th scope="col">TODAY</th>
+                    <th scope="col">HOLE</th>
+                    <th scope="col">1R</th>
+                    <th scope="col">2R</th>
+                    <th scope="col">3R</th>
+                    <th scope="col">4R</th>
+                    <th scope="col">TOTAL</th>
+                  </tr>
+                </thead>
+                <tbody id="leader-tbody">
+
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+        </div>
+      </main>
+
+      <footer>
+        <div class="footer-logo">
+          <img src="../assets/images/logo_footer.svg" alt="DB손해보험" class="logo-footer">
+        </div>
+      </footer>
+    </section>
+  </div>
+
+
+  <script>
+    // --------------------- 샘플 데이터 ---------------------
+    const players = [];
+    for(let i=1;i<=27;i++){
+      players.push({
+        pos:i, name:"PLAYER "+i,
+        score: i%2===0 ? -i : i,   // 홀수는 양수, 짝수는 음수
+        today: (i%3)-1,            // -1,0,1 로 반복
+        hole: (i%18)+1,
+        r:[70+i%5,71+i%3,72+i%4,73+i%2],
+        total:280+i
+      });
+    }
+    
+    // --------------------- 렌더 함수 ---------------------
+    function makeRow(p){
+      return `
+        <tr>
+          <td>${p.pos}</td>
+          <td>${p.name}</td>
+          <td class="${p.score<0?'is-negative':(p.score>0?'is-positive':'')}">
+            ${p.score===0?'E':p.score}
+          </td>
+          <td class="${p.today<0?'is-negative':(p.today>0?'is-positive':'')}">
+            ${p.today===0?'E':p.today}
+          </td>
+          <td>${p.hole}</td>
+          <td>${p.r[0]}</td>
+          <td>${p.r[1]}</td>
+          <td>${p.r[2]}</td>
+          <td>${p.r[3]}</td>
+          <td>${p.total}</td>
+        </tr>`;
+    }
+    function renderPage(page){
+      const start = page*9;
+      const rows = players.slice(start,start+9);
+      return rows.map(makeRow).join('');
+    }
+    
+    // --------------------- 페이지 전환 ---------------------
+    let currentPage = 0;
+    const totalPages = Math.ceil(players.length/9);
+    
+    function swapPage(page){
+      const tbody = document.getElementById("leader-tbody");
+      tbody.classList.add("is-leave"); // 페이드 아웃
+
+      setTimeout(()=>{
+        tbody.innerHTML = renderPage(page);
+        tbody.classList.remove("is-leave"); // 페이드 인
+      },400);
+    }
+    
+    // 초기 렌더
+    swapPage(currentPage);
+    
+    // 자동 롤링 (5초마다)
+    setInterval(()=>{
+      currentPage = (currentPage+1)%totalPages;
+      swapPage(currentPage);
+    },5000);
+    
+    // 수동 전환 (키보드 ←/→)
+    document.addEventListener("keydown",e=>{
+      if(e.key==="ArrowRight"){ currentPage=(currentPage+1)%totalPages; swapPage(currentPage); }
+      if(e.key==="ArrowLeft"){ currentPage=(currentPage-1+totalPages)%totalPages; swapPage(currentPage); }
+    });
+    </script>
+  
+</body>
+
+</html>

@@ -1,7 +1,19 @@
-/* --- common  --- */
+/*
+ * --------------------------------
+ * common 
+ * --------------------------------
+*/
+
 .style-col {
   flex-direction: column;
 }
+
+
+/*
+ * --------------------------------
+ * component
+ * --------------------------------
+*/
 
 
 /* --- card  --- */
@@ -17,7 +29,6 @@
 .card-list .data-area li {
   display: inline-flex;
   flex-direction: column;
-
 }
 .card-list .data-area .data {
   display: flex;
@@ -57,7 +68,6 @@
   
 }
 .profile-area .name-box .name-en {
-  /* position: relative; */
   margin-left: 8rem;
   font-size: 33rem;
 }
@@ -82,12 +92,7 @@
 .data-area li .data.red {
   color: red;
 }
-/* data-area
-  * sizeme
-*/
-.data-area.small {
-
-}
+/* data-area.size */
 .data-area.small .name {
   padding: 0 20rem;
   border-radius: 20rem;
@@ -99,14 +104,11 @@
 
 .data-area.medium {
   font-size: 40rem;
-  height: 56rem;
 }
 .data-area.medium .name {
   padding: 4rem 20rem 1rem;
   border-radius: 28rem;
 }
-
-
 
 
 /* --- page-personal --- */
@@ -138,7 +140,6 @@ personal-wrap .img-box {
 /**
  * --------------------------------
  * page
- * 
  * --------------------------------
 */
 
@@ -150,7 +151,6 @@ personal-wrap .img-box {
 }
 .personal-wrap .data-area.style-row.big li {
   display: flex;
-  /* align-items: center; */
 }
 .data-area.big .name {
   display: inline-flex;
@@ -169,7 +169,7 @@ personal-wrap .img-box {
   font-size: 75rem;
 }
 
-/* page-event */
+/* --- page: event ---- */
 .wrapper:has(.main-event) {
   background-color: #fff;
 }
@@ -194,7 +194,7 @@ footer.footer-event {
   justify-content: space-between;
   height: 100%;
 }
-.footer-event  .title-box {
+.footer-event .title-box {
   display: flex;
   gap: 83rem;
   align-items: center;
@@ -208,13 +208,10 @@ footer.footer-event {
   flex-direction: column;
   align-items: center;
 }
-
 .footer-event .name-area {
   display: flex;
   align-items: center;
 }
-
-
 .footer-event .name-area .title {
   display: inline-flex;
   justify-content: center;
@@ -227,15 +224,12 @@ footer.footer-event {
   color: #00854b;
   background-color: #fff;
 }
-
 .footer-event .name-box .name {
-  font-size: 77px;
+  font-size: 77rem;
 }
 .footer-event .name-box .name-en {
-  font-size: 68px;
+  font-size: 68rem;
 }
-
-
 .footer-event .data-area.small {
   display: flex;
   gap: 20rem;

@@ -2,7 +2,7 @@
 
 /**
  * --------------------------------
- * base CSS
+  * base CSS
   * creator : jinny
  * --------------------------------
 */
@@ -53,64 +53,38 @@
 } */
 
 :root {
-  /* 스케일 = 1rem 크기(px) */
-  --base-w: 1920;
-  --base-h: 1080;
-
-  /* 1rem = 스케일된 1px (가로/세로 중 작은 축) */
-  --rem: min(100dvw / var(--base-w), 100dvh / var(--base-h));
-
-  /* --root-em-int: 1;
+  --root-em-int: 1;
   --root-em: calc(1em * var(--root-em-int, 10) / 16);
-  --rem: var(--root-em); */
-
-  /* 1rem = 스케일된 1px */
-  /* --root-em-int: 1;
-  --root-rem: min(100dvw / 1920, 100dvh / 1080);
-  --rem: calc(var(--root-rem) * var(--root-em-int) * 1px); */
-
+  --rem: var(--root-em);
 
   --color-scrollbar-track-edge: Transparent;
   --margin-scrollbar: calc(var(--rem) * 3);
 }
 
-html,
-body {
-  margin: 0;
-  height: 100%;
-  overflow: hidden; /* 전광판/행사용이면 hidden */
-}
-
-
 html {
-   /* 1rem = 스케일된 1px */
-  /* font-size: calc(var(--rem) * 1px); */
-
-  font-size: var(--rem);
-  
-  /* font-size: var(--root-em);
+  font-size: var(--root-em);
   font-size: calc(100vw * var(--root-em-int) / 1920);
-  font-size: calc(100dvw * var(--root-em-int) / 1920); */
+  font-size: calc(100dvw * var(--root-em-int) / 1920);
+
   /* overflow: auto; */
   scroll-behavior: smooth;
 }
 
+html,
+body {
+  height: 100%;
+  overflow: hidden; /* 전광판/행사용이면 hidden 권장 */
+}
 
 body {
-  /* font-size: 16em; */
-  font-size: 10rem;
+  font-size: 16em;
   margin: 0;
   padding: 0;
   word-break: keep-all;
   font-family: 'SCoreDream', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif;
   font-weight: 500;
-  -webkit-text-size-adjust: 100%;  /* iOS 자동 확대 방지 */
-}
-
-.wrapper {
-  width: 100vw;
-  height: 100vh;
-  aspect-ratio: 16/9; /* 브라우저 크기에 따라 자동 비율 유지 */
+  -webkit-text-size-adjust: none;
+  overflow-y: scroll;
 }
 * {
   scroll-behavior: inherit;

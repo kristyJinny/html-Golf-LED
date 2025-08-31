@@ -1,5 +1,9 @@
 
-/* --- table  --- */
+/*
+ * --------------------------------
+ * table
+ * --------------------------------
+*/
 
 table {
   table-layout: fixed;
@@ -22,8 +26,6 @@ caption {
 table, th, td {
   font-weight: 500;
 }
-.table-wrap {}
-
 .table-box table {
   color: #ffff;
 }
@@ -68,9 +70,6 @@ table, th, td {
   /* font-size: 28rem; */
 }
 
-.table-box tbody td .pos {
-  /* font-size: 47rem; */
-}
 .table-box tbody td .positive {
   color: #23f2ff;
 }
@@ -78,11 +77,10 @@ table, th, td {
   color: #f15922;
 }
 
-/* table style-b:  */
+/* --- table: style-b ---- */
 .table-box.style-b + .table-box.style-b {
   margin-top: 7rem;
 }
-  
 .table-box.style-b table {
   border-top: 4rem solid #fff;
   border-bottom: 4rem solid #fff;
@@ -113,7 +111,6 @@ table, th, td {
 }
 
 
-
 .table-box.big thead th {
   font-size: 42rem;
 }
@@ -127,7 +124,33 @@ table, th, td {
 .table-box.big .name-en {
   font-size: 36rem;
 }
-.table-box.big .pos {
-  /* font-size: 47rem; */
-  /* 삭제예정? */
+
+
+
+/*
+ * --------------------------------
+ * table
+  * 애니메이션
+ * --------------------------------
+*/
+/* 전환 기본값 */
+#leader-tbody {
+  transition: opacity .35s ease, transform .35s ease;
+}
+
+/* 페이드아웃(살짝 아래로) */
+#leader-tbody.is-leave {
+  opacity: 0;
+  transform: translateY(0.6rem);
+}
+
+/* 페이드인(원위치) */
+#leader-tbody.is-enter {
+  opacity: 0;
+  transform: translateY(-0.6rem);
+}
+#leader-tbody.is-enter.is-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity .35s ease, transform .35s ease;
 }
