@@ -17,9 +17,15 @@
 
 
 /* --- card  --- */
+.main.main-card {
+  justify-content: center;
+}
 .card-list {
   display: flex;
   gap: 46rem;
+}
+.card-list .card-item {
+  width: 33.33%;
 }
 .card-list .data-area {
   display: flex;
@@ -48,7 +54,7 @@
   background-color: #fff;
 }
 .profile-area .img-box {
-  height: 490rem;
+  height: 450rem;
 }
 .profile-area .img-box img {
   /* width: 500rem;*/
@@ -56,20 +62,27 @@
 }
 .profile-area .name-box {
   display: flex;
+  flex-direction: column;
   align-items: baseline;
   justify-content: center;
-  margin-top: 25rem;
+  margin-top: 20rem;
   font-weight: 600;
   color: #00854b;
 }
 .profile-area .name-box .name {
-  font-size: 68rem;
+  font-size: 66rem;
   letter-spacing: -1.36rem;
   
 }
 .profile-area .name-box .name-en {
   margin-left: 8rem;
-  font-size: 33rem;
+  font-size: 29rem;
+  letter-spacing: -0.66rem;
+
+  display: -webkit-box; 
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
 }
 .profile-area .name-box .name-en::before {
   /* content: ''; */
@@ -174,7 +187,7 @@ personal-wrap .img-box {
   background-color: #fff;
 }
 .container-section[data-page="page-event"] {
-  width: 1920rem;
+  /* width: 1920rem; */
   padding: 0;
   background-image: none;
 

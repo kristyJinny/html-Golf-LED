@@ -30,19 +30,20 @@ table, th, td {
   color: #ffff;
 }
 .table-box thead {
-  position: sticky;
+  border-bottom: 4rem solid #fff;
+  /* position: sticky;
   top: 0;
   z-index: 3;
-  background-color: #00854b; 
+  background-color: #00854b;  */
 }
 .table-box thead::after {
-  content: "";
+  /* content: "";
   display: table-row;
   position: absolute;
   z-index: 3;
   width: 100%;
   height: 4rem;
-  background-color: #fff;
+  background-color: #fff; */
 }
 .table-box thead th {
   font-size: 38rem;
@@ -53,21 +54,29 @@ table, th, td {
   text-align: center;
   vertical-align: middle;
   padding: 8rem 0;
-  height: 77rem;
+  height: 76rem;
   box-sizing: border-box;
 }
 .table-box tbody tr + tr {
   border-top: 2rem solid rgba(255, 255, 255, 0.2);
 }
 .table-box tbody .name-box {
-  text-align: left;;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0;
+  text-align: left;
 }
 .table-box tbody td .name {
-  font-size: 40rem;
+  font-size: 29rem;
+  line-height: 1.2;
 }
 .table-box tbody td .name-en {
-  font-size: 33rem;
-  /* font-size: 28rem; */
+  font-size: 19rem;
+  display: -webkit-box; 
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
 }
 
 .table-box tbody td .positive {
@@ -112,17 +121,22 @@ table, th, td {
 
 
 .table-box.big thead th {
-  font-size: 42rem;
+  /* font-size: 42rem; */
 }
 .table-box.big thead td {
-  font-size: 52rem;
+  /* font-size: 52rem; */
 }
 .table-box.big tbody td {
-  font-size: 47rem;
+  /* font-size: 47rem; */
   height: 84rem;
 }
+.table-box.big .name {
+  font-size: 30rem;
+  line-height: 1.2;
+}
+
 .table-box.big .name-en {
-  font-size: 36rem;
+  font-size: 20rem;
 }
 
 
