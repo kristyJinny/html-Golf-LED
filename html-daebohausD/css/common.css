@@ -45,6 +45,7 @@
 /* form */
 input, select, textarea {background:#F5F5F5;border:1px solid #E1E1E1;}
 textarea {width:100%;height:500px;}
+strong {font-weight:700;}
 
 /* input text, input password, input number, input email, input search */
 input[type="text"], input[type="password"], input[type="number"], input[type="email"], input[type="search"] {width:100%;height:60px;padding:0 20px;color:#333;font-size:17px;vertical-align:middle;}
@@ -214,7 +215,8 @@ select::-ms-expand {display:none;}
 .tbl_col {margin:80px auto 0;}
 .tbl_col + .tbl_col table {border-top:none;}
 .tbl_col table {text-align:center;border-top:1px solid #333333;}
-.tbl_col thead th {padding:12px 5px;background:#7e192c;color:#fff;font-size:17px;font-weight:700;line-height:28px;}
+.tbl_col thead th,
+.tbl_col tbody tr.style-th th {padding:12px 5px;background:#7e192c;color:#fff;font-size:17px;font-weight:700;line-height:28px;}
 .tbl_col tbody th {padding:9px 12px;background:#f4f4f4;color:#000;font-size:17px;font-weight:700;line-height:28px;border-bottom:1px solid rgba(0, 0, 0, 0.1);}
 .tbl_col tbody td {padding:9px 12px;color:#000;font-size:17px;line-height:28px;border-left:1px solid rgba(0, 0, 0, 0.1);border-bottom:1px solid rgba(0, 0, 0, 0.1);}
 .tbl_col tbody tr:last-child th,
@@ -370,7 +372,8 @@ select::-ms-expand {display:none;}
 
   /* tbl_col */
   .tbl_col {margin-top:40px;}
-  .tbl_col thead th {padding:6px 10px;font-size:13px;}
+  .tbl_col thead th,
+  .tbl_col tbody tr.style-th th {padding:6px 10px;font-size:13px;}
   .tbl_col tbody th {font-size:13px;line-height:20px;}
   .tbl_col tbody td {padding:8px 15px;font-size:13px;line-height:28px;}
   .tbl_col .red {font-size:12px;}
