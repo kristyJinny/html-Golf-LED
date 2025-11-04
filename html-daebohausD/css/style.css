@@ -108,6 +108,7 @@
 .policy .list_dot {margin-top:30px;}
 .policy .list_dot > li + li {margin-top:10px;}
 .policy .list_dot_small .red {font-size:13px;}
+.policy .mo-col {display: none;} /* 2025-11-05 추가 */
 .tbl_col tbody td.border-bottom {border-bottom: 1px solid rgba(0, 0, 0, 0.5);}
 
 .mo-table {display: none;}
@@ -284,8 +285,9 @@
   /* 관람정책 */
   .pc-table {display: none;}
   .mo-table {display: table;}
-
   .mo-table .m-wbr {display: block} /* 2025-09-20 */
+  .policy .pc-col {display: none;} /* 2025-11-05 추가 */
+  .policy .mo-col {display: table-column;} /* 2025-11-05 추가 */
 }
 /* MO : 767px이하 */
 @media all and (max-width:767px){
@@ -376,6 +378,7 @@
   .policy .list_dot {margin-top:12px;}
   .policy .list_dot > li + li {margin-top:3px;}
   .policy .colbox .col + .col {max-width: 100%;} /* 2025-09-25 */
+
 
   /* 히스토리 2021 */
   .history2021 .imgmap {position:relative;width:100%;margin-top:30px;padding-top:220px;}
