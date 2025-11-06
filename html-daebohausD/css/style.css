@@ -112,6 +112,8 @@
 .tbl_col tbody td.border-bottom {border-bottom: 1px solid rgba(0, 0, 0, 0.5);}
 
 .mo-table {display: none;}
+.policy .list_star02 ,
+.policy .list_star02 li {line-height: 20px;}/* 2025-11-05 */
 
 /* 히스토리 2021 */
 .history2021 .imgmap {margin-top:40px;}

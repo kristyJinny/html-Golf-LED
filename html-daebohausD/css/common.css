@@ -175,6 +175,12 @@ select::-ms-expand {display:none;}
 .list_star > li {position:relative;color:#565656;font-size:17px;line-height:22px;}
 .list_star > li + li {margin-top:4px;}
 
+/* list_star02: 2025-11-05 */
+.list_star02 > li {position:relative; padding-left: 10px;}
+.list_star02 > li:before {content:"*"; position: absolute; left: 0; top: 0;}
+
+
+
 /* colbox */
 .colbox {display:flex;justify-content:space-between;gap:20px;margin:60px auto 0;}
 .colbox .h3_tit {margin-top:-4px;}
