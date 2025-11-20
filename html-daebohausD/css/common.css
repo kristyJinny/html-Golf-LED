@@ -93,7 +93,7 @@ select::-ms-expand {display:none;}
 /* header */
 .header {position:sticky;top:0;width:100%;margin:0 auto;background:#fff;border-bottom:1px solid #eaeaea;z-index:20;}
 .header .inner {display:flex;align-items:center;justify-content:space-between;max-width:1200px;height:100px;margin:0 auto;}
-.header .logo a {display:block;width:240px;height:36px;background:url('../img/common/header_logo.svg') no-repeat 0 0;}
+.header .logo a {display:block;width:240px;height:36px;background:url('../img3/common/header_logo.svg') no-repeat 0 0;} /* 2025-11-20 이미지 배포 버전 파일경로와 동기화 */
 .header .header_info {display:flex;align-items:center;}
 .header .gnb {display:flex;align-items:center;}
 .header .gnb > ul {display:flex;align-items:center;}
@@ -111,7 +111,7 @@ select::-ms-expand {display:none;}
 .header .m_gnb_head {display:none;}
 
 /* depth2_list */
-.depth2_list {display:none;position:absolute;top:90px;left:0;background:#fff;padding:18px 20px 18px 30px;box-shadow:0 3px 6px 0 rgba(0, 0, 0, 0.16);z-index:21;}
+.depth2_list {display:none;position:absolute;top:90px;left:0;background:#fff;padding:20px 30px;box-shadow:0 3px 6px 0 rgba(0, 0, 0, 0.16);z-index:21;} /* 2025-11-20 */
 .depth2_list.is_open {display:block;}
 .depth2_list .item {padding:8px 0;}
 .depth2_list .item.is_active .tit {color:#002853;font-weight:700;}
@@ -123,7 +123,7 @@ select::-ms-expand {display:none;}
 .depth2_list .menu li a:hover {color:#333;}
 .depth2_list.depth2_instroduct {width:165px;}
 .depth2_list.depth2_event {width:260px;}
-.depth2_list.depth2_history {width:215px;}
+.depth2_list.depth2_history {width:244px;} /* 2025-11-20 */
 
 
 /**
