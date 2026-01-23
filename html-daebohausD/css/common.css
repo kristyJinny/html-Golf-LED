@@ -123,7 +123,7 @@ select::-ms-expand {display:none;}
 .depth2_list .menu li a:hover {color:#333;}
 .depth2_list.depth2_instroduct {width:165px;}
 .depth2_list.depth2_event {width:260px;}
-.depth2_list.depth2_history {width:244px;} /* 2025-11-20 */
+.depth2_list.depth2_history {width:254px;} /* 2025-11-21: 배포 버전 동기화 */
 
 
 /**
