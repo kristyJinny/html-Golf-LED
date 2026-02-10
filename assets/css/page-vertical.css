@@ -1,0 +1,122 @@
+/*
+ * --------------------------------
+ * page-vertical
+ * --------------------------------
+*/
+
+.wrapper-vertical {
+  width: 100vw;
+  aspect-ratio: 2/3;
+  max-height: 100vh;
+  height: 100vh;
+}
+.wrapper-vertical {
+  position: relative;
+  display: flex;
+  background: url('../images-v/bg.png') no-repeat 100% 100%;
+  background-size: contain;
+}
+.wrapper-vertical .inner {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+.wrapper-vertical > .inner {
+  padding: 119rem 140rem 116rem;
+}
+.wrapper-vertical > .inner02 {
+  padding: 50rem 160rem 98rem;
+  text-align: center;
+}
+
+.logo-header {
+  width: 1000rem;
+  height: auto;
+}
+
+.wrapper-vertical .inner02  .logo-header {
+  width: 874rem;
+  height: auto;
+}
+
+/* header */
+.header {}
+
+/* main 
+*/
+.main {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+}
+
+.main > .inner {
+  text-align: center;
+  color: #03854b;
+  font-size: 100rem;
+}
+.data-time {
+  font-size: 240rem;
+}
+
+/* 
+  data-inner : 세로형 03 상세안내
+ */
+.data-inner {
+  width: 100%;
+}
+.data-inner > .data-time{
+  font-size: 210rem;
+}
+
+.data-inner .data-box .title {
+  display: flex;
+  border-bottom: 4px solid #03854b;
+}
+.data-inner .data-box .title li,
+.data-inner .data-box .data li {
+  width: 50%;
+}
+.data-inner .data-box .data {
+  display: flex;
+  font-size: 160rem;
+  font-weight: bold;
+}
+
+.data-inner .data-box.data-box01 {
+  margin-top: 45rem;
+}
+.data-inner .data-box.data-box01 .data {
+  margin-top: 14rem;
+}
+
+.data-inner .data-box.data-box02 {
+  margin-top: 30rem;
+  border-bottom: 4px solid #03854b;
+}
+.data-inner .data-box.data-box02 .data02 li {
+  display: flex;
+  align-items: center;
+  padding: 32rem 0;
+  font-size: 130rem;
+}
+.data-inner .data-box.data-box02 .data02 li > span {
+  width: 50%;
+}
+.data-inner .data-box.data-box02 .data02 li + li {
+  border-top: 2px solid rgba(3, 133, 75, 0.2);
+}
+
+.data-inner .data-box.data-box02 .data02 .score {
+  color: #f15922;
+  font-size: 120rem;
+}
+
+/* footer
+*/
+footer {}
+.footer-logo {
+  width: 472rem;
+  /* height: 134em; */
+  /* margin-top: 10rem; */
+}
