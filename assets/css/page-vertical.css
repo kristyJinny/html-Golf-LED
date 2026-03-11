@@ -1,6 +1,7 @@
 /*
  * --------------------------------
  * page-vertical
+   * creator : jinny
  * --------------------------------
 */
 
@@ -13,7 +14,7 @@
 .wrapper-vertical {
   position: relative;
   display: flex;
-  background: url('../images-v/bg.png') no-repeat 100% 100%;
+  background: url('../images/bg_green.png') no-repeat 100% 100%;
   background-size: contain;
 }
 .wrapper-vertical .inner {
@@ -69,12 +70,13 @@
   font-size: 210rem;
 }
 
-.data-inner .data-box .title {
+.data-inner .data-box > .title {
   display: flex;
   border-bottom: 4px solid #03854b;
 }
 .data-inner .data-box .title li,
-.data-inner .data-box .data li {
+.data-inner .data-box .data li,
+.data-inner .sub-box .title li {
   width: 50%;
 }
 .data-inner .data-box .data {
@@ -112,11 +114,54 @@
   font-size: 120rem;
 }
 
+/* data-box03 : 세로형 04 연습그린 
+*/
+.main.main-green {
+  margin-top: 90rem;
+}
+.data-inner .data-box.data-box03 {
+  margin-top: 79rem;
+  margin-bottom: 70rem;
+}
+.data-inner .data-box.data-box03 > .title li {
+  width: 100%;
+}
+.data-inner .sub-data .sub-title {
+  display: flex;
+  margin-top: 27rem;
+  font-size: 80rem;
+}
+.data-inner .sub-data .sub-title > li {
+  width: 50%;
+}
+.data-inner .data-box.data-box03 .data {
+  font-size: 140rem;
+}
+.data-inner .sub-box .data li {
+  font-size: 140rem;
+}
+/* 관리자 화면에서 색상 지정 */
+.s-color {
+  color: #000;
+}
+
+/* data-single: 너비 100% */
+.data-inner .data-box.data-single .title li,
+.data-inner .data-box.data-single .data li {
+  width: 100%;
+}
+.data-inner .data-box.data-single + .data-box.data-single {
+  margin-top: 50rem;
+}
+.data-inner .data-box.data-single .data {
+  margin-top: 18rem;
+}
+.data-inner .data-box.data-single .data li {
+  font-size: 130rem;
+}
 /* footer
 */
 footer {}
 .footer-logo {
   width: 472rem;
-  /* height: 134em; */
-  /* margin-top: 10rem; */
 }

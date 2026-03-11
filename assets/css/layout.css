@@ -1,17 +1,13 @@
 /*
  * --------------------------------
- * layout 
+ * layout
+   * creator : jinny
  * --------------------------------
 */
 
 .wrapper {
   position: relative;
-  /* overflow: hidden; */
   display: flex;
-  /* width: initial;
-  width:100%;
-  height: 100%;
-  height: 100vh; */
   background-color: #00854b;
 }
 .container-section {

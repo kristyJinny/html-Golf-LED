@@ -35,22 +35,7 @@
   font-display: swap;
   src: url('../font/SCDream6.woff') format('woff'),
        url('../font/SCDream6.otf') format('opentype');
-} 
-/* 
-
-@font-face {
-  font-family: 'eScoreDream';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-5Medium.woff') format('woff');
-  font-weight: 500;
-  font-display: swap;
 }
-
-@font-face {
-  font-family: 'eScoreDream';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-6Bold.woff') format('woff');
-  font-weight: 600;
-  font-display: swap;
-} */
 
 :root {
   /* 스케일 = 1rem 크기(px) */
@@ -59,16 +44,6 @@
 
   /* 1rem = 스케일된 1px (가로/세로 중 작은 축) */
   --rem: min(100dvw / var(--base-w), 100dvh / var(--base-h));
-
-  /* --root-em-int: 1;
-  --root-em: calc(1em * var(--root-em-int, 10) / 16);
-  --rem: var(--root-em); */
-
-  /* 1rem = 스케일된 1px */
-  /* --root-em-int: 1;
-  --root-rem: min(100dvw / 1920, 100dvh / 1080);
-  --rem: calc(var(--root-rem) * var(--root-em-int) * 1px); */
-
 
   --color-scrollbar-track-edge: Transparent;
   --margin-scrollbar: calc(var(--rem) * 3);
@@ -81,16 +56,9 @@ body {
   overflow: hidden; /* 전광판/행사용이면 hidden */
 }
 
-
 html {
    /* 1rem = 스케일된 1px */
-  /* font-size: calc(var(--rem) * 1px); */
-
   font-size: var(--rem);
-  
-  /* font-size: var(--root-em);
-  font-size: calc(100vw * var(--root-em-int) / 1920);
-  font-size: calc(100dvw * var(--root-em-int) / 1920); */
   /* overflow: auto; */
   scroll-behavior: smooth;
 }
@@ -105,6 +73,12 @@ body {
   font-family: 'SCoreDream', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif;
   font-weight: 500;
   -webkit-text-size-adjust: 100%;  /* iOS 자동 확대 방지 */
+}
+
+/* body에 data-layout="vertical"이 있을 때 :root 변수 덮어쓰기: 2026-02-10 */
+:root:has(body[data-layout="vertical"]) {
+  --base-w: 1280;
+  --base-h: 1920;
 }
 
 .wrapper {
@@ -175,4 +149,13 @@ li {
 img {
   width: inherit;
   height: inherit;
+}
+p {
+  margin: 0;
+  padding: 0;
+}
+/* 2026-03-11 */
+h1 {
+  margin: 0;
+  padding: 0; 
 }
