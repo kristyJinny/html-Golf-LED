@@ -14,7 +14,11 @@
 .wrapper-vertical {
   position: relative;
   display: flex;
-  background: url('../images/bg_green.png') no-repeat 100% 100%;
+  /* background: url('../images/bg_green.png') no-repeat 100% 100%; */
+  /* D: 관리자로 배경 이미지넣기: 2026-03-13 */
+  background-image: url('../images/bg_green.png');
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
   background-size: contain;
 }
 .wrapper-vertical .inner {
@@ -35,13 +39,27 @@
   height: auto;
 }
 
-.wrapper-vertical .inner02  .logo-header {
+.wrapper-vertical > .inner-table {
+  padding: 50rem 50rem 98rem;
+  align-items: center;
+}
+.wrapper-vertical > .inner-table .logo-header {
+  width: 874rem;
+}
+.wrapper-vertical > .inner-table .main {
+  align-items:flex-start;
+  width: 100%;
+}
+
+.wrapper-vertical .inner02 .logo-header {
   width: 874rem;
   height: auto;
 }
 
-/* header */
-.header {}
+/* footer*/
+.footer-logo {
+  width: 472rem;
+}
 
 /* main 
 */
@@ -66,7 +84,7 @@
 .data-inner {
   width: 100%;
 }
-.data-inner > .data-time{
+.data-inner > .data-time {
   font-size: 210rem;
 }
 
@@ -114,6 +132,18 @@
   font-size: 120rem;
 }
 
+/* data-box-half : 세로형_03_상세안내_02 */
+.data-box01.data-box-half > .title {
+  display: inline-block;
+  padding: 0 80rem;
+}
+.data-inner .data-box.data-box01.data-box-half > .data {
+  justify-content: center;
+}
+/* 세로형_03_상세안내 */
+.wrapper-vertical > .inner02 .round {
+  margin-top: 49rem;
+}
 /* data-box03 : 세로형 04 연습그린 
 */
 .main.main-green {
@@ -159,9 +189,77 @@
 .data-inner .data-box.data-single .data li {
   font-size: 130rem;
 }
-/* footer
+
+
+/* 
+  * data-table 
 */
-footer {}
-.footer-logo {
-  width: 472rem;
+.inner-table .data-inner {
+  height: 100%;
+}
+.inner-table .data-inner .round {
+  margin: 46rem 0 55rem;
+}
+.data-table {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  width: 100%;
+}
+/* 공통 column 구조 */
+.data-table .title,
+.data-table .data-area li {
+  display: grid;
+  grid-template-columns: 160rem 1.2fr 1fr 1fr 1fr;
+  align-items: center;
+}
+
+/* 타이틀 */
+.data-table .title {
+  font-size: 60rem;
+  color: #03854b;
+  padding-bottom: 20rem;
+}
+.data-table .data-area {
+  display: grid;
+  grid-auto-rows: auto;
+  height: 100%;
+  border-top: 4px solid #03854b;
+  border-bottom: 4px solid #03854b;
+}
+
+/* 데이터 영역 */
+.data-table .data-area li {
+  font-size: 85rem;
+}
+.data-table .data-area li.index,
+.data-table .data-area li.name {
+  font-size: 80rem;
+}
+.data-table .data-area li + li {
+  border-top: 2px solid rgba(3, 133, 75, 0.2);
+}
+/* 가운데 정렬 */
+.data-table .data-area li > span {
+  height: 100%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* 이름만 왼쪽 정렬 */
+.data-table .name {
+  text-align: left;
+}
+
+/* 색상 */
+.red {
+  color: #f15922;
+}
+.blue {
+  color: #0060ae;
+}
+.score-bg {
+  background-color: rgba(3, 133, 75, 0.1);
 }
