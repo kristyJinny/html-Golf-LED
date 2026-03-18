@@ -44,6 +44,7 @@
 
   /* 1rem = 스케일된 1px (가로/세로 중 작은 축) */
   --rem: min(100dvw / var(--base-w), 100dvh / var(--base-h));
+  --rem: min(100vw / var(--base-w), 100vh / var(--base-h)); /* 2026-03-18 LED 깨짐 대응 */
 
   --color-scrollbar-track-edge: Transparent;
   --margin-scrollbar: calc(var(--rem) * 3);
@@ -75,16 +76,20 @@ body {
   -webkit-text-size-adjust: 100%;  /* iOS 자동 확대 방지 */
 }
 
-/* body에 data-layout="vertical"이 있을 때 :root 변수 덮어쓰기: 2026-02-10 */
-:root:has(body[data-layout="vertical"]) {
+/* 2026-03-18 LED 깨짐 대응 */
+/* :root:has(body[data-layout="vertical"]) {
   --base-w: 1280;
   --base-h: 1920;
-}
+} */
 
 .wrapper {
   width: 100vw;
   height: 100vh;
-  aspect-ratio: 16/9; /* 브라우저 크기에 따라 자동 비율 유지 */
+
+  /* width: calc(var(--base-w) * 1rem);
+  height: calc(var(--base-h) * 1rem); */
+
+  /* aspect-ratio: 16/9; 2026-03-18 LED 깨짐 대응: 브라우저 크기에 따라 자동 비율 유지 */
 }
 * {
   scroll-behavior: inherit;
