@@ -33,24 +33,41 @@
   flex-grow: 1;
 }
 .wrapper-vertical > .inner {
-  padding: 119rem 140rem 116rem;
+  padding: 150rem 70rem 116rem; /* 2026-03-22 */
 }
+ /* 2026-03-22 */
 .wrapper-vertical > .inner02 {
-  padding: 50rem 160rem 98rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 150rem 50rem 100rem;
   text-align: center;
 }
+ /* 2026-03-22 */
+.wrapper-vertical .header {
+  margin: 0 auto;
+}
+.wrapper-vertical  .main-title {
+  width: auto; /* 2026-03-22 */
+  height: 223rem;  /* 2026-03-22 */
 
-.logo-header {
-  width: 1000rem;
-  height: auto;
+  /* width: 1000rem;
+  height: 213rem; */
+}
+
+.wrapper-vertical .main-title .logo-header {
+  /* width: 1000rem;
+  height: auto; */
+  height: 223rem;  /* 2026-03-22 */
 }
 
 .wrapper-vertical > .inner-table {
-  padding: 50rem 50rem 98rem;
+  padding: 100rem 50rem 40rem; /* 2026-03-22 */
+  /* padding: 50rem 50rem 98rem; */
   align-items: center;
 }
 .wrapper-vertical > .inner-table .logo-header {
-  width: 874rem;
+  /* width: 874rem; */
 }
 .wrapper-vertical > .inner-table .main {
   align-items:flex-start;
@@ -58,30 +75,35 @@
 }
 
 .wrapper-vertical .inner02 .logo-header {
-  width: 874rem;
-  height: auto;
+  /* width: 874rem;
+  height: auto; */
 }
 
 /* footer*/
 .footer-logo {
   width: 472rem;
+  margin-left: 70rem; /* 2026-03-22 */
 }
 
 /* main 
 */
-.main {
+/* 2026-03-22 */
+.wrapper-vertical .main {
   display: flex;
   flex-grow: 1;
   align-items: center;
 }
-
-.main > .inner {
+/* 2026-03-22 */
+.wrapper-vertical .inner02 .main {
+  align-items: flex-end;
+}
+.wrapper-vertical .main > .inner {
   text-align: center;
   color: #03854b;
-  font-size: 100rem;
+  font-size: 115rem; /* 2026-03-22 */
 }
 .data-time {
-  font-size: 240rem;
+  font-size: 260rem; /* 2026-03-22 */
 }
 
 /* 
@@ -91,12 +113,12 @@
   width: 100%;
 }
 .data-inner > .data-time {
-  font-size: 210rem;
+  font-size: 242rem; /* 2026-03-22 */
 }
 
 .data-inner .data-box > .title {
   display: flex;
-  border-bottom: 4px solid #03854b;
+  border-bottom: 4rem solid #03854b; /* 2026-03-22 */
 }
 .data-inner .data-box .title li,
 .data-inner .data-box .data li,
@@ -105,10 +127,9 @@
 }
 .data-inner .data-box .data {
   display: flex;
-  font-size: 160rem;
+  font-size: 184rem;/* 2026-03-22 */
   font-weight: bold;
 }
-
 .data-inner .data-box.data-box01 {
   margin-top: 45rem;
 }
@@ -118,13 +139,13 @@
 
 .data-inner .data-box.data-box02 {
   margin-top: 30rem;
-  border-bottom: 4px solid #03854b;
+  border-bottom: 4rem solid #03854b; /* 2026-03-22 */
 }
 .data-inner .data-box.data-box02 .data02 li {
   display: flex;
   align-items: center;
   padding: 32rem 0;
-  font-size: 130rem;
+  font-size: 150rem; /* 2026-03-22 */
 }
 .data-inner .data-box.data-box02 .data02 li > span {
   width: 50%;
@@ -135,7 +156,7 @@
 
 .data-inner .data-box.data-box02 .data02 .score {
   color: #f15922;
-  font-size: 120rem;
+  font-size: 160rem; /* 2026-03-22 */
 }
 
 /* data-box-half : 세로형_03_상세안내_02 */
@@ -148,15 +169,21 @@
 }
 /* 세로형_03_상세안내 */
 .wrapper-vertical > .inner02 .round {
-  margin-top: 49rem;
+  /* margin-top: 49rem; */
+  font-size: 115rem; /* 2026-03-22 */
 }
 /* data-box03 : 세로형 04 연습그린 
 */
 .main.main-green {
-  margin-top: 90rem;
+  padding-bottom: 100rem; /* 2026-03-22 */
+  /* margin-top: 90rem; 2026-03-22 */
+}
+.main.main-green .data-inner .data-box > .title {
+  /* font-size: 110rem;  */
+  /* 2026-03-22 */
 }
 .data-inner .data-box.data-box03 {
-  margin-top: 79rem;
+  margin-top: 80rem; /* 2026-03-22 */
   margin-bottom: 70rem;
 }
 .data-inner .data-box.data-box03 > .title li {
@@ -165,14 +192,14 @@
 .data-inner .sub-data .sub-title {
   display: flex;
   margin-top: 27rem;
-  font-size: 80rem;
+  font-size: 92rem; /* 2026-03-22 */
 }
 .data-inner .sub-data .sub-title > li {
   width: 50%;
 }
-.data-inner .data-box.data-box03 .data {
-  font-size: 140rem;
-}
+/* .data-inner .data-box.data-box03 .data {
+  font-size: 140rem; 2026-03-22
+} */
 .data-inner .sub-box .data li {
   font-size: 140rem;
 }
@@ -193,7 +220,7 @@
   margin-top: 18rem;
 }
 .data-inner .data-box.data-single .data li {
-  font-size: 130rem;
+  font-size: 150rem; /* 2026-03-22 */
 }
 
 
@@ -230,20 +257,24 @@
   display: grid;
   grid-auto-rows: auto;
   height: 100%;
-  border-top: 4px solid #03854b;
-  border-bottom: 4px solid #03854b;
+  border-top: 4rem solid #03854b; /* 2026-03-22 */
+  border-bottom: 4rem solid #03854b; /* 2026-03-22 */
 }
 
 /* 데이터 영역 */
 .data-table .data-area li {
   font-size: 85rem;
 }
+/* 2026-03-22: 폰트 사이즈 크기 확대 */
+.data-table .data-area.data-row05 li {
+  font-size: 92rem;
+}
 .data-table .data-area li.index,
 .data-table .data-area li.name {
   font-size: 80rem;
 }
 .data-table .data-area li + li {
-  border-top: 2px solid rgba(3, 133, 75, 0.2);
+  border-top: 2rem solid rgba(3, 133, 75, 0.2); /* 2026-03-22 */
 }
 /* 가운데 정렬 */
 .data-table .data-area li > span {

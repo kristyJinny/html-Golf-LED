@@ -47,6 +47,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: flex-start; /* 2026-03-22 */
   padding: 20rem 10rem 25rem;
   height: 638rem;
   box-sizing: border-box;
@@ -55,10 +56,12 @@
 }
 .profile-area .img-box {
   height: 450rem;
+  overflow: hidden; /* 2026-03-22 */
 }
 .profile-area .img-box img {
   /* width: 500rem;*/
-  /* height: 490rem;  */
+  height: 450rem; /* 2026-03-22 */
+  max-height: 450px; /* 2026-03-22 */
 }
 .profile-area .name-box {
   display: flex;

@@ -44,7 +44,7 @@
 
   /* 1rem = 스케일된 1px (가로/세로 중 작은 축) */
   --rem: min(100dvw / var(--base-w), 100dvh / var(--base-h));
-  --rem: min(100vw / var(--base-w), 100vh / var(--base-h)); /* 2026-03-18 LED 깨짐 대응 */
+  /* --rem: min(100vw / var(--base-w), 100vh / var(--base-h));  */
 
   --color-scrollbar-track-edge: Transparent;
   --margin-scrollbar: calc(var(--rem) * 3);
@@ -89,7 +89,7 @@ body {
   /* width: calc(var(--base-w) * 1rem);
   height: calc(var(--base-h) * 1rem); */
 
-  /* aspect-ratio: 16/9; 2026-03-18 LED 깨짐 대응: 브라우저 크기에 따라 자동 비율 유지 */
+   aspect-ratio: 16/9; /* 브라우저 크기에 따라 자동 비율 유지 */
 }
 * {
   scroll-behavior: inherit;
@@ -155,12 +155,8 @@ img {
   width: inherit;
   height: inherit;
 }
-p {
+/* 2026-03-22 */
+header,p,h1, h2, h3 {
   margin: 0;
   padding: 0;
-}
-/* 2026-03-11 */
-h1 {
-  margin: 0;
-  padding: 0; 
 }
