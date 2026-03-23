@@ -118,8 +118,6 @@ table, th, td {
   display: flex;
   gap: 20rem;
 }
-
-
 .table-box.big thead th {
   /* font-size: 42rem; */
 }
@@ -139,7 +137,13 @@ table, th, td {
   font-size: 20rem;
 }
 
-
+/* --- 테이블 2개 : page-table_duo02 열 2개 D: 2026-03-23 --- */
+.table-wrap.table-duo.table-duo-row09 {
+  border-bottom: 4rem solid #fff;
+}
+.table-wrap.table-duo.table-duo-row09 .table-box tbody td {
+  height: 84rem;
+}
 
 /*
  * --------------------------------

@@ -75,3 +75,8 @@ footer:not(.footer-event) {
   height: 76rem;
   margin-top: 10rem;
 }
+
+/* D: 2026-03-23 추가 */
+footer.no-line {
+  border: none;
+}

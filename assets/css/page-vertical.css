@@ -45,7 +45,7 @@
 }
  /* 2026-03-22 */
 .wrapper-vertical .header {
-  margin: 0 auto;
+  margin: 0 auto;  /* D: 2026-03-23 혹시 업데이트 안 되었을까봐 주석 남깁니다. */
 }
 .wrapper-vertical  .main-title {
   width: auto; /* 2026-03-22 */
@@ -95,7 +95,7 @@
 }
 /* 2026-03-22 */
 .wrapper-vertical .inner02 .main {
-  align-items: flex-end;
+  /* align-items: flex-end; 2026-03-23 */
 }
 .wrapper-vertical .main > .inner {
   text-align: center;
