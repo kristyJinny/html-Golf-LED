@@ -138,7 +138,7 @@ table, th, td {
 }
 
 /* --- 테이블 2개 : page-table_duo02 열 2개 D: 2026-03-23 --- */
-.table-wrap.table-duo.table-duo-row09 {
+.table-wrap.table-duo .table-box tbody {
   border-bottom: 4rem solid #fff;
 }
 .table-wrap.table-duo.table-duo-row09 .table-box tbody td {
