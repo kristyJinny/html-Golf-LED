@@ -71,8 +71,9 @@ footer:not(.footer-event) {
   border-top: 4rem solid #ffff;
 }
 .footer-logo {
-  width: 200rem;
-  height: 76rem;
+  /* width: 200rem; 2026-03-23 */
+  /* height: 76rem; 2026-03-23 */
+  height: 66rem; /* 2026-03-23: LED 화면 보니, 이미지가 꺠지는 해서, 재 수정 */
   margin-top: 10rem;
 }
 

@@ -73,6 +73,7 @@
   margin: 20rem auto 0; /* D: 2026-03-23 */
   font-weight: 600;
   color: #00854b;
+  text-align: center; /* D: 2026-03-23 */
 }
 .profile-area .name-box .name {
   font-size: 66rem;
