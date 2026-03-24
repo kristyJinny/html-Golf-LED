@@ -64,11 +64,13 @@
   max-height: 450px; /* 2026-03-22 */
 }
 .profile-area .name-box {
+  /* D: 2026-03-23
   display: flex;
   flex-direction: column;
   align-items: baseline;
-  justify-content: center;
-  margin-top: 20rem;
+  justify-content: center; 
+  margin-top: 20rem;*/
+  margin: 20rem auto 0; /* D: 2026-03-23 */
   font-weight: 600;
   color: #00854b;
 }
@@ -78,7 +80,7 @@
   
 }
 .profile-area .name-box .name-en {
-  margin-left: 8rem;
+  /* margin-left: 8rem; D: 2026-03-23 */
   font-size: 29rem;
   letter-spacing: -0.66rem;
 
@@ -247,6 +249,7 @@ footer.footer-event {
   font-size: 68rem;
 }
 .footer-event .data-area.small {
+  overflow: hidden; /* D: 2026-03-23 */
   display: flex;
   gap: 20rem;
 }

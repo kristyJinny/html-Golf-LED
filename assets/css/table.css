@@ -65,7 +65,7 @@ table, th, td {
   flex-direction: column;
   justify-content: center;
   padding: 0;
-  text-align: left;
+  text-align: center; /* D: 2026-03-23 */
 }
 .table-box tbody td .name {
   font-size: 29rem;
