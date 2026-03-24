@@ -44,7 +44,7 @@
 
   /* 1rem = 스케일된 1px (가로/세로 중 작은 축) */
   --rem: min(100dvw / var(--base-w), 100dvh / var(--base-h));
-  /* --rem: min(100vw / var(--base-w), 100vh / var(--base-h));  */
+  /* --rem: min(100vw / var(--base-w), 100vh / var(--base-h)); 2026-03-23  */
 
   --color-scrollbar-track-edge: Transparent;
   --margin-scrollbar: calc(var(--rem) * 3);

@@ -35,7 +35,7 @@
 .wrapper-vertical > .inner {
   padding: 150rem 70rem 116rem; /* 2026-03-22 */
 }
- /* 2026-03-22 */
+ /* s: --- 2026-03-22 여기서 부터  ----------------------*/
 .wrapper-vertical > .inner02 {
   display: flex;
   flex-direction: column;
@@ -43,7 +43,6 @@
   padding: 150rem 50rem 90rem;
   text-align: center;
 }
- /* 2026-03-22 */
 .wrapper-vertical .header {
   margin: 0 auto;  /* D: 2026-03-23 혹시 업데이트 안 되었을까봐 주석 남깁니다. */
 }
@@ -69,6 +68,8 @@
 .wrapper-vertical > .inner-table .logo-header {
   /* width: 874rem; */
 }
+ /* e: --- 2026-03-22 여기 부분 전체적으로 수정 ----------------------*/
+
 .wrapper-vertical > .inner-table .main {
   align-items:flex-start;
   width: 100%;
@@ -76,7 +77,7 @@
 
 .wrapper-vertical .inner02 .logo-header {
   /* width: 874rem;
-  height: auto; */
+  height: auto; 2026-03-23*/
 }
 
 /* footer*/
@@ -87,7 +88,7 @@
 
 /* main 
 */
-/* 2026-03-22 */
+ /* s: --- 2026-03-22 여기서 부터  ----------------------*/
 .wrapper-vertical .main {
   display: flex;
   flex-grow: 1;
@@ -105,7 +106,7 @@
 .data-time {
   font-size: 260rem; /* 2026-03-22 */
 }
-
+ /* e: --- 2026-03-22 전반적으로 수정  ----------------------*/
 /* 
   data-inner : 세로형 03 상세안내
  */
