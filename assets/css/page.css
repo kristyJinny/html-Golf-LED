@@ -118,7 +118,8 @@
   font-size: 33rem;
 }
 .data-area.small .data {
-  font-size: 75rem;
+  font-size: 65rem;  /* 2026-03-22  : 화면 꺠져서 테스트*/
+  /* font-size: 75rem; */
 }
 
 .data-area.medium {
