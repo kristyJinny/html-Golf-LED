@@ -6,7 +6,7 @@
  * --------------------------------
 */
 
-/* 2026-03-30 (공통) 모든 클레스 앞에 .wrapper 구분 값 추가 */
+/* 2026-03-29 (공통) 모든 클레스 앞에 .wrapper 구분 값 추가 */
 
 /*
  * --------------------------------
@@ -116,7 +116,7 @@
 }
 .wrapper .card-list .card-item {
   width: 33.33%;
-  min-width: 578px; /* 2026-03-29 선수 사진 테두리 사이즈 확대 */
+  min-width: 570px; /* 2026-03-29 선수 사진 테두리 사이즈 확대 */
 }
 .wrapper .card-list .data-area {
   display: flex;
@@ -170,7 +170,9 @@
 .wrapper .profile-area .name-box .name {
   font-size: 66rem;
   letter-spacing: -1.36rem;
-  
+}
+.wrapper .profile-area .name-box .name.name-long {
+  font-size: 48rem; /* D: 2026-03-23 */
 }
 .wrapper .profile-area .name-box .name-en {
   /* margin-left: 8rem; D: 2026-03-23 */
@@ -282,16 +284,19 @@
 
 .wrapper .container-page-event .main-event {
   background-color: #fff; /* 2026-03-29 */
+  padding-bottom: 140rem; /* 2026-03-29 추가 */
 }
-
 .wrapper .container-section[data-page="page-event"] {
   padding: 0;
   background-image: none;
 }
-
 .wrapper .container-page-event {
   padding: 0; /* 2026-03-29 */
-  background-color: black; /* 2026-03-29  test */
+}
+/* 2026-03-29 : 이벤트 상단에 로고 추가되면서 해당 간격 추가 */
+.wrapper .container-page-event .header {
+  margin-top: 22rem;
+  margin-left: 25rem;
 }
 .wrapper footer.footer-event {
 /* s: 2026-03-29 */
@@ -302,14 +307,13 @@
   width: 100%;
   /* e: 2026-03-29 */
 
-  height: 140rem;
+  height: 140rem; 
+  max-height: 140rem; /* 2026-03-29 */
   padding: 0 12rem 0 42rem;;
   color: #fff;
   border-top: 0;
   box-sizing: border-box;
-  background-color: black; 
-  /* tesxt */
-  /* background-color: #00854b; */
+  background-color: #00854b;
 }
 .wrapper .footer-event .inner {
   display: flex;
@@ -353,13 +357,21 @@
 .wrapper .footer-event .name-box .name-en {
   font-size: 68rem;
 }
+/* 2025-03-30: 이름이 긴 경우 폰트 사이즈 조정 (최대 이름 : 빳차라쭈타 콩끄라판(I) - 17자)
+   영문 삭제
+*/
+.wrapper .footer-event .name-box .name.name-long {
+  font-size: 60rem; /* 2026-03-29 */
+}
+.wrapper .footer-event .name-box .name.name-long + .name-en {
+  display: none; /* D: 2026-03-23 */
+}
 .wrapper .footer-event .data-area.small {
   overflow: hidden; /* D: 2026-03-23 */
   display: flex;
   gap: 20rem;
 }
-
-
+/* 2026-03-29 테스트용 */
 .wrapper .name-over {
   display: flex;
   flex-direction: column;

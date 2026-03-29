@@ -47,14 +47,16 @@
             <ul class="data-area data-row05"> <!-- .data-row05 추가: 2026-03-22: 폰트 사이즈 크기 확대 -->
               <li>
                 <span class="index">1</span>
-                <span class="name">윤상필</span>
+                <!-- 2026-03-29 -->
+                <span class="name name-over">오수민 <span class="small-name">0809(A)</span></span>
+                <!-- //2026-03-27 -->
                 <span class="score-bg red">-18</span>
                 <span>4</span>
                 <span class="red">-7</span>
               </li>
               <li>
                 <span class="index">2</span>
-                <span class="name">박상현</span>
+                <span class="name">빳차라쭈타 콩끄라판(I)</span>  <!-- 2026-03-29 -->
                 <span class="score-bg">-14</span>
                 <span>4</span>
                 <span class="red">-2</span>
@@ -96,5 +98,16 @@
   </div>
   <!-- // wrapper-vertical -->
 
+  <script>
+    // 2026-03-29: 3글자 초과이면 .name 에 .name-long 클래스 추가
+    // 이름이 긴 경우 폰트 사이즈 조정 (최대 이름 : 빳차라쭈타 콩끄라판(I) - 17자)
+    document.querySelectorAll('.name').forEach(el => {
+      const text = el.textContent.trim();
+    
+      if (text.length > 3) {
+        el.classList.add('name-long');
+      }
+    });
+    </script>
 </body>
 </html>

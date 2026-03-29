@@ -6,26 +6,26 @@
  * --------------------------------
 */
 
+/* 2026-03-29 (공통) 모든 클레스 앞에 .wrapper-vertical 구분 값 추가 */
 
-/* start : 2026-03-29 내용추가 : 세로버전에서만 적용하는 스타일 파일 */
 :root {
   --base-w: 1280;
   --base-h: 1920;
   --rem: min(100dvw / var(--base-w), 100dvh / var(--base-h));
 }
 
-
 :root:has(body[data-layout="vertical"]){
   --base-w: 1280;
   --base-h: 1920;
   --rem: min(100dvw / var(--base-w), 100dvh / var(--base-h));
 }
-/* end : 2026-03-29 내용추가 : 세로버전에서만 적용하는 스타일 파일 */
+
 .wrapper-vertical {
   width: 100vw;
   aspect-ratio: 2/3;
   max-height: 100vh;
   height: 100vh;
+
 }
 .wrapper-vertical {
   position: relative;
@@ -37,7 +37,6 @@
   background-position: 100% 100%;
   background-size: contain;
 }
-/* start (공통) 클레스 앞에 .wrapper-vertical 구분 값 추가  */
 .wrapper-vertical .inner {
   display: flex;
   flex-direction: column;
@@ -71,6 +70,7 @@
   /* padding: 50rem 50rem 98rem; */
   align-items: center;
 }
+
  /* e: --- 2026-03-22 여기 부분 전체적으로 수정 ----------------------*/
 
 .wrapper-vertical > .inner-table .main {
@@ -100,7 +100,7 @@
 .wrapper-vertical .main > .inner {
   text-align: center;
   color: #03854b;
-  font-size: 115rem; /* 2026-03-22 */
+  font-size: 100rem; /* 2026-03-29 */ /* 2026-03-22 */
 }
 /* 2026-03-29 .wrapper-vertical 추가 */
 .wrapper-vertical .data-time {
@@ -158,9 +158,12 @@
 
 .wrapper-vertical .data-inner .data-box.data-box02 .data02 .score {
   color: #f15922;
-  font-size: 160rem; /* 2026-03-22 */
+  font-size: 140rem; /* 2026-03-29 ,2026-03-22 */
 }
+.wrapper-vertical .data-inner .data-box.data-box02 .data02 .name-long {
+  font-size: 68rem; /* 2026-03-29 : 최대 이름 */
 
+}
 /* data-box-half : 세로형_03_상세안내_02 */
 .wrapper-vertical .data-box01.data-box-half > .title {
   display: inline-block;
@@ -316,4 +319,3 @@
 .wrapper-vertical .score-bg {
   background-color: rgba(3, 133, 75, 0.1);
 }
-/* end (공통) 클레스 앞에 .wrapper-vertical 구분 값 추가  */
