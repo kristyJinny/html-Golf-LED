@@ -1,20 +1,110 @@
 /*
  * --------------------------------
- * common
+ * page-horizontal.css
+   * creator : jinny
+  * 가로형 (16:9)
  * --------------------------------
 */
 
-.wrapper .style-col {
-  flex-direction: column;
-}
-
+/* 2026-03-30 (공통) 모든 클레스 앞에 .wrapper 구분 값 추가 */
 
 /*
  * --------------------------------
- * component
- * --------------------------------
+ * layout
+ * 기존 레이아웃 스타일은 layout.css
 */
 
+:root {
+  /* 스케일 = 1rem 크기(px) */
+  --base-w: 1920;
+  --base-h: 1080;
+  --rem: min(100dvw / var(--base-w), 100dvh / var(--base-h));
+}
+
+:root:has(body[data-layout="horizontal"]){
+  --base-w: 1920;
+  --base-h: 1080;
+  --rem: min(100dvw / var(--base-w), 100dvh / var(--base-h));
+}
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  aspect-ratio: 16/9; /* 브라우저 크기에 따라 자동 비율 유지 */
+  overflow: hidden;
+}
+.wrapper {
+  position: relative;
+  display: flex;
+  background-color: #00854b;
+}
+
+.wrapper .container-section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 22rem 25rem 21rem;
+  background: url('../images/bg_01.png') no-repeat center;
+  background-size: cover;
+}
+
+/* header */
+.wrapper .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20rem;
+  padding: 0 20rem;
+  box-sizing: border-box;
+}
+.wrapper .header .main-title {
+  width: 490rem;
+  height: 106rem;
+  margin:0;
+  padding:0;
+}
+.wrapper .header .sub-title {
+  font-size: 62rem;
+  color: #fff;
+  letter-spacing: -1.24rem;
+}
+
+/* main */
+.wrapper .main {
+  display: flex;
+  flex-grow: 1;
+  padding-bottom: 88rem;
+  align-items: center;
+}
+
+/* footer */
+.wrapper footer:not(.footer-event) {
+  position: absolute;
+  left: 25rem;
+  right: 25rem;
+  bottom: 20rem;
+  padding: 0 20rem;
+  border-top: 4rem solid #ffff;
+}
+.wrapper.footer-logo {
+  /* width: 200rem; 2026-03-23 */
+  /* height: 76rem; 2026-03-23 */
+  height: 66rem; /* 2026-03-23: LED 화면 보니, 이미지가 꺠지는 해서, 재 수정 */
+  margin-top: 10rem;
+}
+
+/* D: 2026-03-23 추가 */
+.wrapper footer.no-line {
+  border: none;
+}
+
+/*
+ * --------------------------------
+ * page.css
+*/
+.wrapper .style-col {
+  flex-direction: column;
+}
 
 /* --- card  --- */
 .wrapper .main.main-card {
@@ -158,13 +248,6 @@
   letter-spacing: -0.7;
 }
 
-
-/**
- * --------------------------------
- * page
- * --------------------------------
-*/
-
 /* --- page: personal ---- */
 .wrapper .personal-wrap .data-area.style-row.big {
   display: flex;
@@ -284,3 +367,156 @@
 }
 
 .wrapper .small-name {font-size: 66rem;} /* 2026-03-29: 추가 */ 
+
+/*
+ * --------------------------------
+ * table
+ * --------------------------------
+*/
+
+.wrapper table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.wrapper caption {
+  overflow: hidden;
+  margin: -1px;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  line-height: 1px;
+  font-size: 1px;
+  color: transparent;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+.wrapper table, .wrapper th, .wrapper td {
+  font-weight: 500;
+}
+.wrapper .table-box table {
+  color: #ffff;
+}
+.wrapper .table-box thead {
+  border-bottom: 4rem solid #fff;
+}
+.wrapper .table-box thead th {
+  font-size: 38rem;
+}
+.wrapper .table-box tbody td {
+  font-size: 43rem;
+  text-align: center;
+  vertical-align: middle;
+  padding: 8rem 0;
+  height: 76rem;
+  box-sizing: border-box;
+}
+.wrapper .table-box tbody tr + tr {
+  border-top: 2rem solid rgba(255, 255, 255, 0.2);
+}
+.wrapper .table-box tbody .name-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0;
+  text-align: center; /* D: 2026-03-23 */
+}
+.wrapper .table-box tbody td .name {
+  font-size: 29rem;
+  line-height: 1.2;
+}
+.wrapper .table-box tbody td .name-en {
+  font-size: 19rem;
+  display: -webkit-box; 
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+}
+
+.wrapper .table-box tbody td .positive {
+  color: #23f2ff;
+}
+.wrapper .table-box tbody td .red {
+  color: #f15922;
+}
+
+/* --- table: style-b ---- */
+.wrapper .table-box.style-b + .wrapper .table-box.style-b {
+  margin-top: 7rem;
+}
+.wrapper .table-box.style-b table {
+  border-top: 4rem solid #fff;
+  border-bottom: 4rem solid #fff;
+}
+.wrapper .table-box.style-b tbody {
+  border-top: 4rem solid #fff;
+}
+.wrapper .table-box.style-b tbody th {
+  width: 152rem;
+  box-sizing: border-box;
+  font-size: 43rem;
+}
+.wrapper .table-box.style-b tbody tr + tr {
+  border-top: 4rem solid #fff;
+}
+.wrapper .table-box.style-b tbody tr:first-child {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.wrapper .table-box.style-b tbody td {
+  height: 88rem;
+  border-left: 4rem solid #fff;
+}
+
+/* --- 테이블 2개 --- */
+.wrapper .table-wrap.table-duo {
+  display: flex;
+  gap: 20rem;
+}
+.wrapper .table-box.big tbody td {
+  height: 84rem;
+}
+.wrapper .table-box.big tbody td {
+  font-size: 30rem;
+  line-height: 1.2;
+}
+
+.wrapper .table-box.big tbody td {
+  font-size: 20rem;
+}
+
+/* --- s: 테이블 2개 : page-table_duo02 열 2개 D: 2026-03-23 --- */
+.wrapper .table-wrap.table-duo .table-box tbody {
+  border-bottom: 4rem solid #fff;
+}
+.wrapper .table-wrap.table-duo.table-duo-row09 .table-box tbody td {
+  height: 84rem;
+}
+/* --- e 테이블 2개 : page-table_duo02 열 2개 D: 2026-03-23 --- */
+/*
+ * --------------------------------
+ * table
+  * 애니메이션
+ * --------------------------------
+*/
+/* 전환 기본값 */
+.wrapper #leader-tbody {
+  transition: opacity .35s ease, transform .35s ease;
+}
+
+/* 페이드아웃(살짝 아래로) */
+.wrapper #leader-tbody.is-leave {
+  opacity: 0;
+  transform: translateY(0.6rem);
+}
+
+/* 페이드인(원위치) */
+.wrapper #leader-tbody.is-enter {
+  opacity: 0;
+  transform: translateY(-0.6rem);
+}
+.wrapper #leader-tbody.is-enter.is-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity .35s ease, transform .35s ease;
+}

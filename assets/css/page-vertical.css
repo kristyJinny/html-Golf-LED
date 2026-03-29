@@ -1,16 +1,26 @@
-/* 2026-03-18 LED 깨짐 대응 */
-:root {
-  --base-w: 1280;
-  --base-h: 1920;
-}
-
 /*
  * --------------------------------
  * page-vertical
    * creator : jinny
+    * 세로형 (2:3)
  * --------------------------------
 */
 
+
+/* start : 2026-03-29 내용추가 : 세로버전에서만 적용하는 스타일 파일 */
+:root {
+  --base-w: 1280;
+  --base-h: 1920;
+  --rem: min(100dvw / var(--base-w), 100dvh / var(--base-h));
+}
+
+
+:root:has(body[data-layout="vertical"]){
+  --base-w: 1280;
+  --base-h: 1920;
+  --rem: min(100dvw / var(--base-w), 100dvh / var(--base-h));
+}
+/* end : 2026-03-29 내용추가 : 세로버전에서만 적용하는 스타일 파일 */
 .wrapper-vertical {
   width: 100vw;
   aspect-ratio: 2/3;
@@ -27,6 +37,7 @@
   background-position: 100% 100%;
   background-size: contain;
 }
+/* start (공통) 클레스 앞에 .wrapper-vertical 구분 값 추가  */
 .wrapper-vertical .inner {
   display: flex;
   flex-direction: column;
@@ -40,7 +51,7 @@
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  padding: 150rem 50rem 90rem; /* 2026-03-22 / 2026-03-23 */
+  padding: 50rem 50rem 90rem; /* 2026-03-29 */
   text-align: center;
 }
 .wrapper-vertical .header {
@@ -49,24 +60,16 @@
 .wrapper-vertical  .main-title {
   width: auto; /* 2026-03-22 */
   height: 223rem;  /* 2026-03-22 */
-
-  /* width: 1000rem;
-  height: 213rem; */
 }
 
 .wrapper-vertical .main-title .logo-header {
-  /* width: 1000rem;
-  height: auto; */
-  height: 223rem;  /* 2026-03-22 */
+  height: 186rem;  /* 2026-03-29 */
 }
 
 .wrapper-vertical > .inner-table {
   padding: 100rem 50rem 40rem; /* 2026-03-22 */
   /* padding: 50rem 50rem 98rem; */
   align-items: center;
-}
-.wrapper-vertical > .inner-table .logo-header {
-  /* width: 874rem; */
 }
  /* e: --- 2026-03-22 여기 부분 전체적으로 수정 ----------------------*/
 
@@ -75,13 +78,9 @@
   width: 100%;
 }
 
-.wrapper-vertical .inner02 .logo-header {
-  /* width: 874rem;
-  height: auto; 2026-03-23*/
-}
-
 /* footer*/
-.footer-logo {
+/* 2026-03-29 .wrapper-vertical 추가 */
+.wrapper-vertical .footer-logo { /* 2026-03-29 .wrapper-vertical 추가 */
   width: 472rem;
   margin-left: 70rem; /* 2026-03-22 */
 }
@@ -103,124 +102,121 @@
   color: #03854b;
   font-size: 115rem; /* 2026-03-22 */
 }
-.data-time {
+/* 2026-03-29 .wrapper-vertical 추가 */
+.wrapper-vertical .data-time {
   font-size: 260rem; /* 2026-03-22 */
 }
  /* e: --- 2026-03-22 전반적으로 수정  ----------------------*/
 /* 
   data-inner : 세로형 03 상세안내
  */
-.data-inner {
+ /* 2026-03-29 .wrapper-vertical 추가 */
+.wrapper-vertical .data-inner {
   width: 100%;
 }
-.data-inner > .data-time {
-  font-size: 242rem; /* 2026-03-22 */
+.wrapper-vertical .data-inner > .data-time {  /* 2026-03-29 .wrapper-vertical 추가 */
+  font-size: 210rem; /* 2026-03-29 */
 }
 
-.data-inner .data-box > .title {
+.wrapper-vertical .data-inner .data-box > .title {  /* 2026-03-29 .wrapper-vertical 추가 */
   display: flex;
   border-bottom: 4rem solid #03854b; /* 2026-03-22 */
 }
-.data-inner .data-box .title li,
-.data-inner .data-box .data li,
-.data-inner .sub-box .title li {
+.wrapper-vertical .data-inner .data-box .title li,
+.wrapper-vertical .data-inner .data-box .data li,
+.wrapper-vertical .data-inner .sub-box .title li { /* 2026-03-29 .wrapper-vertical 추가 */
   width: 50%;
 }
-.data-inner .data-box .data {
+.wrapper-vertical .data-inner .data-box .data { /* 2026-03-29 .wrapper-vertical 추가 */
   display: flex;
-  font-size: 184rem;/* 2026-03-22 */
+  font-size: 143rem;/* 2026-03-29 */
   font-weight: bold;
 }
-.data-inner .data-box.data-box01 {
+.wrapper-vertical .data-inner .data-box.data-box01 { /* 2026-03-29 .wrapper-vertical 추가 */
   margin-top: 45rem;
 }
-.data-inner .data-box.data-box01 .data {
+.wrapper-vertical .data-inner .data-box.data-box01 .data { /* 2026-03-29 .wrapper-vertical 추가 */
   margin-top: 14rem;
 }
 
-.data-inner .data-box.data-box02 {
+.wrapper-vertical .data-inner .data-box.data-box02 { /* 2026-03-29 .wrapper-vertical 추가 */
   margin-top: 30rem;
   border-bottom: 4rem solid #03854b; /* 2026-03-22 */
 }
-.data-inner .data-box.data-box02 .data02 li {
+.wrapper-vertical .data-inner .data-box.data-box02 .data02 li { /* 2026-03-29 .wrapper-vertical 추가 */
   display: flex;
   align-items: center;
   padding: 32rem 0;
-  font-size: 150rem; /* 2026-03-22 */
+  font-size: 85rem; /* 2026-03-29 */
 }
-.data-inner .data-box.data-box02 .data02 li > span {
+.wrapper-vertical .data-inner .data-box.data-box02 .data02 li > span {
   width: 50%;
 }
-.data-inner .data-box.data-box02 .data02 li + li {
+.wrapper-vertical .data-inner .data-box.data-box02 .data02 li + li {
   border-top: 2px solid rgba(3, 133, 75, 0.2);
 }
 
-.data-inner .data-box.data-box02 .data02 .score {
+.wrapper-vertical .data-inner .data-box.data-box02 .data02 .score {
   color: #f15922;
   font-size: 160rem; /* 2026-03-22 */
 }
 
 /* data-box-half : 세로형_03_상세안내_02 */
-.data-box01.data-box-half > .title {
+.wrapper-vertical .data-box01.data-box-half > .title {
   display: inline-block;
   padding: 0 80rem;
 }
-.data-inner .data-box.data-box01.data-box-half > .data {
+.wrapper-vertical .data-inner .data-box.data-box01.data-box-half > .data {
   justify-content: center;
 }
 /* 세로형_03_상세안내 */
 .wrapper-vertical > .inner02 .round {
   /* margin-top: 49rem; */
-  font-size: 115rem; /* 2026-03-22 */
+  font-size: 102rem; /* 2026-03-29 */
 }
 /* data-box03 : 세로형 04 연습그린 
 */
-.main.main-green {
+.wrapper-vertical .main.main-green {
   padding-bottom: 100rem; /* 2026-03-22 */
   /* margin-top: 90rem; 2026-03-22 */
 }
-.main.main-green .data-inner .data-box > .title {
-  /* font-size: 110rem;  */
-  /* 2026-03-22 */
-}
-.data-inner .data-box.data-box03 {
+
+.wrapper-vertical .data-inner .data-box.data-box03 {
   margin-top: 80rem; /* 2026-03-22 */
   margin-bottom: 70rem;
 }
-.data-inner .data-box.data-box03 > .title li {
+.wrapper-vertical .data-inner .data-box.data-box03 > .title li {
   width: 100%;
 }
-.data-inner .sub-data .sub-title {
+.wrapper-vertical .data-inner .sub-data .sub-title {
   display: flex;
   margin-top: 27rem;
   font-size: 92rem; /* 2026-03-22 */
 }
-.data-inner .sub-data .sub-title > li {
+.wrapper-vertical .data-inner .sub-data .sub-title > li {
   width: 50%;
 }
-/* .data-inner .data-box.data-box03 .data {
-  font-size: 140rem; 2026-03-22
-} */
-.data-inner .sub-box .data li {
+
+.wrapper-vertical .data-inner .sub-box .data li {
   font-size: 140rem;
 }
 /* 관리자 화면에서 색상 지정 */
-.s-color {
+.wrapper-vertical .s-color {
   color: #000;
 }
 
 /* data-single: 너비 100% */
-.data-inner .data-box.data-single .title li,
-.data-inner .data-box.data-single .data li {
+.wrapper-vertical .data-inner .data-box.data-single .title li,
+.wrapper-vertical .data-inner .data-box.data-single .data li {
   width: 100%;
 }
-.data-inner .data-box.data-single + .data-box.data-single {
+.wrapper-vertical .data-inner .data-box.data-single + .data-box.data-single {
   margin-top: 50rem;
 }
-.data-inner .data-box.data-single .data {
+.wrapper-vertical .data-inner .data-box.data-single .data {
   margin-top: 18rem;
 }
-.data-inner .data-box.data-single .data li {
+.wrapper-vertical .data-inner .data-box.data-single .data li {
   font-size: 150rem; /* 2026-03-22 */
 }
 
@@ -228,33 +224,34 @@
 /* 
   * data-table 
 */
-.inner-table .data-inner {
+.wrapper-vertical .inner-table .data-inner {
   height: 100%;
 }
-.inner-table .data-inner .round {
+.wrapper-vertical .inner-table .data-inner .round {
   margin: 46rem 0 55rem;
 }
-.data-table {
+.wrapper-vertical .data-table {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
   width: 100%;
 }
 /* 공통 column 구조 */
-.data-table .title,
-.data-table .data-area li {
+.wrapper-vertical .data-table .title,
+.wrapper-vertical .data-table .data-area li {
   display: grid;
-  grid-template-columns: 160rem 1.2fr 1fr 1fr 1fr;
+  /* grid-template-columns: 160rem 1.2fr 1fr 1fr 1fr; */
+  grid-template-columns: 140rem 1.2fr 0.8fr 0.8fr 0.8fr; /* 2026-03-22: 최대이름 대응 */
   align-items: center;
 }
 
 /* 타이틀 */
-.data-table .title {
+.wrapper-vertical .data-table .title {
   font-size: 60rem;
   color: #03854b;
   padding-bottom: 20rem;
 }
-.data-table .data-area {
+.wrapper-vertical .data-table .data-area {
   display: grid;
   grid-auto-rows: auto;
   height: 100%;
@@ -263,41 +260,60 @@
 }
 
 /* 데이터 영역 */
-.data-table .data-area li {
+.wrapper-vertical .data-table .data-area li {
   font-size: 85rem;
 }
-/* 2026-03-22: 폰트 사이즈 크기 확대 */
-.data-table .data-area.data-row05 li {
-  font-size: 92rem;
+.wrapper-vertical .data-table .data-area li .name-long {
+  font-size: 56rem; /* 2026-03-29 : 최대 이름 */
 }
-.data-table .data-area li.index,
-.data-table .data-area li.name {
+
+.wrapper-vertical .data-table .data-area li.index,
+.wrapper-vertical .data-table .data-area li.name {
   font-size: 80rem;
 }
-.data-table .data-area li + li {
+.wrapper-vertical .data-table .data-area.data-row05 li {
+  font-size: 86rem; /* 2026-03-29 */
+}
+.wrapper-vertical .data-table .data-area.data-row05 li.name .small-font {
+  font-size: 66rem; /* 2026-03-29 */
+}
+.wrapper-vertical .data-table .data-area li + li {
   border-top: 2rem solid rgba(3, 133, 75, 0.2); /* 2026-03-22 */
 }
 /* 가운데 정렬 */
-.data-table .data-area li > span {
+.wrapper-vertical .data-table .data-area li > span {
   height: 100%;
   display: inline-flex;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
+.wrapper-vertical .data-table .data-area li > span.name-long {
+  font-size: 64rem;
+  /* 2026-03-29 : 최대 이름 */
+}
+
+/* 2026-03-29 :ver-06 작은 이름 */
+.wrapper-vertical .data-table .data-area li > span.name-over {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.wrapper-vertical .small-name {font-size: 66rem;} /* 2026-03-29: 추가 */ 
 
 /* 이름만 왼쪽 정렬 */
-.data-table .name {
+.wrapper-vertical .data-table .name {
   text-align: left;
 }
 
 /* 색상 */
-.red {
+.wrapper-vertical .red {
   color: #f15922;
 }
-.blue {
+.wrapper-vertical .blue {
   color: #0060ae;
 }
-.score-bg {
+.wrapper-vertical .score-bg {
   background-color: rgba(3, 133, 75, 0.1);
 }
+/* end (공통) 클레스 앞에 .wrapper-vertical 구분 값 추가  */

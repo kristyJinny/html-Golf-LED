@@ -5,13 +5,13 @@
  * --------------------------------
 */
 
-table {
+.wrapper table {
   table-layout: fixed;
   width: 100%;
   border-collapse: collapse;
   border-spacing: 0;
 }
-caption {
+.wrapper caption {
   overflow: hidden;
   margin: -1px;
   padding: 0;
@@ -23,33 +23,19 @@ caption {
   border: 0;
   clip: rect(0 0 0 0);
 }
-table, th, td {
+.wrapper table, .wrapper th, .wrapper td {
   font-weight: 500;
 }
-.table-box table {
+.wrapper .table-box table {
   color: #ffff;
 }
-.table-box thead {
+.wrapper .table-box thead {
   border-bottom: 4rem solid #fff;
-  /* position: sticky;
-  top: 0;
-  z-index: 3;
-  background-color: #00854b;  */
 }
-.table-box thead::after {
-  /* content: "";
-  display: table-row;
-  position: absolute;
-  z-index: 3;
-  width: 100%;
-  height: 4rem;
-  background-color: #fff; */
-}
-.table-box thead th {
+.wrapper .table-box thead th {
   font-size: 38rem;
-  /* letter-spacing: -0.76rem; */
 }
-.table-box tbody td {
+.wrapper .table-box tbody td {
   font-size: 43rem;
   text-align: center;
   vertical-align: middle;
@@ -57,21 +43,21 @@ table, th, td {
   height: 76rem;
   box-sizing: border-box;
 }
-.table-box tbody tr + tr {
+.wrapper .table-box tbody tr + tr {
   border-top: 2rem solid rgba(255, 255, 255, 0.2);
 }
-.table-box tbody .name-box {
+.wrapper .table-box tbody .name-box {
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 0;
   text-align: center; /* D: 2026-03-23 */
 }
-.table-box tbody td .name {
+.wrapper .table-box tbody td .name {
   font-size: 29rem;
   line-height: 1.2;
 }
-.table-box tbody td .name-en {
+.wrapper .table-box tbody td .name-en {
   font-size: 19rem;
   display: -webkit-box; 
   -webkit-box-orient: vertical;
@@ -79,69 +65,62 @@ table, th, td {
   overflow: hidden;
 }
 
-.table-box tbody td .positive {
+.wrapper .table-box tbody td .positive {
   color: #23f2ff;
 }
-.table-box tbody td .red {
+.wrapper .table-box tbody td .red {
   color: #f15922;
 }
 
 /* --- table: style-b ---- */
-.table-box.style-b + .table-box.style-b {
+.wrapper .table-box.style-b + .wrapper .table-box.style-b {
   margin-top: 7rem;
 }
-.table-box.style-b table {
+.wrapper .table-box.style-b table {
   border-top: 4rem solid #fff;
   border-bottom: 4rem solid #fff;
 }
-.table-box.style-b tbody {
+.wrapper .table-box.style-b tbody {
   border-top: 4rem solid #fff;
 }
-.table-box.style-b tbody th {
+.wrapper .table-box.style-b tbody th {
   width: 152rem;
   box-sizing: border-box;
   font-size: 43rem;
 }
-.table-box.style-b tbody tr + tr {
+.wrapper .table-box.style-b tbody tr + tr {
   border-top: 4rem solid #fff;
 }
-.table-box.style-b tbody tr:first-child {
+.wrapper .table-box.style-b tbody tr:first-child {
   background-color: rgba(255, 255, 255, 0.2);
 }
-.table-box.style-b tbody td {
+.wrapper .table-box.style-b tbody td {
   height: 88rem;
   border-left: 4rem solid #fff;
 }
 
 /* --- 테이블 2개 --- */
-.table-wrap.table-duo {
+.wrapper .table-wrap.table-duo {
   display: flex;
   gap: 20rem;
 }
-.table-box.big thead th {
-  /* font-size: 42rem; */
-}
-.table-box.big thead td {
-  /* font-size: 52rem; */
-}
-.table-box.big tbody td {
-  /* font-size: 47rem; */
+.wrapper .table-box.big tbody td {
   height: 84rem;
 }
-.table-box.big .name {
+.wrapper .table-box.big tbody td {
   font-size: 30rem;
   line-height: 1.2;
 }
 
-.table-box.big .name-en {
+.wrapper .table-box.big tbody td {
   font-size: 20rem;
 }
 
 /* --- s: 테이블 2개 : page-table_duo02 열 2개 D: 2026-03-23 --- */
-.table-wrap.table-duo .table-box tbody {
+.wrapper .table-wrap.table-duo .table-box tbody {
   border-bottom: 4rem solid #fff;
 }
-.table-wrap.table-duo.table-duo-row09 .table-box tbody td {
+.wrapper .table-wrap.table-duo.table-duo-row09 .table-box tbody td {
   height: 84rem;
 }
 /* --- e 테이블 2개 : page-table_duo02 열 2개 D: 2026-03-23 --- */
@@ -152,22 +131,22 @@ table, th, td {
  * --------------------------------
 */
 /* 전환 기본값 */
-#leader-tbody {
+.wrapper #leader-tbody {
   transition: opacity .35s ease, transform .35s ease;
 }
 
 /* 페이드아웃(살짝 아래로) */
-#leader-tbody.is-leave {
+.wrapper #leader-tbody.is-leave {
   opacity: 0;
   transform: translateY(0.6rem);
 }
 
 /* 페이드인(원위치) */
-#leader-tbody.is-enter {
+.wrapper #leader-tbody.is-enter {
   opacity: 0;
   transform: translateY(-0.6rem);
 }
-#leader-tbody.is-enter.is-enter-active {
+.wrapper #leader-tbody.is-enter.is-enter-active {
   opacity: 1;
   transform: translateY(0);
   transition: opacity .35s ease, transform .35s ease;
