@@ -86,8 +86,9 @@
   padding: 0 20rem;
   border-top: 4rem solid #ffff;
 }
-.wrapper.footer-logo {
-  /* width: 200rem; 2026-03-23 */
+
+.wrapper .footer-logo { /* 2026-03-30 .wrapper (띄어쓰기) .footer-logo */
+  /* width: 200rem; footer-logo */
   /* height: 76rem; 2026-03-23 */
   height: 66rem; /* 2026-03-23: LED 화면 보니, 이미지가 꺠지는 해서, 재 수정 */
   margin-top: 10rem;
@@ -488,14 +489,14 @@
 .wrapper .table-box.big tbody td {
   height: 84rem;
 }
-.wrapper .table-box.big tbody td {
+/* .wrapper .table-box.big tbody td {
   font-size: 30rem;
-  line-height: 1.2;
-}
+  line-height: 1.2; 2026-03-30 테이블 폰트 작은거 삭제
+} */
 
-.wrapper .table-box.big tbody td {
-  font-size: 20rem;
-}
+/* .wrapper .table-box.big tbody td {
+  font-size: 20rem; 2026-03-30 테이블 폰트 작은거 삭제
+} */
 
 /* --- s: 테이블 2개 : page-table_duo02 열 2개 D: 2026-03-23 --- */
 .wrapper .table-wrap.table-duo .table-box tbody {
