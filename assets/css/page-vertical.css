@@ -56,9 +56,9 @@
 .wrapper-vertical .header {
   margin: 0 auto;  /* D: 2026-03-23 혹시 업데이트 안 되었을까봐 주석 남깁니다. */
 }
-.wrapper-vertical  .main-title {
+.wrapper-vertical .main-title {
   width: auto; /* 2026-03-22 */
-  height: 223rem;  /* 2026-03-22 */
+  /* height: 223rem; 2026-04-01 2026-03-22 */
 }
 
 .wrapper-vertical .main-title .logo-header {
@@ -80,7 +80,7 @@
 
 /* footer*/
 /* 2026-03-29 .wrapper-vertical 추가 */
-.wrapper-vertical .footer-logo { /* 2026-03-29 .wrapper-vertical 추가 */
+.wrapper-vertical .footer-logo {
   width: 472rem;
   margin-left: 70rem; /* 2026-03-22 */
 }
@@ -110,43 +110,44 @@
 /* 
   data-inner : 세로형 03 상세안내
  */
- /* 2026-03-29 .wrapper-vertical 추가 */
+
 .wrapper-vertical .data-inner {
   width: 100%;
 }
-.wrapper-vertical .data-inner > .data-time {  /* 2026-03-29 .wrapper-vertical 추가 */
+.wrapper-vertical .data-inner > .data-time { 
   font-size: 210rem; /* 2026-03-29 */
 }
 
-.wrapper-vertical .data-inner .data-box > .title {  /* 2026-03-29 .wrapper-vertical 추가 */
+.wrapper-vertical .data-inner .data-box > .title { 
   display: flex;
   border-bottom: 4rem solid #03854b; /* 2026-03-22 */
 }
 .wrapper-vertical .data-inner .data-box .title li,
 .wrapper-vertical .data-inner .data-box .data li,
-.wrapper-vertical .data-inner .sub-box .title li { /* 2026-03-29 .wrapper-vertical 추가 */
+.wrapper-vertical .data-inner .sub-box .title li {
   width: 50%;
 }
-.wrapper-vertical .data-inner .data-box .data { /* 2026-03-29 .wrapper-vertical 추가 */
+.wrapper-vertical .data-inner .data-box .data {
   display: flex;
-  font-size: 143rem;/* 2026-03-29 */
+  font-size: 140rem;/* 2026-04-01 */
+ /*  font-size: 143rem;2026-03-29 */
   font-weight: bold;
 }
-.wrapper-vertical .data-inner .data-box.data-box01 { /* 2026-03-29 .wrapper-vertical 추가 */
-  margin-top: 45rem;
+.wrapper-vertical .data-inner .data-box.data-box01 {
+ /* margin-top: 25rem;  2026-04-01 */
 }
-.wrapper-vertical .data-inner .data-box.data-box01 .data { /* 2026-03-29 .wrapper-vertical 추가 */
-  margin-top: 14rem;
+.wrapper-vertical .data-inner .data-box.data-box01 .data {
+  /* margin-top: 14rem; 2026-04-01 : ver-03.html */
 }
 
-.wrapper-vertical .data-inner .data-box.data-box02 { /* 2026-03-29 .wrapper-vertical 추가 */
-  margin-top: 30rem;
+.wrapper-vertical .data-inner .data-box.data-box02 {
+  margin-top: 8rem;  /* 2026-04-01 : ver-03.html*/
   border-bottom: 4rem solid #03854b; /* 2026-03-22 */
 }
-.wrapper-vertical .data-inner .data-box.data-box02 .data02 li { /* 2026-03-29 .wrapper-vertical 추가 */
+.wrapper-vertical .data-inner .data-box.data-box02 .data02 li {
   display: flex;
   align-items: center;
-  padding: 32rem 0;
+  padding: 10rem 0; /* 2026-04-01 : ver-03.html*/
   font-size: 85rem; /* 2026-03-29 */
 }
 .wrapper-vertical .data-inner .data-box.data-box02 .data02 li > span {
@@ -185,21 +186,23 @@
 }
 
 .wrapper-vertical .data-inner .data-box.data-box03 {
-  margin-top: 80rem; /* 2026-03-22 */
-  margin-bottom: 70rem;
+  margin-top: 30rem; /* 2026-04-01, 2026-03-22 */
+  margin-bottom: 25rem; /* 2026-04-01 ,2026-03-22 */
 }
 .wrapper-vertical .data-inner .data-box.data-box03 > .title li {
   width: 100%;
 }
 .wrapper-vertical .data-inner .sub-data .sub-title {
   display: flex;
-  margin-top: 27rem;
-  font-size: 92rem; /* 2026-03-22 */
+  margin-top: 12rem; /* 2026-04-01 */
+  font-size: 80rem; /* 2026-04-01 2026-03-22 */
 }
 .wrapper-vertical .data-inner .sub-data .sub-title > li {
   width: 50%;
 }
-
+.wrapper-vertical .data-inner .sub-data .sub-title .data {
+  margin-top: -15rem; /* 2026-04-01 추가 : 폰트..*/
+}
 .wrapper-vertical .data-inner .sub-box .data li {
   font-size: 140rem;
 }
@@ -214,10 +217,10 @@
   width: 100%;
 }
 .wrapper-vertical .data-inner .data-box.data-single + .data-box.data-single {
-  margin-top: 50rem;
+  margin-top: 40rem; /* 2026-04-01 */
 }
 .wrapper-vertical .data-inner .data-box.data-single .data {
-  margin-top: 18rem;
+  /* margin-top: 18rem;  2026-04-01 ver-04.html */
 }
 .wrapper-vertical .data-inner .data-box.data-single .data li {
   font-size: 150rem; /* 2026-03-22 */

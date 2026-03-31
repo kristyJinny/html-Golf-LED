@@ -79,12 +79,12 @@
 
 /* footer */
 .wrapper footer:not(.footer-event) {
-  /* position: absolute;
+  position: absolute;
   left: 25rem;
   right: 25rem;
   bottom: 20rem;
   padding: 0 20rem;
-  border-top: 4rem solid #ffff; 이벤트 화면 2026-03-31 삭제 */
+  border-top: 4rem solid #ffff; /* 이벤트 화면 외 화면: 2026-04-01 원복 */
 }
 
 .wrapper .footer-logo { /* 2026-03-30 .wrapper (띄어쓰기) .footer-logo */
@@ -221,7 +221,7 @@
   font-size: 40rem;
 }
 .wrapper .data-area.medium .name {
-  padding: 4rem 20rem 1rem;
+  padding: 0rem 20rem 1rem; /* 2026-04-01 */
   border-radius: 28rem;
 }
 
@@ -266,8 +266,9 @@
   align-items: center;
   justify-content: center;
   width: 219rem;
-  height: 73rem;
+  height: 72rem; /* 2026-04-01 */
   margin-right: 65rem;
+  padding-bottom: 4rem; /* 2026-04-01 : 가운데 정렬이지만, 폰트 스타일 떄문에 강제로 적용 */
   /* padding: 10rem 0 2rem; 2026-03-31 필요시 숫자로 수정 필요 */
   border-radius: 50rem;
   box-sizing: border-box;
@@ -324,7 +325,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 100%;
+  height: 130rem; /* 2026-04-01 */
+  padding: 5rem 0; /* 2026-04-01 */
 }
 .wrapper .footer-event .title-box {
   display: flex;
@@ -344,21 +346,31 @@
   display: flex;
   align-items: center;
 }
-.wrapper .footer-event .name-area .title {
-  display: inline-flex;
-  justify-content: center; /* D: 2026-03-29 */
+ /* 2026-04-01 : 내용추가 */
+.wrapper .footer-event .name-area .title-area {
+  display: flex;
   align-items: center;
+  justify-content: center;
   width: 136rem;
-  margin-right: 72rem;
-  padding-top: 5rem; /* 이벤트 화면 2026-03-31:수기로 수정 필요할 수 있음 폰트 영향떄문에 그럴 수 있어서 필요시 테스트 부탁드립니다. */
-  /* padding-top: 9rem; 이벤트 화면 2026-03-31 */
+  height: 96rem;
+  margin-right: 68rem;
   border-radius: 24rem;
+  background-color: #fff;
+}
+ /* 2026-04-01 : 내용 수정 */
+.wrapper .footer-event .name-area .title {
   font-size: 77rem;
-  /*line-height: 77rem;   이벤트 화면 2026-03-31 : 폰트 영향떄문에 그럴 수 있어서 필요시 테스트 부탁드립니다. */
-  /* height: 77rem; /* 이벤트 화면 2026-03-31:  : 폰트 영향떄문에 그럴 수 있어서 필요시 테스트 부탁드립니다. */
   color: #1b342a;/* 이벤트 화면 2026-03-31: 색상 값 지정 필요 -> 아니면 안 보입니다. */
   /* color: transparent;이벤트 화면 2026-03-31 2026-03-30 색상 변경 */
-  background-color: #fff;
+  margin-top: -1rem;
+}
+ /*2026-04-01: 전달 못 함..*/
+.wrapper .footer-event .name-area .title::before {
+  position: absolute;
+  content: '';
+  display: block;
+
+
 }
 .wrapper .footer-event .name-box .name {
   font-size: 77rem;
@@ -379,6 +391,7 @@
   overflow: hidden; /* D: 2026-03-23 */
   display: flex;
   gap: 20rem;
+  height: 130rem; /* 2026-04-01 */
 }
 /* 2026-03-29 테스트용 */
 .wrapper .name-over {
