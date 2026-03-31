@@ -79,12 +79,12 @@
 
 /* footer */
 .wrapper footer:not(.footer-event) {
-  position: absolute;
+  /* position: absolute;
   left: 25rem;
   right: 25rem;
   bottom: 20rem;
   padding: 0 20rem;
-  border-top: 4rem solid #ffff;
+  border-top: 4rem solid #ffff; 이벤트 화면 2026-03-31 삭제 */
 }
 
 .wrapper .footer-logo { /* 2026-03-30 .wrapper (띄어쓰기) .footer-logo */
@@ -268,7 +268,7 @@
   width: 219rem;
   height: 73rem;
   margin-right: 65rem;
-  padding: 10rem 0 2rem;
+  /* padding: 10rem 0 2rem; 2026-03-31 필요시 숫자로 수정 필요 */
   border-radius: 50rem;
   box-sizing: border-box;
   font-size: 54rem;
@@ -280,19 +280,20 @@
 
 /* --- page: event ---- */
 .wrapper:has(.main-event) {
-  background-color: #fff;
+  background-color: transparent; /* 이벤트 화면 2026-03-31 : 배경 색상 값으로 수정하는게 안전 */
 }
 
 .wrapper .container-page-event .main-event {
-  background-color: #fff; /* 2026-03-29 */
+  background-color: transparent;  /* 이벤트 화면 2026-03-31 배경 색상 값으로 수정하는게 안전 */
   padding-bottom: 140rem; /* 2026-03-29 추가 */
 }
 .wrapper .container-section[data-page="page-event"] {
   padding: 0;
   background-image: none;
 }
-.wrapper .container-page-event {
+.wrapper .container-section.container-page-event {  /* 이벤트 화면 2026-03-31 */
   padding: 0; /* 2026-03-29 */
+  background-image: none; /* 이벤트 화면 2026-03-31 */
 }
 /* 2026-03-29 : 이벤트 상단에 로고 추가되면서 해당 간격 추가 */
 .wrapper .container-page-event .header {
@@ -301,20 +302,23 @@
 }
 .wrapper footer.footer-event {
 /* s: 2026-03-29 */
+  /* s: 이벤트 화면 2026-03-31
   position: absolute;
   bottom: 0;
   z-index: 1;
   overflow: hidden;
-  width: 100%;
+  width: 100%; */
+    /* e: 2026-03-31 삭제 */
   /* e: 2026-03-29 */
 
   height: 140rem; 
   max-height: 140rem; /* 2026-03-29 */
   padding: 0 12rem 0 42rem;;
-  color: #fff;
+  color: #fff;  /* 이벤트 하단 색상 값을 넣어주는게 ui 안 깨집니다. 2026-03-31 */
+   /* color: transparent;  이벤트 화면 2026-03-31 */
   border-top: 0;
   box-sizing: border-box;
-  background-color: #1b342a;/* 2026-03-30 색상 변경 */
+  /* background-color: #1b342a; 이벤트 화면 2026-03-31  배경색 넣기 */
 }
 .wrapper .footer-event .inner {
   display: flex;
@@ -346,10 +350,14 @@
   align-items: center;
   width: 136rem;
   margin-right: 72rem;
-  padding-top: 9rem;
+  padding-top: 5rem; /* 이벤트 화면 2026-03-31:수기로 수정 필요할 수 있음 폰트 영향떄문에 그럴 수 있어서 필요시 테스트 부탁드립니다. */
+  /* padding-top: 9rem; 이벤트 화면 2026-03-31 */
   border-radius: 24rem;
   font-size: 77rem;
-  color: #1b342a;/* 2026-03-30 색상 변경 */
+  /*line-height: 77rem;   이벤트 화면 2026-03-31 : 폰트 영향떄문에 그럴 수 있어서 필요시 테스트 부탁드립니다. */
+  /* height: 77rem; /* 이벤트 화면 2026-03-31:  : 폰트 영향떄문에 그럴 수 있어서 필요시 테스트 부탁드립니다. */
+  color: #1b342a;/* 이벤트 화면 2026-03-31: 색상 값 지정 필요 -> 아니면 안 보입니다. */
+  /* color: transparent;이벤트 화면 2026-03-31 2026-03-30 색상 변경 */
   background-color: #fff;
 }
 .wrapper .footer-event .name-box .name {
