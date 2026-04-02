@@ -360,18 +360,17 @@
  /* 2026-04-01 : 내용 수정 */
 .wrapper .footer-event .name-area .title {
   font-size: 77rem;
-  color: #1b342a;/* 이벤트 화면 2026-03-31: 색상 값 지정 필요 -> 아니면 안 보입니다. */
-  /* color: transparent;이벤트 화면 2026-03-31 2026-03-30 색상 변경 */
+  color: #1b342a; /* 이벤트 화면 2026-03-31: 색상 값 지정 필요 -> 아니면 안 보입니다. */
+  /*color: transparent; 2026-04-04: 이벤트 화면 2026-03-31 2026-03-30 색상 변경 */
   margin-top: -1rem;
 }
- /*2026-04-01: 전달 못 함..*/
+
+/*  2026-04-01: 전달 못 함.. 2026-04-04 삭제
 .wrapper .footer-event .name-area .title::before {
   position: absolute;
   content: '';
   display: block;
-
-
-}
+} */
 .wrapper .footer-event .name-box .name {
   font-size: 77rem;
 }
