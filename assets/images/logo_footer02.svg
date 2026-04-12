@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="97" height="56.44" viewBox="0 0 97 56.44">
+    <defs>
+        <clipPath id="l5xlk8wvud">
+            <path data-name="사각형 4" style="fill:none" d="M0 0h97v56.44H0z"/>
+        </clipPath>
+        <clipPath id="1kaeblnp3e">
+            <path data-name="패스 73" d="M.352 12.662C-.233 15.346.04 38.4.25 41.07c.147 1.964.973 3.109 3.274 3.061 16.03-.258 20.234-19.692 10.334-28.833a16.685 16.685 0 0 0-5.844-3.481 15.705 15.705 0 0 0-4.738-1.01c-1.412 0-2.619.447-2.924 1.856" transform="translate(0 -10.806)" style="fill:url(#v82b5860ja)"/>
+        </clipPath>
+        <clipPath id="8asc2q5qqf">
+            <path data-name="패스 74" d="M14.7 0c-1.29 0-2.382.417-2.664 1.694-.526 2.428-.278 23.361-.1 25.792.142 1.771.885 2.81 2.975 2.779 14.561-.242 18.389-17.887 9.394-26.189a15.276 15.276 0 0 0-5.3-3.153A14.06 14.06 0 0 0 14.7 0z" transform="translate(-11.72)" style="fill:url(#4oabpepntb)"/>
+        </clipPath>
+        <clipPath id="ql1vgknw9g">
+            <path data-name="패스 75" d="M14.028 13.111c-.677 3.058-.35 29.359-.114 32.41.181 2.238 1.106 3.533 3.724 3.493 18.3-.288 23.112-22.465 11.813-32.9a19.167 19.167 0 0 0-6.666-3.967 17.774 17.774 0 0 0-5.408-1.156c-1.617 0-3 .513-3.349 2.119" transform="translate(-13.624 -10.992)" style="fill:url(#o1ikte29lc)"/>
+        </clipPath>
+        <linearGradient id="v82b5860ja" x1=".454" y1=".808" x2=".457" y2="-.006" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#f27920"/>
+            <stop offset=".1" stop-color="#f27920"/>
+            <stop offset=".269" stop-color="#ef7320"/>
+            <stop offset=".491" stop-color="#e66223"/>
+            <stop offset=".743" stop-color="#d84727"/>
+            <stop offset="1" stop-color="#c7242c"/>
+        </linearGradient>
+        <linearGradient id="4oabpepntb" x1=".497" y1="-.007" x2=".502" y2=".818" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#0faee5"/>
+            <stop offset="1" stop-color="#0661ad"/>
+        </linearGradient>
+        <linearGradient id="o1ikte29lc" x1=".497" y1="-.007" x2=".502" y2=".829" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#8ac43f"/>
+            <stop offset=".139" stop-color="#84c140"/>
+            <stop offset=".321" stop-color="#73bc43"/>
+            <stop offset=".528" stop-color="#58b248"/>
+            <stop offset=".751" stop-color="#32a54f"/>
+            <stop offset=".932" stop-color="#029458"/>
+            <stop offset="1" stop-color="#009359"/>
+        </linearGradient>
+    </defs>
+    <g data-name="그룹 3" transform="translate(.001)" style="clip-path:url(#l5xlk8wvud)">
+        <path data-name="패스 71" d="M40.018 11.113h-9.29v25.4h9.292c7.67 0 13.234-5.319 13.234-12.649 0-7.623-5.319-12.748-13.235-12.746m8.751 12.711c0 5.338-3.547 8.787-8.874 8.787h-4.683V15H39.9c5.49 0 8.874 3.319 8.874 8.826" transform="translate(20.753 7.506)" style="fill:#007f41"/>
+        <path data-name="패스 72" d="M61.459 23.368a7.024 7.024 0 0 0 2.749-5.742c0-4.08-3.277-6.516-8.761-6.514H45.375v25.4h10.25c6.2 0 9.895-2.714 9.895-7.253 0-2.721-1.329-4.649-4.061-5.887m-7.683-1.833A1.751 1.751 0 0 0 52.326 23a2.267 2.267 0 0 0 .357 1.662 1.575 1.575 0 0 0 1.03.65 15.425 15.425 0 0 0 1.9.156c2 .089 4.115.176 5.058 1.95a3.347 3.347 0 0 1-.206 3.406c-.707 1.027-2.1 1.644-4.13 1.764-.261.017-.526.025-.818.025h-5.66V15h5.125c3.376 0 4.738.972 4.738 3.032a3.356 3.356 0 0 1-1.282 2.791 5.249 5.249 0 0 1-2.962.581 9.575 9.575 0 0 0-1.7.127" transform="translate(30.645 7.506)" style="fill:#007f41"/>
+    </g>
+    <g data-name="그룹 5" transform="translate(0 18.104)" style="clip-path:url(#1kaeblnp3e)">
+        <path data-name="사각형 5" transform="rotate(-89.454 16.57 16.963)" style="fill:url(#v82b5860ja)" d="M0 0h33.601v24.307H0z"/>
+    </g>
+    <g data-name="그룹 7" transform="translate(19.636)" style="clip-path:url(#8asc2q5qqf)">
+        <path data-name="사각형 6" transform="rotate(-89.454 15.043 15.398)" style="fill:url(#4oabpepntb)" d="M0 0h30.502v22.074H0z"/>
+    </g>
+    <g data-name="그룹 9" transform="translate(22.826 18.416)" style="clip-path:url(#ql1vgknw9g)">
+        <path data-name="사각형 7" transform="rotate(-89.4 18.903 19.35)" style="fill:url(#o1ikte29lc)" d="M0 0h38.322v27.761H0z"/>
+    </g>
+</svg>

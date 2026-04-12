@@ -284,11 +284,12 @@
   font-size: 66rem; /* 2026-03-29 */
 }
 .wrapper-vertical .data-table .data-area li + li {
-  border-top: 2rem solid rgba(3, 133, 75, 0.2); /* 2026-03-22 */
- /* border-top: 3rem solid rgba(3, 133, 75, 0.2);  2026-04-04 */
+ /* border-top: 2rem solid rgba(3, 133, 75, 0.2);  2026-03-22 */
+ border-top: 3rem solid rgba(3, 133, 75, 0.2);  /* 2026-04-06 */
 }
 .wrapper-vertical .data-table .data-area li.line {
-  border-bottom: 3rem solid rgba(3, 133, 75, 0.2);
+  border-bottom: 5rem solid rgba(3, 133, 75, 0.2); /* 2026-04-06 */
+  /* border-bottom: 3rem solid rgba(3, 133, 75, 0.2); */
 }
 /* 가운데 정렬 */
 .wrapper-vertical .data-table .data-area li > span {

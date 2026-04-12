@@ -37,6 +37,9 @@
   display: flex;
   background-color: #1b342a;/* 2026-03-30 색상 변경 */
 }
+.wrapper.wrapper-bright { /* 2026-04-12 추가 */
+  background-color: transparent;
+}
 
 .wrapper .container-section {
   position: relative;
@@ -47,7 +50,9 @@
   background: url('../images/bg_01.png') no-repeat center;
   background-size: cover;
 }
-
+.wrapper .container-section.container-bg { /* 2026-04-12 추가 */
+  background-image: url('../images/bg_02.png');
+}
 /* header */
 .wrapper .header {
   display: flex;
@@ -68,6 +73,9 @@
   color: #fff;
   letter-spacing: -1.24rem;
 }
+.wrapper.wrapper-bright .header .sub-title { /* 2026-04-12 추가 */
+  color: #246d37;
+}
 
 /* main */
 .wrapper .main {
@@ -86,7 +94,9 @@
   padding: 0 20rem;
   border-top: 4rem solid #ffff; /* 이벤트 화면 외 화면: 2026-04-01 원복 */
 }
-
+.wrapper.wrapper-bright footer:not(.footer-event) { /* 2026-04-12 추가 */
+  border-color: #246d37;
+}
 .wrapper .footer-logo { /* 2026-03-30 .wrapper (띄어쓰기) .footer-logo */
   /* width: 200rem; footer-logo */
   /* height: 76rem; 2026-03-23 */
@@ -431,11 +441,20 @@
 .wrapper .table-box table {
   color: #ffff;
 }
+.wrapper.wrapper-bright .table-box table {  /* 2026-04-12 추가 */
+  color: #246d37;
+}
 .wrapper .table-box thead {
   border-bottom: 4rem solid #fff;
 }
+.wrapper.wrapper-bright .table-box thead {  /* 2026-04-12 추가 */
+  border-color: #246d37; 
+}
 .wrapper .table-box thead th {
   font-size: 38rem;
+}
+.wrapper .table-box.big-col05 thead th { /* 2026-04-12 추가 */
+  font-size: 42rem;
 }
 .wrapper .table-box tbody td {
   font-size: 43rem;
@@ -447,6 +466,9 @@
 }
 .wrapper .table-box tbody tr + tr {
   border-top: 2rem solid rgba(255, 255, 255, 0.2);
+}
+.wrapper.wrapper-bright .table-box tbody tr + tr { /* 2026-04-12 추가 */
+  border-color: rgba(36, 109, 55, 0.2);
 }
 .wrapper .table-box tbody .name-box {
   display: flex;
@@ -509,6 +531,14 @@
 .wrapper .table-box.big tbody td {
   height: 84rem;
 }
+.wrapper .table-box.big-col05 tbody td { /* 2026-04-12 추가 */
+  height: 154rem;
+  font-size: 90rem;
+}
+.wrapper .table-box.big-col05 tbody td .name { /* 2026-04-12 추가 */
+  font-size: 80rem;
+}
+
 /* .wrapper .table-box.big tbody td {
   font-size: 30rem;
   line-height: 1.2; 2026-03-30 테이블 폰트 작은거 삭제
