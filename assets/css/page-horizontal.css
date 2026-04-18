@@ -417,17 +417,6 @@
  * --------------------------------
 */
 
-.wrapper [class*="main-table"] .inner {
-  flex-grow: 1;
-  height: 100%;
-  justify-content: center;
-}
-.wrapper [class*="main-table"] .inner .table-wrap,
-.wrapper [class*="main-table"] .inner .table-wrap .table-box,
-.wrapper [class*="main-table"] .inner .table-wrap .table-box table {
-  /* flex-grow: 1; */
-  height: 100%;
-}
 .wrapper table {
   table-layout: fixed;
   width: 100%;
@@ -543,8 +532,7 @@
   height: 84rem;
 }
 .wrapper .table-box.big-col05 tbody td { /* 2026-04-12 추가 */
-  height: auto; /* test 2026-04-16 */
-  /* height: 154rem; */
+  height: 154rem;
   font-size: 90rem;
 }
 .wrapper .table-box.big-col05 tbody td .name { /* 2026-04-12 추가 */
