@@ -247,7 +247,8 @@
 .wrapper-vertical .data-table .data-area li {
   display: grid;
   /* grid-template-columns: 160rem 1.2fr 1fr 1fr 1fr; */
-  grid-template-columns: 140rem 1.2fr 0.8fr 0.8fr 0.8fr; /* 2026-03-22: 최대이름 대응 */
+   /* grid-template-columns: 140rem 1.2fr 0.8fr 0.8fr 0.8fr;2026-03-22: 최대이름 대응 */
+  grid-template-columns:  120rem 1.1fr 0.6fr 0.6fr 0.6fr; /* 2026-04-21: 최대이름 대응: ver-05.html */
   align-items: center;
 }
 
@@ -270,7 +271,7 @@
   font-size: 85rem;
 }
 .wrapper-vertical .data-table .data-area li .name-long {
-  font-size: 56rem; /* 2026-03-29 : 최대 이름 */
+  font-size: 42rem; /* 2026-04-21 : 최대 이름 : ver-05.html */
 }
 
 .wrapper-vertical .data-table .data-area li.index,
@@ -300,7 +301,7 @@
   text-align: center;
 }
 .wrapper-vertical .data-table .data-area li > span.name-long {
-  font-size: 64rem;
+   /* font-size: 64rem;
   /* 2026-03-29 : 최대 이름 */
 }
 

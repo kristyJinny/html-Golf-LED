@@ -369,7 +369,8 @@
 }
  /* 2026-04-01 : 내용 수정 */
 .wrapper .footer-event .name-area .title {
-  font-size: 77rem;
+  font-size: 55rem;  /* 2026-04-21 : 영문 포함 4자리  */
+  /*font-size: 77rem;2026-04-21 : 영문 포함 4자리  */
   color: #1b342a; /* 이벤트 화면 2026-03-31: 색상 값 지정 필요 -> 아니면 안 보입니다. */
   /*color: transparent; 2026-04-04: 이벤트 화면 2026-03-31 2026-03-30 색상 변경 */
   margin-top: -1rem;
@@ -537,6 +538,9 @@
 }
 .wrapper .table-box.big-col05 tbody td .name { /* 2026-04-12 추가 */
   font-size: 80rem;
+}
+.wrapper .table-box.big-col05 tbody td .name.name-long { /* 2026-04-21 추가 */
+    font-size: 60rem;
 }
 
 /* .wrapper .table-box.big tbody td {
