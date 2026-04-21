@@ -1,0 +1,1739 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Document</title>
+  <link rel="stylesheet" href="./../assets/css/base.css">
+  <!-- (공통) 가로버전.css 분리 -->
+  <link rel="stylesheet" href="./../assets/css/page-horizontal.css">
+  <!-- //가로버전.css 분리 -->
+</head>
+
+<!-- (공통) 가로버전 : data-layout="horizontal 추가-->
+<body data-layout="horizontal">
+  <div class="wrapper">
+    <!-- container-faull-table 추가: 2026-04-18 -->
+    <section class="container-faull-table" data-page="page-full-table-duo">
+
+      <main class="main-full-table main-full-table-duo">
+
+        <div class="table-wrap table-duo">
+          <!-- table-box -->
+          <div class="table-box">
+            <table class="scoreboard">
+              <colgroup>
+                <col class="col-pos" />
+                <col class="col-player" />
+                <col class="col-total" />
+                <col class="col-today" />
+                <!-- 홀 -->
+                <col span="9" />
+                <col class="col-out" />
+                <col span="9" />
+                <col class="col-in" />
+                <col span="4" />
+                <col class="col-tot" />
+              </colgroup>
+            
+              <thead>
+                <tr>
+                  <th rowspan="2" class="rowspan-cell border-left-no">POS</th>
+                  <th rowspan="2" class="rowspan-cell">PLAYER</th>
+                  <th rowspan="2" class="rowspan-cell">TOTAL</th>
+                  <th rowspan="2" class="rowspan-cell">TODAY</th>
+            
+                  <!-- border-left: 디자인 기준 -->
+                  <th class="border-left">1</th><th>2</th><th>3</th><th>4</th><th>5</th>
+                  <th>6</th><th>7</th><th>8</th><th>9</th>
+                  <th class="border-both">OUT</th>
+            
+                  <th>10</th><th>11</th><th>12</th><th>13</th><th>14</th>
+                  <th>15</th><th>16</th><th>17</th><th>18</th>
+                  <th class="border-both">IN</th>
+            
+                  <th>1R</th><th>2R</th><th>3R</th><th>4R</th>
+                  <th class="border-left">TOT</th>
+                </tr>
+            
+                <!-- 파 정보 -->
+                <tr class="par">
+                  <th class="border-left">4</th><th>3</th><th>4</th><th>4</th><th>4</th>
+                  <th>5</th><th>4</th><th>3</th><th>5</th>
+                  <th class="border-both">36</th>
+                
+                  <th>5</th><th>4</th><th>4</th><th>3</th><th>4</th>
+                  <th>4</th><th>4</th><th>3</th><th>5</th>
+                  <th class="border-both">36</th>
+                
+                  <th>72</th><th>72</th><th>72</th><th>72</th>
+                  <th class="border-left">288</th>
+                </tr>
+              </thead>
+            
+              <tbody>
+                <!-- 임희정 -->
+                <tr class="player red">
+                  <td>T120</td>
+                  <td class="name">임희정</td>
+                  <td class="score total">-18</td>
+                  <td class="score today">-18</td>
+            
+                  <td>3</td><td>2</td><td>3</td><td>3</td><td>3</td>
+                  <td>4</td><td>3</td><td>2</td><td>4</td>
+                  <td>27</td>
+            
+                  <td>4</td><td>3</td><td>3</td><td>2</td><td>3</td>
+                  <td>3</td><td>3</td><td>2</td><td>4</td>
+                  <td>27</td>
+            
+                  <td>54</td><td>54</td><td>54</td><td>54</td>
+                  <td>216</td>
+                </tr>
+            
+                <!-- 김규빈 -->
+                <tr class="player blue">
+                  <td>T120</td>
+                  <td class="name">김규빈 0910(A)</td>
+                  <td class="score total">18</td>
+                  <td class="score today">18</td>
+            
+                  <td>5</td><td>4</td><td>5</td><td>5</td><td>5</td>
+                  <td>6</td><td>5</td><td>4</td><td>6</td>
+                  <td>45</td>
+            
+                  <td>6</td><td>5</td><td>5</td><td>4</td><td>5</td>
+                  <td>5</td><td>5</td><td>4</td><td>6</td>
+                  <td>45</td>
+            
+                  <td>90</td><td>90</td><td>90</td><td>90</td>
+                  <td>360</td>
+                </tr>
+            
+                <!-- P. 콩끄라판 -->
+                <tr class="player">
+                  <td>T120</td>
+                  <td class="name">P. 콩끄라판(I)</td>
+                  <td>E</td>
+                  <td>E</td>
+            
+                  <td>4</td><td>3</td><td>4</td><td>4</td><td>4</td>
+                  <td>5</td><td>4</td><td>3</td><td>5</td>
+                  <td>36</td>
+            
+                  <td>5</td><td>4</td><td>4</td><td>3</td><td>4</td>
+                  <td>4</td><td>4</td><td>3</td><td>5</td>
+                  <td>36</td>
+            
+                  <td>72</td><td>72</td><td>72</td><td>72</td>
+                  <td>288</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <table class="scoreboard">
+              <colgroup>
+                <col class="col-pos" />
+                <col class="col-player" />
+                <col class="col-total" />
+                <col class="col-today" />
+                <!-- 홀 -->
+                <col span="9" />
+                <col class="col-out" />
+                <col span="9" />
+                <col class="col-in" />
+                <col span="4" />
+                <col class="col-tot" />
+              </colgroup>
+              <tbody>
+                <!-- 임희정 -->
+                <tr class="player red">
+                  <td>T120</td>
+                  <td class="name">임희정</td>
+                  <td class="score total">-18</td>
+                  <td class="score today">-18</td>
+            
+                  <td>3</td><td>2</td><td>3</td><td>3</td><td>3</td>
+                  <td>4</td><td>3</td><td>2</td><td>4</td>
+                  <td>27</td>
+            
+                  <td>4</td><td>3</td><td>3</td><td>2</td><td>3</td>
+                  <td>3</td><td>3</td><td>2</td><td>4</td>
+                  <td>27</td>
+            
+                  <td>54</td><td>54</td><td>54</td><td>54</td>
+                  <td>216</td>
+                </tr>
+            
+                <!-- 김규빈 -->
+                <tr class="player blue">
+                  <td>T120</td>
+                  <td class="name">김규빈 0910(A)</td>
+                  <td class="score total">18</td>
+                  <td class="score today">18</td>
+            
+                  <td>5</td><td>4</td><td>5</td><td>5</td><td>5</td>
+                  <td>6</td><td>5</td><td>4</td><td>6</td>
+                  <td>45</td>
+            
+                  <td>6</td><td>5</td><td>5</td><td>4</td><td>5</td>
+                  <td>5</td><td>5</td><td>4</td><td>6</td>
+                  <td>45</td>
+            
+                  <td>90</td><td>90</td><td>90</td><td>90</td>
+                  <td>360</td>
+                </tr>
+            
+                <!-- P. 콩끄라판 -->
+                <tr class="player">
+                  <td>T120</td>
+                  <td class="name">P. 콩끄라판(I)</td>
+                  <td>E</td>
+                  <td>E</td>
+            
+                  <td>4</td><td>3</td><td>4</td><td>4</td><td>4</td>
+                  <td>5</td><td>4</td><td>3</td><td>5</td>
+                  <td>36</td>
+            
+                  <td>5</td><td>4</td><td>4</td><td>3</td><td>4</td>
+                  <td>4</td><td>4</td><td>3</td><td>5</td>
+                  <td>36</td>
+            
+                  <td>72</td><td>72</td><td>72</td><td>72</td>
+                  <td>288</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <table class="scoreboard">
+              <colgroup>
+                <col class="col-pos" />
+                <col class="col-player" />
+                <col class="col-total" />
+                <col class="col-today" />
+                <!-- 홀 -->
+                <col span="9" />
+                <col class="col-out" />
+                <col span="9" />
+                <col class="col-in" />
+                <col span="4" />
+                <col class="col-tot" />
+              </colgroup>
+              <tbody>
+                <!-- 임희정 -->
+                <tr class="player red">
+                  <td>T120</td>
+                  <td class="name">임희정 test</td>
+                  <td class="score total">-18</td>
+                  <td class="score today">-18</td>
+            
+                  <td>3</td><td>2</td><td>3</td><td>3</td><td>3</td>
+                  <td>4</td><td>3</td><td>2</td><td>4</td>
+                  <td>27</td>
+            
+                  <td>4</td><td>3</td><td>3</td><td>2</td><td>3</td>
+                  <td>3</td><td>3</td><td>2</td><td>4</td>
+                  <td>27</td>
+            
+                  <td>54</td><td>54</td><td>54</td><td>54</td>
+                  <td>216</td>
+                </tr>
+            
+                <!-- 김규빈 -->
+                <tr class="player blue">
+                  <td class="name">T120 - test02</td>
+                  <td class="name">김규빈 0910(A)</td>
+                  <td class="score total">18</td>
+                  <td class="score today">18</td>
+            
+                  <td>5</td><td>4</td><td>5</td><td>5</td><td>5</td>
+                  <td>6</td><td>5</td><td>4</td><td>6</td>
+                  <td>45</td>
+            
+                  <td>6</td><td>5</td><td>5</td><td>4</td><td>5</td>
+                  <td>5</td><td>5</td><td>4</td><td>6</td>
+                  <td>45</td>
+            
+                  <td>90</td><td>90</td><td>90</td><td>90</td>
+                  <td>360</td>
+                </tr>
+            
+                <!-- P. 콩끄라판 -->
+                <tr class="player">
+                  <td>T120</td>
+                  <td class="name">P. 콩끄라판(I)</td>
+                  <td>E</td>
+                  <td>E</td>
+            
+                  <td>4</td><td>3</td><td>4</td><td>4</td><td>4</td>
+                  <td>5</td><td>4</td><td>3</td><td>5</td>
+                  <td>36</td>
+            
+                  <td>5</td><td>4</td><td>4</td><td>3</td><td>4</td>
+                  <td>4</td><td>4</td><td>3</td><td>5</td>
+                  <td>36</td>
+            
+                  <td>72</td><td>72</td><td>72</td><td>72</td>
+                  <td>288</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <table class="scoreboard">
+              <colgroup>
+                <col class="col-pos" />
+                <col class="col-player" />
+                <col class="col-total" />
+                <col class="col-today" />
+                <!-- 홀 -->
+                <col span="9" />
+                <col class="col-out" />
+                <col span="9" />
+                <col class="col-in" />
+                <col span="4" />
+                <col class="col-tot" />
+              </colgroup>
+              <tbody>
+                <!-- 임희정 -->
+                <tr class="player red">
+                  <td>T120</td>
+                  <td class="name">임희정</td>
+                  <td class="score total">-18</td>
+                  <td class="score today">-18</td>
+            
+                  <td>3</td><td>2</td><td>3</td><td>3</td><td>3</td>
+                  <td>4</td><td>3</td><td>2</td><td>4</td>
+                  <td>27</td>
+            
+                  <td>4</td><td>3</td><td>3</td><td>2</td><td>3</td>
+                  <td>3</td><td>3</td><td>2</td><td>4</td>
+                  <td>27</td>
+            
+                  <td>54</td><td>54</td><td>54</td><td>54</td>
+                  <td>216</td>
+                </tr>
+            
+                <!-- 김규빈 -->
+                <tr class="player blue">
+                  <td>T120</td>
+                  <td class="name">김규빈 0910(A)</td>
+                  <td class="score total">18</td>
+                  <td class="score today">18</td>
+            
+                  <td>5</td><td>4</td><td>5</td><td>5</td><td>5</td>
+                  <td>6</td><td>5</td><td>4</td><td>6</td>
+                  <td>45</td>
+            
+                  <td>6</td><td>5</td><td>5</td><td>4</td><td>5</td>
+                  <td>5</td><td>5</td><td>4</td><td>6</td>
+                  <td>45</td>
+            
+                  <td>90</td><td>90</td><td>90</td><td>90</td>
+                  <td>360</td>
+                </tr>
+            
+                <!-- P. 콩끄라판 -->
+                <tr class="player">
+                  <td>T120</td>
+                  <td class="name">P. 콩끄라판(I)</td>
+                  <td>E</td>
+                  <td>E</td>
+            
+                  <td>4</td><td>3</td><td>4</td><td>4</td><td>4</td>
+                  <td>5</td><td>4</td><td>3</td><td>5</td>
+                  <td>36</td>
+            
+                  <td>5</td><td>4</td><td>4</td><td>3</td><td>4</td>
+                  <td>4</td><td>4</td><td>3</td><td>5</td>
+                  <td>36</td>
+            
+                  <td>72</td><td>72</td><td>72</td><td>72</td>
+                  <td>288</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <table class="scoreboard">
+              <colgroup>
+                <col class="col-pos" />
+                <col class="col-player" />
+                <col class="col-total" />
+                <col class="col-today" />
+                <!-- 홀 -->
+                <col span="9" />
+                <col class="col-out" />
+                <col span="9" />
+                <col class="col-in" />
+                <col span="4" />
+                <col class="col-tot" />
+              </colgroup>
+              <tbody>
+                <!-- 임희정 -->
+                <tr class="player red">
+                  <td>T120</td>
+                  <td class="name">임희정 test</td>
+                  <td class="score total">-18</td>
+                  <td class="score today">-18</td>
+            
+                  <td>3</td><td>2</td><td>3</td><td>3</td><td>3</td>
+                  <td>4</td><td>3</td><td>2</td><td>4</td>
+                  <td>27</td>
+            
+                  <td>4</td><td>3</td><td>3</td><td>2</td><td>3</td>
+                  <td>3</td><td>3</td><td>2</td><td>4</td>
+                  <td>27</td>
+            
+                  <td>54</td><td>54</td><td>54</td><td>54</td>
+                  <td>216</td>
+                </tr>
+            
+                <!-- 김규빈 -->
+                <tr class="player blue">
+                  <td class="name">T120 - test02</td>
+                  <td class="name">김규빈 0910(A)</td>
+                  <td class="score total">18</td>
+                  <td class="score today">18</td>
+            
+                  <td>5</td><td>4</td><td>5</td><td>5</td><td>5</td>
+                  <td>6</td><td>5</td><td>4</td><td>6</td>
+                  <td>45</td>
+            
+                  <td>6</td><td>5</td><td>5</td><td>4</td><td>5</td>
+                  <td>5</td><td>5</td><td>4</td><td>6</td>
+                  <td>45</td>
+            
+                  <td>90</td><td>90</td><td>90</td><td>90</td>
+                  <td>360</td>
+                </tr>
+            
+                <!-- P. 콩끄라판 -->
+                <tr class="player">
+                  <td>T120</td>
+                  <td class="name">P. 콩끄라판(I)</td>
+                  <td>E</td>
+                  <td>E</td>
+            
+                  <td>4</td><td>3</td><td>4</td><td>4</td><td>4</td>
+                  <td>5</td><td>4</td><td>3</td><td>5</td>
+                  <td>36</td>
+            
+                  <td>5</td><td>4</td><td>4</td><td>3</td><td>4</td>
+                  <td>4</td><td>4</td><td>3</td><td>5</td>
+                  <td>36</td>
+            
+                  <td>72</td><td>72</td><td>72</td><td>72</td>
+                  <td>288</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <table class="scoreboard">
+              <colgroup>
+                <col class="col-pos" />
+                <col class="col-player" />
+                <col class="col-total" />
+                <col class="col-today" />
+                <!-- 홀 -->
+                <col span="9" />
+                <col class="col-out" />
+                <col span="9" />
+                <col class="col-in" />
+                <col span="4" />
+                <col class="col-tot" />
+              </colgroup>
+              <tbody>
+                <!-- 임희정 -->
+                <tr class="player red">
+                  <td>T120</td>
+                  <td class="name">임희정</td>
+                  <td class="score total">-18</td>
+                  <td class="score today">-18</td>
+            
+                  <td>3</td><td>2</td><td>3</td><td>3</td><td>3</td>
+                  <td>4</td><td>3</td><td>2</td><td>4</td>
+                  <td>27</td>
+            
+                  <td>4</td><td>3</td><td>3</td><td>2</td><td>3</td>
+                  <td>3</td><td>3</td><td>2</td><td>4</td>
+                  <td>27</td>
+            
+                  <td>54</td><td>54</td><td>54</td><td>54</td>
+                  <td>216</td>
+                </tr>
+            
+                <!-- 김규빈 -->
+                <tr class="player blue">
+                  <td>T120</td>
+                  <td class="name">김규빈 0910(A)</td>
+                  <td class="score total">18</td>
+                  <td class="score today">18</td>
+            
+                  <td>5</td><td>4</td><td>5</td><td>5</td><td>5</td>
+                  <td>6</td><td>5</td><td>4</td><td>6</td>
+                  <td>45</td>
+            
+                  <td>6</td><td>5</td><td>5</td><td>4</td><td>5</td>
+                  <td>5</td><td>5</td><td>4</td><td>6</td>
+                  <td>45</td>
+            
+                  <td>90</td><td>90</td><td>90</td><td>90</td>
+                  <td>360</td>
+                </tr>
+            
+                <!-- P. 콩끄라판 -->
+                <tr class="player">
+                  <td>T120</td>
+                  <td class="name">P. 콩끄라판(I)</td>
+                  <td>E</td>
+                  <td>E</td>
+            
+                  <td>4</td><td>3</td><td>4</td><td>4</td><td>4</td>
+                  <td>5</td><td>4</td><td>3</td><td>5</td>
+                  <td>36</td>
+            
+                  <td>5</td><td>4</td><td>4</td><td>3</td><td>4</td>
+                  <td>4</td><td>4</td><td>3</td><td>5</td>
+                  <td>36</td>
+            
+                  <td>72</td><td>72</td><td>72</td><td>72</td>
+                  <td>288</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <table class="scoreboard">
+              <colgroup>
+                <col class="col-pos" />
+                <col class="col-player" />
+                <col class="col-total" />
+                <col class="col-today" />
+                <!-- 홀 -->
+                <col span="9" />
+                <col class="col-out" />
+                <col span="9" />
+                <col class="col-in" />
+                <col span="4" />
+                <col class="col-tot" />
+              </colgroup>
+              <tbody>
+                <!-- 임희정 -->
+                <tr class="player red">
+                  <td>T120</td>
+                  <td class="name">임희정 test</td>
+                  <td class="score total">-18</td>
+                  <td class="score today">-18</td>
+            
+                  <td>3</td><td>2</td><td>3</td><td>3</td><td>3</td>
+                  <td>4</td><td>3</td><td>2</td><td>4</td>
+                  <td>27</td>
+            
+                  <td>4</td><td>3</td><td>3</td><td>2</td><td>3</td>
+                  <td>3</td><td>3</td><td>2</td><td>4</td>
+                  <td>27</td>
+            
+                  <td>54</td><td>54</td><td>54</td><td>54</td>
+                  <td>216</td>
+                </tr>
+            
+                <!-- 김규빈 -->
+                <tr class="player blue">
+                  <td class="name">T120 - test02</td>
+                  <td class="name">김규빈 0910(A)</td>
+                  <td class="score total">18</td>
+                  <td class="score today">18</td>
+            
+                  <td>5</td><td>4</td><td>5</td><td>5</td><td>5</td>
+                  <td>6</td><td>5</td><td>4</td><td>6</td>
+                  <td>45</td>
+            
+                  <td>6</td><td>5</td><td>5</td><td>4</td><td>5</td>
+                  <td>5</td><td>5</td><td>4</td><td>6</td>
+                  <td>45</td>
+            
+                  <td>90</td><td>90</td><td>90</td><td>90</td>
+                  <td>360</td>
+                </tr>
+            
+                <!-- P. 콩끄라판 -->
+                <tr class="player">
+                  <td>T120</td>
+                  <td class="name">P. 콩끄라판(I)</td>
+                  <td>E</td>
+                  <td>E</td>
+            
+                  <td>4</td><td>3</td><td>4</td><td>4</td><td>4</td>
+                  <td>5</td><td>4</td><td>3</td><td>5</td>
+                  <td>36</td>
+            
+                  <td>5</td><td>4</td><td>4</td><td>3</td><td>4</td>
+                  <td>4</td><td>4</td><td>3</td><td>5</td>
+                  <td>36</td>
+            
+                  <td>72</td><td>72</td><td>72</td><td>72</td>
+                  <td>288</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <table class="scoreboard">
+              <colgroup>
+                <col class="col-pos" />
+                <col class="col-player" />
+                <col class="col-total" />
+                <col class="col-today" />
+                <!-- 홀 -->
+                <col span="9" />
+                <col class="col-out" />
+                <col span="9" />
+                <col class="col-in" />
+                <col span="4" />
+                <col class="col-tot" />
+              </colgroup>
+              <tbody>
+                <!-- 임희정 -->
+                <tr class="player red">
+                  <td>T120</td>
+                  <td class="name">임희정</td>
+                  <td class="score total">-18</td>
+                  <td class="score today">-18</td>
+            
+                  <td>3</td><td>2</td><td>3</td><td>3</td><td>3</td>
+                  <td>4</td><td>3</td><td>2</td><td>4</td>
+                  <td>27</td>
+            
+                  <td>4</td><td>3</td><td>3</td><td>2</td><td>3</td>
+                  <td>3</td><td>3</td><td>2</td><td>4</td>
+                  <td>27</td>
+            
+                  <td>54</td><td>54</td><td>54</td><td>54</td>
+                  <td>216</td>
+                </tr>
+            
+                <!-- 김규빈 -->
+                <tr class="player blue">
+                  <td>T120</td>
+                  <td class="name">김규빈 0910(A)</td>
+                  <td class="score total">18</td>
+                  <td class="score today">18</td>
+            
+                  <td>5</td><td>4</td><td>5</td><td>5</td><td>5</td>
+                  <td>6</td><td>5</td><td>4</td><td>6</td>
+                  <td>45</td>
+            
+                  <td>6</td><td>5</td><td>5</td><td>4</td><td>5</td>
+                  <td>5</td><td>5</td><td>4</td><td>6</td>
+                  <td>45</td>
+            
+                  <td>90</td><td>90</td><td>90</td><td>90</td>
+                  <td>360</td>
+                </tr>
+            
+                <!-- P. 콩끄라판 -->
+                <tr class="player">
+                  <td>T120</td>
+                  <td class="name">P. 콩끄라판(I)</td>
+                  <td>E</td>
+                  <td>E</td>
+            
+                  <td>4</td><td>3</td><td>4</td><td>4</td><td>4</td>
+                  <td>5</td><td>4</td><td>3</td><td>5</td>
+                  <td>36</td>
+            
+                  <td>5</td><td>4</td><td>4</td><td>3</td><td>4</td>
+                  <td>4</td><td>4</td><td>3</td><td>5</td>
+                  <td>36</td>
+            
+                  <td>72</td><td>72</td><td>72</td><td>72</td>
+                  <td>288</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <table class="scoreboard">
+              <colgroup>
+                <col class="col-pos" />
+                <col class="col-player" />
+                <col class="col-total" />
+                <col class="col-today" />
+                <!-- 홀 -->
+                <col span="9" />
+                <col class="col-out" />
+                <col span="9" />
+                <col class="col-in" />
+                <col span="4" />
+                <col class="col-tot" />
+              </colgroup>
+              <tbody>
+                <!-- 임희정 -->
+                <tr class="player red">
+                  <td>T120</td>
+                  <td class="name">임희정 test</td>
+                  <td class="score total">-18</td>
+                  <td class="score today">-18</td>
+            
+                  <td>3</td><td>2</td><td>3</td><td>3</td><td>3</td>
+                  <td>4</td><td>3</td><td>2</td><td>4</td>
+                  <td>27</td>
+            
+                  <td>4</td><td>3</td><td>3</td><td>2</td><td>3</td>
+                  <td>3</td><td>3</td><td>2</td><td>4</td>
+                  <td>27</td>
+            
+                  <td>54</td><td>54</td><td>54</td><td>54</td>
+                  <td>216</td>
+                </tr>
+            
+                <!-- 김규빈 -->
+                <tr class="player blue">
+                  <td class="name">T120 - test02</td>
+                  <td class="name">김규빈 0910(A)</td>
+                  <td class="score total">18</td>
+                  <td class="score today">18</td>
+            
+                  <td>5</td><td>4</td><td>5</td><td>5</td><td>5</td>
+                  <td>6</td><td>5</td><td>4</td><td>6</td>
+                  <td>45</td>
+            
+                  <td>6</td><td>5</td><td>5</td><td>4</td><td>5</td>
+                  <td>5</td><td>5</td><td>4</td><td>6</td>
+                  <td>45</td>
+            
+                  <td>90</td><td>90</td><td>90</td><td>90</td>
+                  <td>360</td>
+                </tr>
+            
+                <!-- P. 콩끄라판 -->
+                <tr class="player">
+                  <td>T120</td>
+                  <td class="name">P. 콩끄라판(I)</td>
+                  <td>E</td>
+                  <td>E</td>
+            
+                  <td>4</td><td>3</td><td>4</td><td>4</td><td>4</td>
+                  <td>5</td><td>4</td><td>3</td><td>5</td>
+                  <td>36</td>
+            
+                  <td>5</td><td>4</td><td>4</td><td>3</td><td>4</td>
+                  <td>4</td><td>4</td><td>3</td><td>5</td>
+                  <td>36</td>
+            
+                  <td>72</td><td>72</td><td>72</td><td>72</td>
+                  <td>288</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <table class="scoreboard">
+              <colgroup>
+                <col class="col-pos" />
+                <col class="col-player" />
+                <col class="col-total" />
+                <col class="col-today" />
+                <!-- 홀 -->
+                <col span="9" />
+                <col class="col-out" />
+                <col span="9" />
+                <col class="col-in" />
+                <col span="4" />
+                <col class="col-tot" />
+              </colgroup>
+              <tbody>
+                <!-- 임희정 -->
+                <tr class="player red">
+                  <td>T120</td>
+                  <td class="name">임희정</td>
+                  <td class="score total">-18</td>
+                  <td class="score today">-18</td>
+            
+                  <td>3</td><td>2</td><td>3</td><td>3</td><td>3</td>
+                  <td>4</td><td>3</td><td>2</td><td>4</td>
+                  <td>27</td>
+            
+                  <td>4</td><td>3</td><td>3</td><td>2</td><td>3</td>
+                  <td>3</td><td>3</td><td>2</td><td>4</td>
+                  <td>27</td>
+            
+                  <td>54</td><td>54</td><td>54</td><td>54</td>
+                  <td>216</td>
+                </tr>
+            
+                <!-- 김규빈 -->
+                <tr class="player blue">
+                  <td>T120</td>
+                  <td class="name">김규빈 0910(A)</td>
+                  <td class="score total">18</td>
+                  <td class="score today">18</td>
+            
+                  <td>5</td><td>4</td><td>5</td><td>5</td><td>5</td>
+                  <td>6</td><td>5</td><td>4</td><td>6</td>
+                  <td>45</td>
+            
+                  <td>6</td><td>5</td><td>5</td><td>4</td><td>5</td>
+                  <td>5</td><td>5</td><td>4</td><td>6</td>
+                  <td>45</td>
+            
+                  <td>90</td><td>90</td><td>90</td><td>90</td>
+                  <td>360</td>
+                </tr>
+            
+                <!-- P. 콩끄라판 -->
+                <tr class="player">
+                  <td>T120</td>
+                  <td class="name">P. 콩끄라판(I)</td>
+                  <td>E</td>
+                  <td>E</td>
+            
+                  <td>4</td><td>3</td><td>4</td><td>4</td><td>4</td>
+                  <td>5</td><td>4</td><td>3</td><td>5</td>
+                  <td>36</td>
+            
+                  <td>5</td><td>4</td><td>4</td><td>3</td><td>4</td>
+                  <td>4</td><td>4</td><td>3</td><td>5</td>
+                  <td>36</td>
+            
+                  <td>72</td><td>72</td><td>72</td><td>72</td>
+                  <td>288</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <table class="scoreboard">
+              <colgroup>
+                <col class="col-pos" />
+                <col class="col-player" />
+                <col class="col-total" />
+                <col class="col-today" />
+                <!-- 홀 -->
+                <col span="9" />
+                <col class="col-out" />
+                <col span="9" />
+                <col class="col-in" />
+                <col span="4" />
+                <col class="col-tot" />
+              </colgroup>
+              <tbody>
+                <!-- 임희정 -->
+                <tr class="player red">
+                  <td>T120</td>
+                  <td class="name">임희정 test</td>
+                  <td class="score total">-18</td>
+                  <td class="score today">-18</td>
+            
+                  <td>3</td><td>2</td><td>3</td><td>3</td><td>3</td>
+                  <td>4</td><td>3</td><td>2</td><td>4</td>
+                  <td>27</td>
+            
+                  <td>4</td><td>3</td><td>3</td><td>2</td><td>3</td>
+                  <td>3</td><td>3</td><td>2</td><td>4</td>
+                  <td>27</td>
+            
+                  <td>54</td><td>54</td><td>54</td><td>54</td>
+                  <td>216</td>
+                </tr>
+            
+                <!-- 김규빈 -->
+                <tr class="player blue">
+                  <td class="name">T120 - test02</td>
+                  <td class="name">김규빈 0910(A)</td>
+                  <td class="score total">18</td>
+                  <td class="score today">18</td>
+            
+                  <td>5</td><td>4</td><td>5</td><td>5</td><td>5</td>
+                  <td>6</td><td>5</td><td>4</td><td>6</td>
+                  <td>45</td>
+            
+                  <td>6</td><td>5</td><td>5</td><td>4</td><td>5</td>
+                  <td>5</td><td>5</td><td>4</td><td>6</td>
+                  <td>45</td>
+            
+                  <td>90</td><td>90</td><td>90</td><td>90</td>
+                  <td>360</td>
+                </tr>
+            
+                <!-- P. 콩끄라판 -->
+                <tr class="player">
+                  <td>T120</td>
+                  <td class="name">P. 콩끄라판(I)</td>
+                  <td>E</td>
+                  <td>E</td>
+            
+                  <td>4</td><td>3</td><td>4</td><td>4</td><td>4</td>
+                  <td>5</td><td>4</td><td>3</td><td>5</td>
+                  <td>36</td>
+            
+                  <td>5</td><td>4</td><td>4</td><td>3</td><td>4</td>
+                  <td>4</td><td>4</td><td>3</td><td>5</td>
+                  <td>36</td>
+            
+                  <td>72</td><td>72</td><td>72</td><td>72</td>
+                  <td>288</td>
+                </tr>
+              </tbody>
+            </table>
+
+          </div>
+          <!-- // table-box -->
+           
+          <!-- table-box -->
+          <div class="table-box">
+            <table class="scoreboard">
+              <colgroup>
+                <col class="col-pos" />
+                <col class="col-player" />
+                <col class="col-total" />
+                <col class="col-today" />
+                <!-- 홀 -->
+                <col span="9" />
+                <col class="col-out" />
+                <col span="9" />
+                <col class="col-in" />
+                <col span="4" />
+                <col class="col-tot" />
+              </colgroup>
+            
+              <thead>
+                <tr>
+                  <th rowspan="2" class="rowspan-cell border-left-no">POS</th>
+                  <th rowspan="2" class="rowspan-cell">PLAYER</th>
+                  <th rowspan="2" class="rowspan-cell">TOTAL</th>
+                  <th rowspan="2" class="rowspan-cell">TODAY</th>
+            
+                  <!-- border-left: 디자인 기준 -->
+                  <th class="border-left">1</th><th>2</th><th>3</th><th>4</th><th>5</th>
+                  <th>6</th><th>7</th><th>8</th><th>9</th>
+                  <th class="border-both">OUT</th>
+            
+                  <th>10</th><th>11</th><th>12</th><th>13</th><th>14</th>
+                  <th>15</th><th>16</th><th>17</th><th>18</th>
+                  <th class="border-both">IN</th>
+            
+                  <th>1R</th><th>2R</th><th>3R</th><th>4R</th>
+                  <th class="border-left">TOT</th>
+                </tr>
+            
+                <!-- 파 정보 -->
+                <tr class="par">
+                  <th class="border-left">4</th><th>3</th><th>4</th><th>4</th><th>4</th>
+                  <th>5</th><th>4</th><th>3</th><th>5</th>
+                  <th class="border-both">36</th>
+                
+                  <th>5</th><th>4</th><th>4</th><th>3</th><th>4</th>
+                  <th>4</th><th>4</th><th>3</th><th>5</th>
+                  <th class="border-both">36</th>
+                
+                  <th>72</th><th>72</th><th>72</th><th>72</th>
+                  <th class="border-left">288</th>
+                </tr>
+              </thead>
+            
+              <tbody>
+                <!-- 임희정 -->
+                <tr class="player red">
+                  <td>T120</td>
+                  <td class="name">임희정</td>
+                  <td class="score total">-18</td>
+                  <td class="score today">-18</td>
+            
+                  <td>3</td><td>2</td><td>3</td><td>3</td><td>3</td>
+                  <td>4</td><td>3</td><td>2</td><td>4</td>
+                  <td>27</td>
+            
+                  <td>4</td><td>3</td><td>3</td><td>2</td><td>3</td>
+                  <td>3</td><td>3</td><td>2</td><td>4</td>
+                  <td>27</td>
+            
+                  <td>54</td><td>54</td><td>54</td><td>54</td>
+                  <td>216</td>
+                </tr>
+            
+                <!-- 김규빈 -->
+                <tr class="player blue">
+                  <td>T120</td>
+                  <td class="name">김규빈 0910(A)</td>
+                  <td class="score total">18</td>
+                  <td class="score today">18</td>
+            
+                  <td>5</td><td>4</td><td>5</td><td>5</td><td>5</td>
+                  <td>6</td><td>5</td><td>4</td><td>6</td>
+                  <td>45</td>
+            
+                  <td>6</td><td>5</td><td>5</td><td>4</td><td>5</td>
+                  <td>5</td><td>5</td><td>4</td><td>6</td>
+                  <td>45</td>
+            
+                  <td>90</td><td>90</td><td>90</td><td>90</td>
+                  <td>360</td>
+                </tr>
+            
+                <!-- P. 콩끄라판 -->
+                <tr class="player">
+                  <td>T120</td>
+                  <td class="name">P. 콩끄라판(I)</td>
+                  <td>E</td>
+                  <td>E</td>
+            
+                  <td>4</td><td>3</td><td>4</td><td>4</td><td>4</td>
+                  <td>5</td><td>4</td><td>3</td><td>5</td>
+                  <td>36</td>
+            
+                  <td>5</td><td>4</td><td>4</td><td>3</td><td>4</td>
+                  <td>4</td><td>4</td><td>3</td><td>5</td>
+                  <td>36</td>
+            
+                  <td>72</td><td>72</td><td>72</td><td>72</td>
+                  <td>288</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <table class="scoreboard">
+              <colgroup>
+                <col class="col-pos" />
+                <col class="col-player" />
+                <col class="col-total" />
+                <col class="col-today" />
+                <!-- 홀 -->
+                <col span="9" />
+                <col class="col-out" />
+                <col span="9" />
+                <col class="col-in" />
+                <col span="4" />
+                <col class="col-tot" />
+              </colgroup>
+              <tbody>
+                <!-- 임희정 -->
+                <tr class="player red">
+                  <td>T120</td>
+                  <td class="name">임희정</td>
+                  <td class="score total">-18</td>
+                  <td class="score today">-18</td>
+            
+                  <td>3</td><td>2</td><td>3</td><td>3</td><td>3</td>
+                  <td>4</td><td>3</td><td>2</td><td>4</td>
+                  <td>27</td>
+            
+                  <td>4</td><td>3</td><td>3</td><td>2</td><td>3</td>
+                  <td>3</td><td>3</td><td>2</td><td>4</td>
+                  <td>27</td>
+            
+                  <td>54</td><td>54</td><td>54</td><td>54</td>
+                  <td>216</td>
+                </tr>
+            
+                <!-- 김규빈 -->
+                <tr class="player blue">
+                  <td>T120</td>
+                  <td class="name">김규빈 0910(A)</td>
+                  <td class="score total">18</td>
+                  <td class="score today">18</td>
+            
+                  <td>5</td><td>4</td><td>5</td><td>5</td><td>5</td>
+                  <td>6</td><td>5</td><td>4</td><td>6</td>
+                  <td>45</td>
+            
+                  <td>6</td><td>5</td><td>5</td><td>4</td><td>5</td>
+                  <td>5</td><td>5</td><td>4</td><td>6</td>
+                  <td>45</td>
+            
+                  <td>90</td><td>90</td><td>90</td><td>90</td>
+                  <td>360</td>
+                </tr>
+            
+                <!-- P. 콩끄라판 -->
+                <tr class="player">
+                  <td>T120</td>
+                  <td class="name">P. 콩끄라판(I)</td>
+                  <td>E</td>
+                  <td>E</td>
+            
+                  <td>4</td><td>3</td><td>4</td><td>4</td><td>4</td>
+                  <td>5</td><td>4</td><td>3</td><td>5</td>
+                  <td>36</td>
+            
+                  <td>5</td><td>4</td><td>4</td><td>3</td><td>4</td>
+                  <td>4</td><td>4</td><td>3</td><td>5</td>
+                  <td>36</td>
+            
+                  <td>72</td><td>72</td><td>72</td><td>72</td>
+                  <td>288</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <table class="scoreboard">
+              <colgroup>
+                <col class="col-pos" />
+                <col class="col-player" />
+                <col class="col-total" />
+                <col class="col-today" />
+                <!-- 홀 -->
+                <col span="9" />
+                <col class="col-out" />
+                <col span="9" />
+                <col class="col-in" />
+                <col span="4" />
+                <col class="col-tot" />
+              </colgroup>
+              <tbody>
+                <!-- 임희정 -->
+                <tr class="player red">
+                  <td>T120</td>
+                  <td class="name">임희정 test</td>
+                  <td class="score total">-18</td>
+                  <td class="score today">-18</td>
+            
+                  <td>3</td><td>2</td><td>3</td><td>3</td><td>3</td>
+                  <td>4</td><td>3</td><td>2</td><td>4</td>
+                  <td>27</td>
+            
+                  <td>4</td><td>3</td><td>3</td><td>2</td><td>3</td>
+                  <td>3</td><td>3</td><td>2</td><td>4</td>
+                  <td>27</td>
+            
+                  <td>54</td><td>54</td><td>54</td><td>54</td>
+                  <td>216</td>
+                </tr>
+            
+                <!-- 김규빈 -->
+                <tr class="player blue">
+                  <td class="name">T120 - test02</td>
+                  <td class="name">김규빈 0910(A)</td>
+                  <td class="score total">18</td>
+                  <td class="score today">18</td>
+            
+                  <td>5</td><td>4</td><td>5</td><td>5</td><td>5</td>
+                  <td>6</td><td>5</td><td>4</td><td>6</td>
+                  <td>45</td>
+            
+                  <td>6</td><td>5</td><td>5</td><td>4</td><td>5</td>
+                  <td>5</td><td>5</td><td>4</td><td>6</td>
+                  <td>45</td>
+            
+                  <td>90</td><td>90</td><td>90</td><td>90</td>
+                  <td>360</td>
+                </tr>
+            
+                <!-- P. 콩끄라판 -->
+                <tr class="player">
+                  <td>T120</td>
+                  <td class="name">P. 콩끄라판(I)</td>
+                  <td>E</td>
+                  <td>E</td>
+            
+                  <td>4</td><td>3</td><td>4</td><td>4</td><td>4</td>
+                  <td>5</td><td>4</td><td>3</td><td>5</td>
+                  <td>36</td>
+            
+                  <td>5</td><td>4</td><td>4</td><td>3</td><td>4</td>
+                  <td>4</td><td>4</td><td>3</td><td>5</td>
+                  <td>36</td>
+            
+                  <td>72</td><td>72</td><td>72</td><td>72</td>
+                  <td>288</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <table class="scoreboard">
+              <colgroup>
+                <col class="col-pos" />
+                <col class="col-player" />
+                <col class="col-total" />
+                <col class="col-today" />
+                <!-- 홀 -->
+                <col span="9" />
+                <col class="col-out" />
+                <col span="9" />
+                <col class="col-in" />
+                <col span="4" />
+                <col class="col-tot" />
+              </colgroup>
+              <tbody>
+                <!-- 임희정 -->
+                <tr class="player red">
+                  <td>T120</td>
+                  <td class="name">임희정</td>
+                  <td class="score total">-18</td>
+                  <td class="score today">-18</td>
+            
+                  <td>3</td><td>2</td><td>3</td><td>3</td><td>3</td>
+                  <td>4</td><td>3</td><td>2</td><td>4</td>
+                  <td>27</td>
+            
+                  <td>4</td><td>3</td><td>3</td><td>2</td><td>3</td>
+                  <td>3</td><td>3</td><td>2</td><td>4</td>
+                  <td>27</td>
+            
+                  <td>54</td><td>54</td><td>54</td><td>54</td>
+                  <td>216</td>
+                </tr>
+            
+                <!-- 김규빈 -->
+                <tr class="player blue">
+                  <td>T120</td>
+                  <td class="name">김규빈 0910(A)</td>
+                  <td class="score total">18</td>
+                  <td class="score today">18</td>
+            
+                  <td>5</td><td>4</td><td>5</td><td>5</td><td>5</td>
+                  <td>6</td><td>5</td><td>4</td><td>6</td>
+                  <td>45</td>
+            
+                  <td>6</td><td>5</td><td>5</td><td>4</td><td>5</td>
+                  <td>5</td><td>5</td><td>4</td><td>6</td>
+                  <td>45</td>
+            
+                  <td>90</td><td>90</td><td>90</td><td>90</td>
+                  <td>360</td>
+                </tr>
+            
+                <!-- P. 콩끄라판 -->
+                <tr class="player">
+                  <td>T120</td>
+                  <td class="name">P. 콩끄라판(I)</td>
+                  <td>E</td>
+                  <td>E</td>
+            
+                  <td>4</td><td>3</td><td>4</td><td>4</td><td>4</td>
+                  <td>5</td><td>4</td><td>3</td><td>5</td>
+                  <td>36</td>
+            
+                  <td>5</td><td>4</td><td>4</td><td>3</td><td>4</td>
+                  <td>4</td><td>4</td><td>3</td><td>5</td>
+                  <td>36</td>
+            
+                  <td>72</td><td>72</td><td>72</td><td>72</td>
+                  <td>288</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <table class="scoreboard">
+              <colgroup>
+                <col class="col-pos" />
+                <col class="col-player" />
+                <col class="col-total" />
+                <col class="col-today" />
+                <!-- 홀 -->
+                <col span="9" />
+                <col class="col-out" />
+                <col span="9" />
+                <col class="col-in" />
+                <col span="4" />
+                <col class="col-tot" />
+              </colgroup>
+              <tbody>
+                <!-- 임희정 -->
+                <tr class="player red">
+                  <td>T120</td>
+                  <td class="name">임희정 test</td>
+                  <td class="score total">-18</td>
+                  <td class="score today">-18</td>
+            
+                  <td>3</td><td>2</td><td>3</td><td>3</td><td>3</td>
+                  <td>4</td><td>3</td><td>2</td><td>4</td>
+                  <td>27</td>
+            
+                  <td>4</td><td>3</td><td>3</td><td>2</td><td>3</td>
+                  <td>3</td><td>3</td><td>2</td><td>4</td>
+                  <td>27</td>
+            
+                  <td>54</td><td>54</td><td>54</td><td>54</td>
+                  <td>216</td>
+                </tr>
+            
+                <!-- 김규빈 -->
+                <tr class="player blue">
+                  <td class="name">T120 - test02</td>
+                  <td class="name">김규빈 0910(A)</td>
+                  <td class="score total">18</td>
+                  <td class="score today">18</td>
+            
+                  <td>5</td><td>4</td><td>5</td><td>5</td><td>5</td>
+                  <td>6</td><td>5</td><td>4</td><td>6</td>
+                  <td>45</td>
+            
+                  <td>6</td><td>5</td><td>5</td><td>4</td><td>5</td>
+                  <td>5</td><td>5</td><td>4</td><td>6</td>
+                  <td>45</td>
+            
+                  <td>90</td><td>90</td><td>90</td><td>90</td>
+                  <td>360</td>
+                </tr>
+            
+                <!-- P. 콩끄라판 -->
+                <tr class="player">
+                  <td>T120</td>
+                  <td class="name">P. 콩끄라판(I)</td>
+                  <td>E</td>
+                  <td>E</td>
+            
+                  <td>4</td><td>3</td><td>4</td><td>4</td><td>4</td>
+                  <td>5</td><td>4</td><td>3</td><td>5</td>
+                  <td>36</td>
+            
+                  <td>5</td><td>4</td><td>4</td><td>3</td><td>4</td>
+                  <td>4</td><td>4</td><td>3</td><td>5</td>
+                  <td>36</td>
+            
+                  <td>72</td><td>72</td><td>72</td><td>72</td>
+                  <td>288</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <table class="scoreboard">
+              <colgroup>
+                <col class="col-pos" />
+                <col class="col-player" />
+                <col class="col-total" />
+                <col class="col-today" />
+                <!-- 홀 -->
+                <col span="9" />
+                <col class="col-out" />
+                <col span="9" />
+                <col class="col-in" />
+                <col span="4" />
+                <col class="col-tot" />
+              </colgroup>
+              <tbody>
+                <!-- 임희정 -->
+                <tr class="player red">
+                  <td>T120</td>
+                  <td class="name">임희정</td>
+                  <td class="score total">-18</td>
+                  <td class="score today">-18</td>
+            
+                  <td>3</td><td>2</td><td>3</td><td>3</td><td>3</td>
+                  <td>4</td><td>3</td><td>2</td><td>4</td>
+                  <td>27</td>
+            
+                  <td>4</td><td>3</td><td>3</td><td>2</td><td>3</td>
+                  <td>3</td><td>3</td><td>2</td><td>4</td>
+                  <td>27</td>
+            
+                  <td>54</td><td>54</td><td>54</td><td>54</td>
+                  <td>216</td>
+                </tr>
+            
+                <!-- 김규빈 -->
+                <tr class="player blue">
+                  <td>T120</td>
+                  <td class="name">김규빈 0910(A)</td>
+                  <td class="score total">18</td>
+                  <td class="score today">18</td>
+            
+                  <td>5</td><td>4</td><td>5</td><td>5</td><td>5</td>
+                  <td>6</td><td>5</td><td>4</td><td>6</td>
+                  <td>45</td>
+            
+                  <td>6</td><td>5</td><td>5</td><td>4</td><td>5</td>
+                  <td>5</td><td>5</td><td>4</td><td>6</td>
+                  <td>45</td>
+            
+                  <td>90</td><td>90</td><td>90</td><td>90</td>
+                  <td>360</td>
+                </tr>
+            
+                <!-- P. 콩끄라판 -->
+                <tr class="player">
+                  <td>T120</td>
+                  <td class="name">P. 콩끄라판(I)</td>
+                  <td>E</td>
+                  <td>E</td>
+            
+                  <td>4</td><td>3</td><td>4</td><td>4</td><td>4</td>
+                  <td>5</td><td>4</td><td>3</td><td>5</td>
+                  <td>36</td>
+            
+                  <td>5</td><td>4</td><td>4</td><td>3</td><td>4</td>
+                  <td>4</td><td>4</td><td>3</td><td>5</td>
+                  <td>36</td>
+            
+                  <td>72</td><td>72</td><td>72</td><td>72</td>
+                  <td>288</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <table class="scoreboard">
+              <colgroup>
+                <col class="col-pos" />
+                <col class="col-player" />
+                <col class="col-total" />
+                <col class="col-today" />
+                <!-- 홀 -->
+                <col span="9" />
+                <col class="col-out" />
+                <col span="9" />
+                <col class="col-in" />
+                <col span="4" />
+                <col class="col-tot" />
+              </colgroup>
+              <tbody>
+                <!-- 임희정 -->
+                <tr class="player red">
+                  <td>T120</td>
+                  <td class="name">임희정 test</td>
+                  <td class="score total">-18</td>
+                  <td class="score today">-18</td>
+            
+                  <td>3</td><td>2</td><td>3</td><td>3</td><td>3</td>
+                  <td>4</td><td>3</td><td>2</td><td>4</td>
+                  <td>27</td>
+            
+                  <td>4</td><td>3</td><td>3</td><td>2</td><td>3</td>
+                  <td>3</td><td>3</td><td>2</td><td>4</td>
+                  <td>27</td>
+            
+                  <td>54</td><td>54</td><td>54</td><td>54</td>
+                  <td>216</td>
+                </tr>
+            
+                <!-- 김규빈 -->
+                <tr class="player blue">
+                  <td class="name">T120 - test02</td>
+                  <td class="name">김규빈 0910(A)</td>
+                  <td class="score total">18</td>
+                  <td class="score today">18</td>
+            
+                  <td>5</td><td>4</td><td>5</td><td>5</td><td>5</td>
+                  <td>6</td><td>5</td><td>4</td><td>6</td>
+                  <td>45</td>
+            
+                  <td>6</td><td>5</td><td>5</td><td>4</td><td>5</td>
+                  <td>5</td><td>5</td><td>4</td><td>6</td>
+                  <td>45</td>
+            
+                  <td>90</td><td>90</td><td>90</td><td>90</td>
+                  <td>360</td>
+                </tr>
+            
+                <!-- P. 콩끄라판 -->
+                <tr class="player">
+                  <td>T120</td>
+                  <td class="name">P. 콩끄라판(I)</td>
+                  <td>E</td>
+                  <td>E</td>
+            
+                  <td>4</td><td>3</td><td>4</td><td>4</td><td>4</td>
+                  <td>5</td><td>4</td><td>3</td><td>5</td>
+                  <td>36</td>
+            
+                  <td>5</td><td>4</td><td>4</td><td>3</td><td>4</td>
+                  <td>4</td><td>4</td><td>3</td><td>5</td>
+                  <td>36</td>
+            
+                  <td>72</td><td>72</td><td>72</td><td>72</td>
+                  <td>288</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <table class="scoreboard">
+              <colgroup>
+                <col class="col-pos" />
+                <col class="col-player" />
+                <col class="col-total" />
+                <col class="col-today" />
+                <!-- 홀 -->
+                <col span="9" />
+                <col class="col-out" />
+                <col span="9" />
+                <col class="col-in" />
+                <col span="4" />
+                <col class="col-tot" />
+              </colgroup>
+              <tbody>
+                <!-- 임희정 -->
+                <tr class="player red">
+                  <td>T120</td>
+                  <td class="name">임희정</td>
+                  <td class="score total">-18</td>
+                  <td class="score today">-18</td>
+            
+                  <td>3</td><td>2</td><td>3</td><td>3</td><td>3</td>
+                  <td>4</td><td>3</td><td>2</td><td>4</td>
+                  <td>27</td>
+            
+                  <td>4</td><td>3</td><td>3</td><td>2</td><td>3</td>
+                  <td>3</td><td>3</td><td>2</td><td>4</td>
+                  <td>27</td>
+            
+                  <td>54</td><td>54</td><td>54</td><td>54</td>
+                  <td>216</td>
+                </tr>
+            
+                <!-- 김규빈 -->
+                <tr class="player blue">
+                  <td>T120</td>
+                  <td class="name">김규빈 0910(A)</td>
+                  <td class="score total">18</td>
+                  <td class="score today">18</td>
+            
+                  <td>5</td><td>4</td><td>5</td><td>5</td><td>5</td>
+                  <td>6</td><td>5</td><td>4</td><td>6</td>
+                  <td>45</td>
+            
+                  <td>6</td><td>5</td><td>5</td><td>4</td><td>5</td>
+                  <td>5</td><td>5</td><td>4</td><td>6</td>
+                  <td>45</td>
+            
+                  <td>90</td><td>90</td><td>90</td><td>90</td>
+                  <td>360</td>
+                </tr>
+            
+                <!-- P. 콩끄라판 -->
+                <tr class="player">
+                  <td>T120</td>
+                  <td class="name">P. 콩끄라판(I)</td>
+                  <td>E</td>
+                  <td>E</td>
+            
+                  <td>4</td><td>3</td><td>4</td><td>4</td><td>4</td>
+                  <td>5</td><td>4</td><td>3</td><td>5</td>
+                  <td>36</td>
+            
+                  <td>5</td><td>4</td><td>4</td><td>3</td><td>4</td>
+                  <td>4</td><td>4</td><td>3</td><td>5</td>
+                  <td>36</td>
+            
+                  <td>72</td><td>72</td><td>72</td><td>72</td>
+                  <td>288</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <table class="scoreboard">
+              <colgroup>
+                <col class="col-pos" />
+                <col class="col-player" />
+                <col class="col-total" />
+                <col class="col-today" />
+                <!-- 홀 -->
+                <col span="9" />
+                <col class="col-out" />
+                <col span="9" />
+                <col class="col-in" />
+                <col span="4" />
+                <col class="col-tot" />
+              </colgroup>
+              <tbody>
+                <!-- 임희정 -->
+                <tr class="player red">
+                  <td>T120</td>
+                  <td class="name">임희정 test</td>
+                  <td class="score total">-18</td>
+                  <td class="score today">-18</td>
+            
+                  <td>3</td><td>2</td><td>3</td><td>3</td><td>3</td>
+                  <td>4</td><td>3</td><td>2</td><td>4</td>
+                  <td>27</td>
+            
+                  <td>4</td><td>3</td><td>3</td><td>2</td><td>3</td>
+                  <td>3</td><td>3</td><td>2</td><td>4</td>
+                  <td>27</td>
+            
+                  <td>54</td><td>54</td><td>54</td><td>54</td>
+                  <td>216</td>
+                </tr>
+            
+                <!-- 김규빈 -->
+                <tr class="player blue">
+                  <td class="name">T120 - test02</td>
+                  <td class="name">김규빈 0910(A)</td>
+                  <td class="score total">18</td>
+                  <td class="score today">18</td>
+            
+                  <td>5</td><td>4</td><td>5</td><td>5</td><td>5</td>
+                  <td>6</td><td>5</td><td>4</td><td>6</td>
+                  <td>45</td>
+            
+                  <td>6</td><td>5</td><td>5</td><td>4</td><td>5</td>
+                  <td>5</td><td>5</td><td>4</td><td>6</td>
+                  <td>45</td>
+            
+                  <td>90</td><td>90</td><td>90</td><td>90</td>
+                  <td>360</td>
+                </tr>
+            
+                <!-- P. 콩끄라판 -->
+                <tr class="player">
+                  <td>T120</td>
+                  <td class="name">P. 콩끄라판(I)</td>
+                  <td>E</td>
+                  <td>E</td>
+            
+                  <td>4</td><td>3</td><td>4</td><td>4</td><td>4</td>
+                  <td>5</td><td>4</td><td>3</td><td>5</td>
+                  <td>36</td>
+            
+                  <td>5</td><td>4</td><td>4</td><td>3</td><td>4</td>
+                  <td>4</td><td>4</td><td>3</td><td>5</td>
+                  <td>36</td>
+            
+                  <td>72</td><td>72</td><td>72</td><td>72</td>
+                  <td>288</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <table class="scoreboard">
+              <colgroup>
+                <col class="col-pos" />
+                <col class="col-player" />
+                <col class="col-total" />
+                <col class="col-today" />
+                <!-- 홀 -->
+                <col span="9" />
+                <col class="col-out" />
+                <col span="9" />
+                <col class="col-in" />
+                <col span="4" />
+                <col class="col-tot" />
+              </colgroup>
+              <tbody>
+                <!-- 임희정 -->
+                <tr class="player red">
+                  <td>T120</td>
+                  <td class="name">임희정</td>
+                  <td class="score total">-18</td>
+                  <td class="score today">-18</td>
+            
+                  <td>3</td><td>2</td><td>3</td><td>3</td><td>3</td>
+                  <td>4</td><td>3</td><td>2</td><td>4</td>
+                  <td>27</td>
+            
+                  <td>4</td><td>3</td><td>3</td><td>2</td><td>3</td>
+                  <td>3</td><td>3</td><td>2</td><td>4</td>
+                  <td>27</td>
+            
+                  <td>54</td><td>54</td><td>54</td><td>54</td>
+                  <td>216</td>
+                </tr>
+            
+                <!-- 김규빈 -->
+                <tr class="player blue">
+                  <td>T120</td>
+                  <td class="name">김규빈 0910(A)</td>
+                  <td class="score total">18</td>
+                  <td class="score today">18</td>
+            
+                  <td>5</td><td>4</td><td>5</td><td>5</td><td>5</td>
+                  <td>6</td><td>5</td><td>4</td><td>6</td>
+                  <td>45</td>
+            
+                  <td>6</td><td>5</td><td>5</td><td>4</td><td>5</td>
+                  <td>5</td><td>5</td><td>4</td><td>6</td>
+                  <td>45</td>
+            
+                  <td>90</td><td>90</td><td>90</td><td>90</td>
+                  <td>360</td>
+                </tr>
+            
+                <!-- P. 콩끄라판 -->
+                <tr class="player">
+                  <td>T120</td>
+                  <td class="name">P. 콩끄라판(I)</td>
+                  <td>E</td>
+                  <td>E</td>
+            
+                  <td>4</td><td>3</td><td>4</td><td>4</td><td>4</td>
+                  <td>5</td><td>4</td><td>3</td><td>5</td>
+                  <td>36</td>
+            
+                  <td>5</td><td>4</td><td>4</td><td>3</td><td>4</td>
+                  <td>4</td><td>4</td><td>3</td><td>5</td>
+                  <td>36</td>
+            
+                  <td>72</td><td>72</td><td>72</td><td>72</td>
+                  <td>288</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <table class="scoreboard">
+              <colgroup>
+                <col class="col-pos" />
+                <col class="col-player" />
+                <col class="col-total" />
+                <col class="col-today" />
+                <!-- 홀 -->
+                <col span="9" />
+                <col class="col-out" />
+                <col span="9" />
+                <col class="col-in" />
+                <col span="4" />
+                <col class="col-tot" />
+              </colgroup>
+              <tbody>
+                <!-- 임희정 -->
+                <tr class="player red">
+                  <td>T120</td>
+                  <td class="name">임희정 test</td>
+                  <td class="score total">-18</td>
+                  <td class="score today">-18</td>
+            
+                  <td>3</td><td>2</td><td>3</td><td>3</td><td>3</td>
+                  <td>4</td><td>3</td><td>2</td><td>4</td>
+                  <td>27</td>
+            
+                  <td>4</td><td>3</td><td>3</td><td>2</td><td>3</td>
+                  <td>3</td><td>3</td><td>2</td><td>4</td>
+                  <td>27</td>
+            
+                  <td>54</td><td>54</td><td>54</td><td>54</td>
+                  <td>216</td>
+                </tr>
+            
+                <!-- 김규빈 -->
+                <tr class="player blue">
+                  <td class="name">T120 - test02</td>
+                  <td class="name">김규빈 0910(A)</td>
+                  <td class="score total">18</td>
+                  <td class="score today">18</td>
+            
+                  <td>5</td><td>4</td><td>5</td><td>5</td><td>5</td>
+                  <td>6</td><td>5</td><td>4</td><td>6</td>
+                  <td>45</td>
+            
+                  <td>6</td><td>5</td><td>5</td><td>4</td><td>5</td>
+                  <td>5</td><td>5</td><td>4</td><td>6</td>
+                  <td>45</td>
+            
+                  <td>90</td><td>90</td><td>90</td><td>90</td>
+                  <td>360</td>
+                </tr>
+            
+                <!-- P. 콩끄라판 -->
+                <tr class="player">
+                  <td>T120</td>
+                  <td class="name">P. 콩끄라판(I)</td>
+                  <td>E</td>
+                  <td>E</td>
+            
+                  <td>4</td><td>3</td><td>4</td><td>4</td><td>4</td>
+                  <td>5</td><td>4</td><td>3</td><td>5</td>
+                  <td>36</td>
+            
+                  <td>5</td><td>4</td><td>4</td><td>3</td><td>4</td>
+                  <td>4</td><td>4</td><td>3</td><td>5</td>
+                  <td>36</td>
+            
+                  <td>72</td><td>72</td><td>72</td><td>72</td>
+                  <td>288</td>
+                </tr>
+              </tbody>
+            </table>
+
+          </div>
+          <!-- // table-box -->
+        </div>
+
+      </main>
+
+    </section>
+  </div>
+</body>
+</html>
