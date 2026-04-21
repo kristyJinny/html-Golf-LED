@@ -1,0 +1,373 @@
+/*
+ * --------------------------------
+ * page-horizontal.css
+   * creator : jinny
+  * 가로형 (16:9)
+ * --------------------------------
+*/
+
+
+/*
+ * --------------------------------
+ * layout
+ * 기존 레이아웃 스타일은 layout.css
+*/
+
+:root {
+  /* 스케일 = 1rem 크기(px) */
+  --base-w: 1920;
+  --base-h: 1080;
+  --rem: min(100dvw / var(--base-w), 100dvh / var(--base-h));
+}
+
+:root:has(body[data-layout="horizontal"]){
+  --base-w: 1920;
+  --base-h: 1080;
+  --rem: min(100dvw / var(--base-w), 100dvh / var(--base-h));
+}
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  aspect-ratio: 16/9; /* 브라우저 크기에 따라 자동 비율 유지 */
+  overflow: hidden;
+}
+.wrapper {
+  position: relative;
+  display: flex;
+  background-color: #1b342a;/* 2026-03-30 색상 변경 */
+}
+
+/* main */
+.wrapper .main {
+  display: flex;
+  flex-grow: 1;
+  padding-bottom: 88rem;
+  align-items: center;
+}
+
+.wrapper .small-name {font-size: 66rem;} /* 2026-03-29: 추가 */ 
+
+/*
+ * --------------------------------
+ * table
+ * --------------------------------
+*/
+.wrapper table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.wrapper caption {
+  overflow: hidden;
+  margin: -1px;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  line-height: 1px;
+  font-size: 1px;
+  color: transparent;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+.wrapper table, .wrapper th, .wrapper td {
+  font-weight: 500;
+}
+.wrapper .table-box table {
+  color: #ffff;
+}
+.wrapper.wrapper-bright .table-box table {  /* 2026-04-12 추가 */
+  color: #246d37;
+}
+.wrapper .table-box thead {
+  border-bottom: 4rem solid #fff;
+}
+.wrapper.wrapper-bright .table-box thead {  /* 2026-04-12 추가 */
+  border-color: #246d37; 
+}
+.wrapper .table-box thead th {
+  font-size: 38rem;
+}
+.wrapper .table-box.big-col05 thead th { /* 2026-04-12 추가 */
+  font-size: 42rem;
+}
+.wrapper .table-box tbody td {
+  font-size: 43rem;
+  text-align: center;
+  vertical-align: middle;
+  padding: 8rem 0;
+  height: 76rem;
+  box-sizing: border-box;
+}
+.wrapper .table-box tbody tr + tr {
+  border-top: 2rem solid rgba(255, 255, 255, 0.2);
+}
+.wrapper.wrapper-bright .table-box tbody tr + tr { /* 2026-04-12 추가 */
+  border-color: rgba(36, 109, 55, 0.2);
+}
+.wrapper .table-box tbody .name-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0;
+  text-align: center; /* D: 2026-03-23 */
+}
+.wrapper .table-box tbody td .name {
+  font-size: 29rem;
+  line-height: 1.2;
+}
+.wrapper .table-box tbody td .name-en {
+  font-size: 19rem;
+  display: -webkit-box; 
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+}
+.wrapper .table-box tbody td .positive {
+  color: #23f2ff;
+}
+.wrapper .table-box tbody td .red {
+  color: #f15922;
+}
+
+
+/* --- 테이블 2개 --- */
+.wrapper .table-wrap.table-duo {
+  display: flex;
+  gap: 20rem;
+}
+.wrapper .table-box.big tbody td {
+  height: 84rem;
+}
+.wrapper .table-box.big-col05 tbody td { /* 2026-04-12 추가 */
+  height: 154rem;
+  font-size: 90rem;
+}
+.wrapper .table-box.big-col05 tbody td .name { /* 2026-04-12 추가 */
+  font-size: 80rem;
+}
+.wrapper .table-box.big-col05 tbody td .name.name-long { /* 2026-04-21 추가 */
+    font-size: 60rem;
+}
+
+/* --- s: 테이블 2개 : page-table_duo02 열 2개 D: 2026-03-23 --- */
+.wrapper .table-wrap.table-duo .table-box tbody {
+  border-bottom: 4rem solid #fff;
+}
+.wrapper .table-wrap.table-duo.table-duo-row09 .table-box tbody td {
+  height: 84rem;
+}
+/* --- e 테이블 2개 : page-table_duo02 열 2개 D: 2026-03-23 --- */
+/*
+ * --------------------------------
+ * table
+  * 애니메이션
+ * --------------------------------
+*/
+/* 전환 기본값 */
+.wrapper #leader-tbody {
+  transition: opacity .35s ease, transform .35s ease;
+}
+
+/* 페이드아웃(살짝 아래로) */
+.wrapper #leader-tbody.is-leave {
+  opacity: 0;
+  transform: translateY(0.6rem);
+}
+
+/* 페이드인(원위치) */
+.wrapper #leader-tbody.is-enter {
+  opacity: 0;
+  transform: translateY(-0.6rem);
+}
+.wrapper #leader-tbody.is-enter.is-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity .35s ease, transform .35s ease;
+}
+
+/* start: 2026-04-18 */
+/*
+ * --------------------------------
+ * 2026-04-18 full 버전
+  * table
+ * --------------------------------
+*/
+.container-faull-table {
+  padding: 16px 5px;
+  /* background: url('../images/bg_01.png') no-repeat center;
+  background-size: cover; */
+  background-color: #246d37;
+}
+
+.wrapper .container-faull-table .table-box table {
+  margin-top: 14rem;
+  border-top: 2rem solid #fff;
+  border-bottom: 2rem solid #fff;
+}
+.wrapper .container-faull-table .table-box table:first-child {
+  margin-top: 0;
+}
+.wrapper .main-full-table .table-box thead {
+  border-bottom-width: 2rem;
+}
+.wrapper .main-full-table .table-box thead th {
+  border-left: 1rem solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1rem solid rgba(255, 255, 255, 0.2);
+  padding: 5rem 0;
+  font-size: 30rem;
+}
+.wrapper .main-full-table .table-box thead tr:last-child th {
+  border-bottom: 2rem solid #fff;
+}
+.wrapper .main-full-table .table-box thead th.border-left-no {
+  border-left: none;
+}
+.wrapper .main-full-table .table-box thead th.border-left {
+  border-left: 2rem solid #fff;
+}
+.wrapper .main-full-table .table-box thead th.border-both {
+  border-left: 2rem solid #fff;
+  border-right: 2rem solid #fff;
+}
+.wrapper .main-full-table .table-box thead th.rowspan-cell  {
+  border-bottom: 2rem solid #fff;
+}
+.wrapper .main-full-table .table-box tbody td {
+  height: auto;
+  padding: 2rem;
+  font-size: 30rem;
+  border-left: 1rem solid rgba(255, 255, 255, 0.2);
+}
+.wrapper .main-full-table .table-box tbody td:first-child {
+  border-left: none;
+}
+.wrapper .container-faull-table .table-box tbody tr + tr {
+  border-width: 1rem;
+}
+.wrapper .main-full-table .table-box tbody td:nth-of-type(5),
+.wrapper .main-full-table .table-box tbody td:nth-of-type(29) {
+  border-left: 2rem solid #fff;
+}
+
+.wrapper .main-full-table .table-box tbody td:nth-of-type(14),
+.wrapper .main-full-table .table-box tbody td:nth-of-type(24) {
+  border-left: 2rem solid #fff;
+  border-right: 2rem solid #fff;
+}
+
+/* .wrapper .main-full-table .table-box tbody td.name {
+  font-size: 32rem;
+} */
+.wrapper .main-full-table .table-box tbody td.td-pos {
+  padding: 3rem 0;
+}
+
+.wrapper .main-full-table .col-pos    { width: 4.3%; }
+.wrapper .main-full-table .col-player { width: 11.9%; }
+.wrapper .main-full-table .col-total  { width: 6%; }
+.wrapper .main-full-table .col-out  { width: 5%; }
+.wrapper .main-full-table .col-today  { width: 6%; }
+.wrapper .main-full-table .col-tot  { width: 5%; }
+
+.wrapper .main-full-table .table-box .bg-red {
+  display: inline-block;
+  width: 100%;
+  border-radius: 4rem;
+  background-color: #ff1010;
+  padding-top: 6rem;
+}
+.wrapper .main-full-table .table-box .bg-blue {
+  display: inline-block;
+  width: 100%;
+  border-radius: 4rem;
+  background-color: #4b7cff;
+  padding-top: 6rem;
+}
+
+/*
+ * --------------------------------
+ * 2026-04-18
+  * container-full-img
+ * --------------------------------
+*/
+.container-full-img {
+  display: flex;
+}
+.container-full-img .img-wrap {
+  display: flex;
+  flex-direction: column;
+}
+.container-full-img .img-wrap .img-box {
+  flex: 1;
+  width: 1480rem;
+  height: 833rem;
+}
+.container-full-img .img-wrap .img-box  img {
+  height: 100%;;
+}
+.container-full-img .img-wrap .logo-box {
+  display: flex;
+  align-items: center;
+  padding-top: 44rem;
+  padding-bottom: 43rem;
+}
+.container-full-img .img-wrap .logo-box .logo-item01 {
+  /* width: 490rem;
+  height: 247rem; */
+  /* margin-top: 50rem; */
+  margin-left: 45rem;
+}
+.container-full-img .img-wrap .logo-box .logo-item01 img {
+  width: 400rem;
+  height: 145rem;
+}
+.container-full-img .img-wrap .logo-box .logo-item02 {
+  /* width: 990rem;
+  height: 247rem; */
+  /* margin-top: 44rem; */
+  margin-left: 335rem;
+}
+.container-full-img .img-wrap .logo-box .logo-item02 img {
+  width: 305rem;
+  height: 160rem;
+  /* display: block;
+  margin: 0 auto; */
+}
+.container-full-img .table-wrap {
+  width: 440rem;
+  padding: 0 10rem;
+  box-sizing: border-box;
+}
+.container-full-img .table-wrap h2 {
+  margin: 40rem 0;
+  font-size: 40rem;
+  color: #fff;
+  text-align: center;
+}
+
+.container-full-img .table-wrap .table-box {
+  padding-bottom: 29rem;
+}
+.container-full-img .table-wrap .table-box table {
+  border-bottom: 2rem solid #fff;
+}
+.container-full-img .table-wrap .table-box thead th {
+  font-size: 16rem;
+}
+.wrapper .container-full-img .table-wrap .table-box tbody td {
+  font-size: 20rem;
+  padding: 20rem 0;
+  height: auto;
+}
+.wrapper .container-full-img .table-wrap .table-box tbody td.name-long {
+  font-size: 16rem;
+}
+.wrapper .container-full-img .table-wrap .table-box tbody td .time-ex {
+  font-size: 10rem;;
+}
+.orange {
+  color: #ffb400;
+}
+
+/* end: 2026-04-18 */

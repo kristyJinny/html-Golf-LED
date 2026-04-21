@@ -273,7 +273,9 @@
 .wrapper-vertical .data-table .data-area li .name-long {
   font-size: 42rem; /* 2026-04-21 : 최대 이름 : ver-05.html */
 }
-
+.wrapper-vertical .name-over .small-name {
+    font-size: 42rem; /* 2026-04-22 : 최대 이름 : ver-05.html */
+}
 .wrapper-vertical .data-table .data-area li.index,
 .wrapper-vertical .data-table .data-area li.name {
   font-size: 80rem;
