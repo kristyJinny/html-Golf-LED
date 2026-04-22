@@ -338,6 +338,11 @@
   width: 440rem;
   padding: 0 10rem;
   box-sizing: border-box;
+  /* start : 2026-04-22 */
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  /* end : 2026-04-22 */
 }
 .container-full-img .table-wrap h2 {
   margin: 40rem 0;
@@ -347,6 +352,10 @@
 }
 
 .container-full-img .table-wrap .table-box {
+  /* start : 2026-04-22 */
+  display: flex;
+  flex-grow: 1;
+  /* end : 2026-04-22 */
   padding-bottom: 29rem;
 }
 .container-full-img .table-wrap .table-box table {
@@ -357,7 +366,7 @@
 }
 .wrapper .container-full-img .table-wrap .table-box tbody td {
   font-size: 20rem;
-  padding: 20rem 0;
+  padding: 11rem 0; /* 2026-04-22 */
   height: auto;
 }
 .wrapper .container-full-img .table-wrap .table-box tbody td.name-long {
