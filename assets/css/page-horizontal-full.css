@@ -255,10 +255,10 @@
   border-left: 2rem solid #fff;
   border-right: 2rem solid #fff;
 }
-
-/* .wrapper .main-full-table .table-box tbody td.name {
-  font-size: 32rem;
-} */
+/* 2026-04-26 */
+.wrapper .main-full-table .table-box tbody td.name.name-long {
+  font-size: 20rem;
+}
 .wrapper .main-full-table .table-box tbody td.td-pos {
   padding: 3rem 0;
 }

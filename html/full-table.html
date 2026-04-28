@@ -97,7 +97,7 @@
                 <!-- 김규빈 -->
                 <tr class="player">
                   <td class="td-pos">T120</td>
-                  <td class="name">김규빈 0910(A)</td>
+                  <td class="name">빳차라쭈타콩끄라판(I)</td> <!-- // 2026-04-26 -->
                   <td><span class="bg-blue">18</span></td>
                   <td><span class="bg-blue">18</span></td>
             
@@ -523,5 +523,16 @@
 
     </section>
   </div>
+  <script>
+    // 2026-04-26: 12글자 초과이면 .name 에 .name-long 클래스 추가
+    // 이름이 긴 경우 폰트 사이즈 조정 (최대 이름 : 빳차라쭈타 콩끄라판(I))
+    document.querySelectorAll('.name').forEach(el => {
+      const text = el.textContent.trim();
+    
+      if (text.length > 11) {
+        el.classList.add('name-long');
+      }
+    });
+  </script>
 </body>
 </html>
