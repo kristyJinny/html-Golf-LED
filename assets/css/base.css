@@ -9,6 +9,14 @@
 
 /* ---- font ----*/
 @font-face {
+  font-family: 'Pretendard';
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url('../font/Pretendard-Medium.otf') format('opentype'),
+}
+
+/* @font-face {
   font-family: 'DBGothic';
   font-weight: 300;
   font-style: normal;
@@ -33,7 +41,7 @@
   font-display: swap;
   src: url('../font/DBGothicB_OTF.otf') format('opentype'),
        url('../font/DBGothicB.ttf') format('truetype');
-}
+} */
 
 /* :root {} 2026-03-29 삭제 */
 
@@ -57,7 +65,7 @@ body {
   margin: 0;
   padding: 0;
   word-break: keep-all;
-  font-family: 'DBGothic', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif;
+  font-family: 'Pretendard', 'DBGothic', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif;
   font-weight: 500;
   -webkit-text-size-adjust: 100%;  /* iOS 자동 확대 방지 */
 }

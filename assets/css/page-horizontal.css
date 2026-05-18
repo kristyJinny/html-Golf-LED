@@ -237,6 +237,9 @@
 
 
 /* --- page-personal --- */
+.wrapper .section-personal {
+  background-image: none; /* 2026-05-19 */
+}
 .wrapper .personal-wrap {
   display: flex;
   align-items: anchor-center;
@@ -254,7 +257,6 @@
 }
 .wrapper .personal-wrap .name-box .name {
   font-size: 98rem;
-  letter-spacing: -1.9;
 }
 .wrapper .personal-wrap .name-box .name-en {
   font-size: 39rem;
@@ -265,7 +267,7 @@
 .wrapper .personal-wrap .data-area.style-row.big {
   display: flex;
   gap: 65rem;
-  margin: 30rem 30rem 32rem;;
+  margin: 60rem 0; /* 2026-05-19 */
 }
 .wrapper .personal-wrap .data-area.style-row.big li {
   display: flex;
@@ -779,3 +781,81 @@
 }
 
 /* end: 2026-04-18 */
+
+
+
+/* start: 2026-05-19 */
+.scoreboard {
+  width: max-content;
+  border-collapse: separate;
+  border-spacing: 0;
+  color: #fff;
+  padding: 16rem 18rem;
+  border-radius: 12rem;
+  min-width: 100%;
+}
+.scoreboard th,
+.scoreboard td {
+  height: 42rem;
+  text-align: center;
+  font-size: 52rem;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.scoreboard thead th {
+  font-size: 52rem;
+  /* font-weight: 700; */
+}
+
+.scoreboard tbody th {
+  font-weight: 600;
+}
+
+.scoreboard .hole-row th,
+.scoreboard .hole-row td {
+  border-bottom: 2rem solid rgba(255, 255, 255, 0.3);
+}
+.scoreboard .main-th {
+  width: 356rem;
+  box-sizing: border-box;
+  font-size: 41rem;
+}
+
+.scoreboard .par-row .main-th {
+  padding: 22rem 0 25rem;
+}
+.scoreboard .out {
+  width: 188rem;
+}
+.scoreboard .in {
+  width: 208rem;
+}
+
+.scoreboard .player-row,
+.scoreboard .player-row th,
+.scoreboard .player-row td {
+  background: #fff;
+}
+.scoreboard .player-row {
+  color: #222;
+}
+.scoreboard .player-row th:first-child {
+  border-radius: 999rem 0 0 999rem;
+}
+
+.scoreboard .player-row td:last-child {
+  border-radius: 0 999rem 999rem 0;
+}
+
+.scoreboard .score-under,
+.scoreboard .total-red {
+  color: #ff4d4f;
+  font-weight: 700;
+}
+
+.scoreboard .score-over,
+.scoreboard .total-blue {
+  color: #1da1ff;
+  font-weight: 700;
+}
