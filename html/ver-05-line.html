@@ -83,28 +83,28 @@
               </li>
               <li>
                 <span class="index"></span>
-                <span class="name">배용준</span>
+                <span class="name">김준성사오육</span>
                 <span class="score-bg">0</span>
                 <span>9</span>
                 <span>0</span>
               </li>
               <li class="line"><!-- .data-line 추가: 2026-04-06 -->
                 <span class="index">T7</span>
-                <span class="name">허인회</span>
+                <span class="name">김준성사오육칠</span>
                 <span class="score-bg blue">4</span>
                 <span>11</span>
                 <span class="blue">2</span>
               </li>
               <li>
                 <span class="index"></span>
-                <span class="name">김준성</span>
+                <span class="name">김준성사오육칠팔</span>
                 <span class="score-bg blue">4</span>
                 <span>13</span>
                 <span class="blue">2</span>
               </li>
               <li>
                 <span class="index"></span>
-                <span class="name">이형준</span>
+                <span class="name">이형준2</span>
                 <span class="score-bg blue">4</span>
                 <span>13</span>
                 <span class="blue">2</span>
@@ -125,12 +125,11 @@
 
 
 <script>
-// 2026-03-29: 3글자 초과이면 .name 에 .name-long 클래스 추가
-// 이름이 긴 경우 폰트 사이즈 조정 (최대 이름 : 빳차라쭈타 콩끄라판(I) - 17자)
+// 2026-05-21: 6글자 초과이면 .name 에 .name-long 클래스 추가
 document.querySelectorAll('.name').forEach(el => {
   const text = el.textContent.trim();
 
-  if (text.length > 3) {
+  if (text.length > 5) {
     el.classList.add('name-long');
   }
 });
