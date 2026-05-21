@@ -237,9 +237,26 @@
 
 
 /* --- page-personal --- */
+/* start: 2026-05-19 */
 .wrapper .section-personal {
   background-image: none; /* 2026-05-19 */
+  padding: 22rem 30rem 89rem;
 }
+.wrapper .section-personal .main {
+  align-items: flex-end;
+  border-bottom: 4rem solid #ffff;
+  align-items: 58rem;
+}
+.wrapper .section-personal .header {
+  padding: 0;
+  margin-bottom: 0;
+}
+.wrapper .section-personal .header .main-title {
+  width: 282rem;
+  height: 104px;
+  padding: 0 0 0 16rem;
+}
+/* end: 2026-05-19 */
 .wrapper .personal-wrap {
   display: flex;
   align-items: anchor-center;
@@ -253,6 +270,7 @@
 }
 
 .wrapper .personal-wrap .name-box {
+  margin-left: 27rem; /* 2026-05-19 */
   color: #fff;
 }
 .wrapper .personal-wrap .name-box .name {
@@ -267,7 +285,7 @@
 .wrapper .personal-wrap .data-area.style-row.big {
   display: flex;
   gap: 65rem;
-  margin: 60rem 0; /* 2026-05-19 */
+  margin: 60rem 0 60rem 13rem; /* 2026-05-19 */
 }
 .wrapper .personal-wrap .data-area.style-row.big li {
   display: flex;
@@ -859,3 +877,4 @@
   color: #1da1ff;
   font-weight: 700;
 }
+/* end: 2026-05-19 */

@@ -6,7 +6,18 @@
  * --------------------------------
 */
 
-
+/* s: 2026-05-19 */
+@font-face {
+  font-family: 'Pretendard';
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url('../font/Pretendard-Medium.otf') format('opentype'),
+}
+body {
+  font-family: 'Pretendard', 'DBGothic', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif;
+}
+/* e: 2026-05-19 */
 /*
  * --------------------------------
  * layout
@@ -71,8 +82,8 @@
   clip: rect(0 0 0 0);
 }
 .wrapper table, .wrapper th, .wrapper td {
-  font-weight: 400;
-  letter-spacing: -0.66px;
+  font-weight: 400; /* 2026-05-19 */
+  letter-spacing: -0.66px; /* 2026-05-19 */
 }
 .wrapper .table-box table {
   color: #ffff;
@@ -202,7 +213,7 @@
 }
 
 .wrapper .container-faull-table .table-box table {
-  margin-top: 9rem;
+  margin-top: 9rem; /* 2026-05-19 */
   border-top: 2rem solid #fff;
   border-bottom: 2rem solid #fff;
 }
@@ -215,7 +226,7 @@
 .wrapper .main-full-table .table-box thead th {
   border-left: 1rem solid rgba(255, 255, 255, 0.2);
   border-bottom: 1rem solid rgba(255, 255, 255, 0.2);
-  padding: 3rem 0;
+  padding: 3rem 0; /* 2026-05-19 */
   font-size: 30rem;
 }
 .wrapper .main-full-table .table-box thead tr:last-child th {
@@ -235,8 +246,7 @@
   border-bottom: 2rem solid #fff;
 }
 .wrapper .main-full-table .table-box tbody td {
-  height: 39rem;
-  /* height: auto; */
+  height: 39rem; /* 2026-05-19 */
   padding: 2rem;
   font-size: 30rem;
   border-left: 1rem solid rgba(255, 255, 255, 0.2);
@@ -244,16 +254,19 @@
 .wrapper .main-full-table .table-box tbody td:first-child {
   border-left: none;
 }
+/* s: 2026-05-19 */
 .wrapper .main-full-table .table-box tbody td:first-child.border-left,
 .wrapper .main-full-table .table-box tbody .border-left {
   border-left: 1rem solid rgba(255, 255, 255, 0.2)
 }
+/* e: 2026-05-19 */
 .wrapper .container-faull-table .table-box tbody tr + tr {
   border-width: 1rem;
 }
+/* 2026-05-19 : 계산을 해서 넣어 함
 .wrapper .main-full-table .table-box tbody td:nth-of-type(5),
 .wrapper .main-full-table .table-box tbody td:nth-of-type(29) {
-  border-left: 2rem solid #fff;
+  border-left: 2rem solid #fff; 
 }
 
 .wrapper .main-full-table .table-box tbody td:nth-of-type(14),
@@ -261,14 +274,16 @@
   border-left: 2rem solid #fff;
   border-right: 2rem solid #fff;
 }
+
+*/
 /* 2026-04-26 */
 .wrapper .main-full-table .table-box tbody td.name.name-long {
   font-size: 20rem;
-  letter-spacing: -0.66px;
+  letter-spacing: -0.66px; /* 2026-05-19 */
 }
-.wrapper .main-full-table .table-box tbody td.td-pos {
-  /* padding: 3rem 0; */
-}
+/* .wrapper .main-full-table .table-box tbody td.td-pos {
+  padding: 3rem 0; 2026-05-19
+} */
 
 .wrapper .main-full-table .col-pos    { width: 4.3%; }
 .wrapper .main-full-table .col-player { width: 11.9%; }
@@ -283,20 +298,18 @@
   width: 100%;
   border-radius: 4rem;
   background-color: #ff1010;
-  /* padding-top: 6rem; */
+  /* padding-top: 6rem; 2026-05-19 */
 }
 .wrapper .main-full-table .table-box .bg-blue {
   display: inline-block;
   width: 100%;
   border-radius: 4rem;
   background-color: #4b7cff;
-  /* padding-top: 6rem; */
+  /* padding-top: 6rem; 2026-05-19 */
 }
-
- /* 2026-05-19 */
-.wrapper .main-full-table .table-box .width {
-  /* width: 84rem; */
-}
+/* .wrapper .main-full-table .table-box .width {
+  width: 84rem; 2026-05-19
+} */
 /*
  * --------------------------------
  * 2026-04-18
@@ -386,7 +399,7 @@
 /* end: 2026-04-18 */
 
 
-.main-title {
+.main-title { /* 2026-05-19 */
   margin: 5rem 0 34rem 40rem;
   font-size: 62rem;
   color: #fff;
