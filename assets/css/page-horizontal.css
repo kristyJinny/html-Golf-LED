@@ -825,7 +825,11 @@
   font-size: 52rem;
   /* font-weight: 700; */
 }
-
+/* 2026-05-31 숫자 간격 */
+.scoreboard thead th.number,
+.scoreboard td.number {
+  letter-spacing: -3.5px;
+}
 .scoreboard tbody th {
   font-weight: 600;
 }
@@ -845,9 +849,11 @@
 }
 .scoreboard .out {
   width: 188rem;
+  letter-spacing: -1px; /* 2026-05-31 숫자 간격 */
 }
 .scoreboard .in {
   width: 208rem;
+  letter-spacing: -1px; /* 2026-05-31 숫자 간격 */
 }
 
 .scoreboard .player-row,
