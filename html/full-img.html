@@ -48,15 +48,15 @@
               <tr>
                 <th scope="col">POS</th>
                 <th scope="col">PLAYER</th>
-                <th scope="col">TOTAL</th>
-                <th scope="col">TODAY</th>
+                <th scope="col">TOT</th><!-- 2026-06-08 -->
+                <th scope="col">TDY</th><!-- 2026-06-08 -->
                 <th scope="col">HOLE</th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <td class="number">1</td>
-                <td class="name">BRANDON KEWALRAMANL콩끄라판</td>
+                <td class="name">임희정</td>
                 <td class="score orange">-18</td>
                 <td>-</td>
                 <td class="time-box">
@@ -71,7 +71,7 @@
                 <td>-</td>
                 <td class="time-box">
                   <span class="time">11:30</span>
-                  <span class="time-ex">(out)</span>
+                  <!-- <span class="time-ex">(out)</span> -->
                 </td>
               </tr>
               <tr>
@@ -126,7 +126,7 @@
               </tr>
               <tr>
                 <td class="number">8</td>
-                <td class="name">빳차라쭈타 콩끄라판(I)</td>
+                <td class="name">BRANDON KEWALRAMANL콩끄라판</td>
                 <td class="score orange">-18</td>
                 <td>-</td>
                 <td class="time-box">
@@ -186,10 +186,11 @@
   </div>
   <script>
     // 20글자 초과이면 .name 에 .name-long 클래스 추가
+    // 2026-06-08
     document.querySelectorAll('.name').forEach(el => {
       const text = el.textContent.trim();
     
-      if (text.length > 20) {
+      if (text.length > 7) { 
         el.classList.add('name-long');
       }
     });

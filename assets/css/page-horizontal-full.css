@@ -83,7 +83,7 @@ body {
 }
 .wrapper table, .wrapper th, .wrapper td {
   font-weight: 400; /* 2026-05-19 */
-  letter-spacing: -0.66px; /* 2026-05-19 */
+  letter-spacing: -0.4px; /* 2026-06-08 수정 */
 }
 .wrapper .table-box table {
   color: #ffff;
@@ -92,7 +92,7 @@ body {
   color: #246d37;
 }
 .wrapper .table-box thead {
-  border-bottom: 4rem solid #fff;
+  border-bottom: 2rem solid #fff;  /* 2026-06-08 수정 */
 }
 .wrapper.wrapper-bright .table-box thead {  /* 2026-04-12 추가 */
   border-color: #246d37; 
@@ -279,7 +279,7 @@ body {
 /* 2026-04-26 */
 .wrapper .main-full-table .table-box tbody td.name.name-long {
   font-size: 20rem;
-  letter-spacing: -0.66px; /* 2026-05-19 */
+  letter-spacing: -0.4px; /* 2026-06-08 수정 */
 }
 /* .wrapper .main-full-table .table-box tbody td.td-pos {
   padding: 3rem 0; 2026-05-19
@@ -379,7 +379,8 @@ body {
   border-bottom: 2rem solid #fff;
 }
 .container-full-img .table-wrap .table-box thead th {
-  font-size: 16rem;
+  padding-bottom: 6rem; /* 2026-06-08 추가 */
+  font-size: 18rem; /* 2026-06-08 수정 */
 }
 .wrapper .container-full-img .table-wrap .table-box tbody td {
   font-size: 20rem;
