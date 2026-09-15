@@ -7,17 +7,35 @@
  * --------------------------------
 */
 
-/* main */
+/* ---- main ------- */
 #wrap.main {background:url('../img/common/bg_main.jpg') no-repeat center;background-size:cover;}
-#wrap.main:after {content:"";position:fixed;top:0;left:0;right:0;bottom:0; /* background:rgba(0,0,0,.3); */}
+/* #wrap.main:after {content:"";position:fixed;top:0;left:0;right:0;bottom:0; background:rgba(0,0,0,.3);} 2026-09-15 */
 #wrap.main .header {background:transparent;}
 #wrap.main .header .logo a {background-image:url('../img/common/header_logo_white4.svg');}
+#wrap.main .header .logo02 {background-image:url('../img/common/header_happy_white.svg');} /* 2026-09-15 */
 #wrap.main .header .gnb > ul > li > a {color:#fff;}
 #wrap.main .header .ticket .btn_ticket {color:#fff;border-color:#fff;}
 #wrap.main .header .ticket .btn_ticket:hover {border-color:#001c48;}
 #wrap.main .header .menu .btn_menu {background-image:url('../img/common/btn_menu_white.svg');}
-.main_visual {position:fixed;bottom:100px;left:50%;width:100%;max-width:1200px;color:#fff;z-index:1;transform:translateX(-50%);}
-.main_visual .desc {margin-top:24px;font-size:21px;line-height:34px;}
+
+/* s: 2026-09-15 */
+.main .content {display: flex; flex-direction: column;text-align: center; height: calc(100vh - 101px);padding: 0; justify-content: center;}
+.main .content .main-info {display: flex; justify-content: center; align-items: center;flex-direction: column; width: 100%;}
+/* .main_visual {position:fixed;bottom:100px;left:50%;width:100%;max-width:1200px;color:#fff;z-index:1;transform:translateX(-50%);} */
+.main .content .main-info .tit .pc-img {max-width: 860px;}
+.main .content .main-info .tit .mo-img {display: none;}
+.main .content .main-info .main-button-area {margin-top: 40px;}
+.main .content .main-info .main-button-area a {display: block;cursor: pointer;}
+.main .content .main-info .main-button-area img {max-width: 580px;}
+.main .content .sub-box {margin-top: 50px; color: #fff;}
+.main .content .sub-box .strong-text {font-size: 35px; line-height: 1.2;}
+.main .content .sub-box .text {margin-top: 30px; font-size: 31px;line-height: 1.2;}
+
+
+.ticke-button-area {margin-top: 140px;}
+.ticke-button-area a {display: block;cursor: pointer;text-align: center;}
+.ticke-button-area img {max-width: 555px;}
+/* e: 2026-09-15 */
 
 /* 대회소개 */
 /* .instroduct {} */
@@ -35,7 +53,6 @@
 .place .define_list {margin-top:40px;}
 
 /* 참가선수 */
-/* .player {} */
 
 /* 갤러리플라자 */
 /* s: 2025-09 : 필요없으면 삭제 필요 */
@@ -72,7 +89,6 @@
 .company .thumb_list strong {display:block;margin-top:10px;color:#000;font-size:18px;font-weight:700;}
 
 /* 대회뉴스 */
-/* .media {} */
 
 /* 이벤트 */
 .eventlist .thumb {display:flex;flex-wrap:wrap;align-items:start;gap:40px;justify-content:start;position:relative;max-width:720px;margin:40px auto 0;}
@@ -214,7 +230,7 @@
 .history-2025 .head .item01 {width: 360px;}
 .history-2025 .head .item03 {width: 380px;}
 
-/* PC : 1240px이하 */
+/* ==== PC : 1240px이하 ==== */
 @media all and (max-width:1240px){
   /* main */
   #wrap.main .header .gnb > ul > li > a {color:#000;}
@@ -297,21 +313,42 @@
 }
 
 @media all and (max-width: 1024px) {
+  /* main */
+  /* s: 2026-09-15 */
+  .main .content {height: calc(100vh - 61px); padding: 0 30px;}
+  .main .content .main-info .tit .pc-img {display: none;}
+  .main .content .main-info .tit .mo-img {display: block; width: 100%;}
+  .main .content .main-info .tit {max-width: 600px;}
+  .main .content .sub-box {margin-top: 22px;}
+  .main .content .sub-box .strong-text {font-size: 22px;}
+  .main .content .sub-box .strong-text .wbr {display: block;}
+  .main .content .sub-box .text {margin-top: 12px;font-size: 13px;}
+
+  /* 메인 제외: 티켓 */
+  .ticke-button-area {margin-top: 60px;}
+  .ticke-button-area a {padding: 0 20px}
+  .ticke-button-area img {max-width: none; width: 100%;}
+  /* e: 2026-09-15 */
+
   /* 관람정책 */
   .pc-table {display: none;}
   .mo-table {display: table;}
   .mo-table .m-wbr {display: block} /* 2025-09-20 */
   .policy .pc-col {display: none;} /* 2025-11-05 추가 */
   .policy .mo-col {display: table-column; width: 60px;} /* 2025-11-06 추가 */
+
+
 }
+
 /* MO : 767px이하 */
 @media all and (max-width:767px){
+  
   /* main */
-  .main_visual {bottom:100px;}
-  .main_visual .desc {margin-top:20px;font-size:12px;line-height:18px;}
-
-  /* 대회소개 */
-  /* .instroduct {} */
+  /* s: 2026-09-15 */
+  .main .content .main-info .main-button-area img {max-width: none; width: 100%;}
+  /* .main_visual {bottom:100px;}
+  .main_visual .desc {margin-top:20px;font-size:12px;line-height:18px;} */
+  /* e: 2026-09-15 */
 
   /* 대회일정 */
   .schedule_list ul {flex-wrap:wrap;}
@@ -485,6 +522,8 @@
 /* MO : 375px이하 */
 @media all and (max-width:375px) {
 
+  .ticke-button-area a {padding: 0 40px;} /* 2026-09-15 */
+  
   /* 플라자 */
   .plaza .thumb_list {flex-wrap: wrap;}
   
