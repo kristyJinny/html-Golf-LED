@@ -550,7 +550,8 @@
                 <!-- s: 2025-11-05 수정 -->
                 <col style="width: 160px;" class="pc-col">
                 <col style="width: 60px;" class="mo-col">
-                <col class="col-width"><!-- // 2025-11-06 수정 -->
+                <col style="width: 60px;" class="mo-col"><!-- // 2026-09-17  -->
+                <col class="col-width" class="pc-col"><!-- // 2026-09-17  -->
                 <col class="col-width"><!-- //2025-11-06 수정 -->
                 <!-- <col />2 025-11-05 삭제--->
                 <!-- e: 2025-11-05 수정 -->
@@ -563,7 +564,8 @@
             </thead>
             <tbody>
             <tr>
-                <th scope="row" rowspan="3">티켓판매</th>
+                <th scope="row" rowspan="3" class="pc-th">티켓판매</th><!-- // 2026-09-17  -->
+                <th scope="row" rowspan="5" class="mo-th">티켓판매</th><!-- // 2026-09-17  -->
                 <td class="tal" colspan="2"> <!-- 2025-11-05: 2 로 수정 -->
                     <ul class="list_dot_small">
                         <li>티켓은 티켓 예매 사이트에서 구매 가능하며, 본 대회기간 동안 현장 판매도 함께 진행</li><!-- //2026-09-15 -->
@@ -573,13 +575,13 @@
                 </td>
             </tr>
 
-            <tr class="style-th">
+            <tr class="style-th pc-only"><!-- // 2026-09-17  -->
                 <th scope="col">일반 입장권</th>
                 <th scope="col">VIP 라운지 입장권</th>
                 <!-- <th scope="col">인사이드 로프</th> 2025-11-05 삭제-->
             </tr>
 
-            <tr>
+            <tr class="pc-only"><!-- // 2026-09-17  -->
                 <td class="tal">
                     <ul class="list_dot_small">
                         <li><strong>예매 사이트 및 현장 구매 가능</strong></li>
@@ -608,6 +610,33 @@
                   </ul>
                 </td> -->
             </tr>
+
+            <!-- s: mo-only 모바일 전용 행 2026-09-17 -->
+            <tr class="mo-only">
+                <th scope="row" class="style-th-mo">일반 입장권</th>
+                <td class="tal">
+                    <ul class="list_dot_small">
+                        <li><strong>예매 사이트 및 현장 구매 가능</strong></li>
+                        <li>당일 구매 가능</li>
+                    </ul>
+                </td>
+            </tr>
+
+            <tr class="mo-only">
+                <th scope="row" class="style-th-mo">VIP 라운지 입장권</th>
+                <td class="tal">
+                    <ul class="list_dot_small">
+                        <li><strong>예매 사이트 및 현장 구매 가능</strong></li>
+                        <li>
+                            당일 구매 가능
+                            <ul class="list_star02">
+                                <li class="red">별도 셔틀 탑승은 탑승 전 티켓을 소지하신 분만 가능합니다.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+            <!-- e: mo-only 모바일 전용 행 2026-09-17 -->
 
             <tr>
                 <th scope="row">미취학 아동</th>

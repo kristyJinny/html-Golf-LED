@@ -132,6 +132,8 @@
 .policy .list_star02 li {line-height: 20px;}/* 2025-11-05 */
 .policy .pc-col {width: 160px;}
 .policy .col-width {width: 520px;}
+.policy .tbl_col tr.mo-only {display: none;} /* 2026-09-17 */
+.policy .mo-th {display: none;} /* 2026-09-17 */
 
 
 /* 히스토리 2021 */
@@ -336,8 +338,14 @@
   .mo-table .m-wbr {display: block} /* 2025-09-20 */
   .policy .pc-col {display: none;} /* 2025-11-05 추가 */
   .policy .mo-col {display: table-column; width: 60px;} /* 2025-11-06 추가 */
+  .policy .col-width {width: auto;} /* 2026-09-17 */
 
-
+  /* 모바일 전용: pc-only 숨김, mo-only 표시 2026-09-17 */
+  .policy .pc-th {display: none;} /* 2026-09-17 */
+  .policy .mo-th {display: table-cell;} /* 2026-09-17 */
+  .policy .tbl_col tr.pc-only {display: none;}
+  .policy .tbl_col tr.mo-only {display: table-row; border-bottom: 1px solid rgba(0, 0, 0, 0.1);} /* 2026-09-17 */
+  .policy .tbl_col tr.mo-only th.style-th-mo {background:#7e192c;color:#fff;font-size:13px;font-weight:700;padding:6px 10px;line-height:20px;text-align:center;}
 }
 
 /* MO : 767px이하 */
@@ -430,6 +438,7 @@
   .policy .list_dot {margin-top:12px;}
   .policy .list_dot > li + li {margin-top:3px;}
   .policy .colbox .col + .col {max-width: 100%;} /* 2025-09-25 */
+  
 
 
   /* 히스토리 2021 */
