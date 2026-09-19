@@ -158,6 +158,12 @@ select::-ms-expand {display:none;}
 .titlearea .list_dot {margin-top:30px;}
 .titlearea + .h3_tit {margin-top:40px;}
 
+/* titlearea.tobe-center : 추후 업데이트: 2026-09-19 */
+.titlearea.tobe-center {text-align: center;}
+/* .titlearea.tobe-center .textbox h2 {display: inline-block;} */
+.titlearea.tobe-center .textbox h2::after {content:'';display: block; width: 70px; height: 4px; margin: 20px auto 0; background-color: #5d0d1d;}
+.tobe-info {margin: 70px auto 0; text-align: center;font-size: 26px; color: #333;}
+
 /* list_style */
 .list_style {margin-top:48px;}
 .list_style > li {color:#888888;font-size:14px;line-height:20px;}
@@ -353,6 +359,10 @@ select::-ms-expand {display:none;}
   .titlearea .textbox h2 {font-size:24px;}
   .titlearea .textbox p {margin-top:16px;font-size:12px;line-height:21px;}
   .titlearea + .h3_tit {margin-top:30px;}
+
+  /* 2026-09-19 */
+  .titlearea.tobe-center .textbox h2::after {margin-top: 13px;}
+  .tobe-info {margin-top: 43px; font-size: 15px;}
 
   /* list_style */
   .list_style {margin-top:24px;}
